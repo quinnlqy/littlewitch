@@ -1,0 +1,26 @@
+# 本目录仅用于精选公开资料。避免误放临时文件和本地配置。
+.DS_Store
+Thumbs.db
+desktop.ini
+__pycache__/
+*.pyc
+.env
+.env.*
+*.log
+*.tmp
+.workbuddy/
+.backup/
+backup/
+artifacts/
+record/
+*.zip
+*.mp4
+*.webm
+
+# Local build and media-processing outputs
+.venv/
+venv/
+node_modules/
+models/
+output/
+outputs/

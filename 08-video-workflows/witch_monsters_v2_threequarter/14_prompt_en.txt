@@ -1,0 +1,14 @@
+How the reference pictures align with the target video — Picture 1 (from Shot 1) aligns with the 0.00-second mark of the target video; Picture 2 (from Shot 1) aligns with the 8.00-second mark of the target video.
+
+integrated_multimodal_description: [Shot 1] A fixed-camera eight-second 2D sprite clip. One purple winged storybook spirit with two tall ears, two pale eyes, two tiny white fangs, a narrow torso, two connected SOFT ROUNDED OPAQUE PURPLE WING-FLAPS and the original lower mist tail. Keep the exact source painted outline and near/far perspective.
+
+0.00-1.00s: ordinary small wing motion. 1.00-1.45s: fold both wings tightly, narrowing the total silhouette to about 64 percent, with ears slightly back. 1.45-2.85s: hold the distinct dash pose, wings half open, torso leaning six degrees toward screen-left with a little wing tremor, keeping the root center fixed. 2.85-3.50s: reopen to ordinary wing motion. 3.50-8.00s: resume the source flight pose. The empty green surroundings stay unchanged.
+
+The supplied left-facing three-quarter sprite remains at the same size and fixed canvas center, with its face and body both directed toward screen-left. Keep the source near-side/far-side occlusion and exact painted colors, texture and part counts. The camera and viewing angle are completely fixed. Only the stated small local motions occur. The entire area outside this one sprite is a completely flat, opaque, uniformly lit chroma-green color #00FF00 in EVERY frame, identical to the reference background. All empty background pixels stay the same solid green throughout; it remains an empty color field with constant exposure. Keep all existing parts connected and preserve the original anatomy. All motion ends in the supplied neutral pose; the body and face keep their left-facing three-quarter orientation throughout.
+
+overall_soundscape: N/A
+
+non_diegetic_music: N/A
+
+Both original soft rounded wing-flaps remain entirely inside the frame. Keep their painted opaque silhouettes and original brush texture; their contour and part structure remain the same throughout. The smaller reference placement intentionally reserves generous room for wing motion.
+

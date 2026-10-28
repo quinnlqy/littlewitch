@@ -1,0 +1,12 @@
+How the reference pictures align with the target video — Picture 1 (from Shot 1) aligns with the 0.00-second mark of the target video; Picture 2 (from Shot 1) aligns with the 8.00-second mark of the target video.
+
+integrated_multimodal_description: [Shot 1] A fixed-camera eight-second 2D sprite clip. One pale grey-blue ghost with exactly two dark eyes, a tiny quiet mouth, one continuous soft body and exactly three lower wisps. Its silhouette is limbless and its little mouth retains the source size.
+
+0.00-1.00s: quiet source pose. 1.00-1.60s: gradually puff the cheeks by a SMALL amount, maximum 12 percent wider, keeping the mouth tiny and the head size unchanged. 1.60-1.80s: one short blowing mouth motion toward screen-left; cheeks relax while the three wisps flick locally. 1.80-3.50s: return to the same quiet pose. 3.50-8.00s: remain calm, with only tiny breathing and wisp motion. Exactly one cheek-puff-and-release action. The delivered sprite remains self-contained, its surroundings stay empty flat green.
+
+The supplied left-facing three-quarter sprite remains at the same size and fixed canvas center, with its face and body both directed toward screen-left. Keep the source near-side/far-side occlusion and exact painted colors, texture and part counts. The camera and viewing angle are completely fixed. Only the stated small local motions occur. The entire area outside this one sprite is a completely flat, opaque, uniformly lit chroma-green color #00FF00 in EVERY frame, identical to the reference background. All empty background pixels stay the same solid green throughout; it remains an empty color field with constant exposure. Keep all existing parts connected and preserve the original anatomy. All motion ends in the supplied neutral pose; the body and face keep their left-facing three-quarter orientation throughout.
+
+overall_soundscape: N/A
+
+non_diegetic_music: N/A
+

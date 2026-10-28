@@ -1,0 +1,12 @@
+How the reference pictures align with the target video — Picture 1 (from Shot 1) aligns with the 0.00-second mark of the target video; Picture 2 (from Shot 1) aligns with the 8.00-second mark of the target video.
+
+integrated_multimodal_description: [Shot 1] A fixed-camera eight-second 2D sprite clip. One asymmetrical grey-lavender cloud, exactly one sleepy cream face at lower-left, two ivory horns, the original dusty-rose mound and exactly three small grey puffs on the right. Entirely legless with a continuous rounded underside. All three existing puffs remain close to the body.
+
+0.00-1.00s: quiet source pose. 1.00-1.60s: the eyes focus slightly and the cheeks swell modestly around a small opening mouth. The cream face, nose, horns, mound and exactly three trailing puffs keep their shapes and positions. 1.60-1.85s: one short blowing mouth pulse toward screen-left, followed by a tiny backward recoil of the connected face-side cloud. 1.85-3.50s: return to quiet neutral. 3.50-8.00s: gentle breathing. Keep the green surroundings completely empty.
+
+The supplied left-facing three-quarter sprite remains at the same size and fixed canvas center, with its face and body both directed toward screen-left. Keep the source near-side/far-side occlusion and exact painted colors, texture and part counts. The camera and viewing angle are completely fixed. Only the stated small local motions occur. The entire area outside this one sprite is a completely flat, opaque, uniformly lit chroma-green color #00FF00 in EVERY frame, identical to the reference background. All empty background pixels stay the same solid green throughout; it remains an empty color field with constant exposure. Keep all existing parts connected and preserve the original anatomy. All motion ends in the supplied neutral pose; the body and face keep their left-facing three-quarter orientation throughout.
+
+overall_soundscape: N/A
+
+non_diegetic_music: N/A
+

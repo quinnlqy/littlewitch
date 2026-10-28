@@ -1,0 +1,193 @@
+{
+  "92": {
+    "class_type": "SaveVideo",
+    "inputs": {
+      "filename_prefix": "witch_flight_green_v1/03_飞行_长施法",
+      "format": "mp4",
+      "codec": "h264",
+      "video": [
+        "130",
+        0
+      ]
+    }
+  },
+  "119": {
+    "class_type": "VAELoader",
+    "inputs": {
+      "vae_name": "minimax_h3_video_vae_fp16.safetensors"
+    }
+  },
+  "122": {
+    "class_type": "VAEDecode",
+    "inputs": {
+      "samples": [
+        "125",
+        0
+      ],
+      "vae": [
+        "119",
+        0
+      ]
+    }
+  },
+  "123": {
+    "class_type": "MiniMaxH3TurboSampler",
+    "inputs": {}
+  },
+  "124": {
+    "class_type": "BasicScheduler",
+    "inputs": {
+      "scheduler": "simple",
+      "steps": 6,
+      "denoise": 1,
+      "model": [
+        "144",
+        0
+      ]
+    }
+  },
+  "125": {
+    "class_type": "SamplerCustomAdvanced",
+    "inputs": {
+      "noise": [
+        "129",
+        0
+      ],
+      "guider": [
+        "126",
+        0
+      ],
+      "sampler": [
+        "123",
+        0
+      ],
+      "sigmas": [
+        "124",
+        0
+      ],
+      "latent_image": [
+        "136",
+        1
+      ]
+    }
+  },
+  "126": {
+    "class_type": "BasicGuider",
+    "inputs": {
+      "model": [
+        "144",
+        0
+      ],
+      "conditioning": [
+        "136",
+        0
+      ]
+    }
+  },
+  "127": {
+    "class_type": "UNETLoader",
+    "inputs": {
+      "unet_name": "minimax_h3_ref2va_pruned_int8_convrot.safetensors",
+      "weight_dtype": "default"
+    }
+  },
+  "128": {
+    "class_type": "CLIPLoader",
+    "inputs": {
+      "clip_name": "qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors",
+      "type": "minimax",
+      "device": "default"
+    }
+  },
+  "129": {
+    "class_type": "RandomNoise",
+    "inputs": {
+      "noise_seed": 2026101903
+    }
+  },
+  "130": {
+    "class_type": "CreateVideo",
+    "inputs": {
+      "fps": 24,
+      "bit_depth": 8,
+      "images": [
+        "146",
+        0
+      ],
+      "color_space": "sRGB",
+      "codec": "none"
+    }
+  },
+  "136": {
+    "class_type": "MiniMaxH3ReferenceToVideo",
+    "inputs": {
+      "clip": [
+        "128",
+        0
+      ],
+      "vae": [
+        "119",
+        0
+      ],
+      "prompt": "subject_definitions:\n<Subject 1> is the single chibi little witch from reference image 1: oversized ivory floppy pointed hat with a dark-purple underside, one blue bow, two black rectangular eyes, a tiny inverted-V mouth and pink cheeks on the HAT; pale blonde bangs and two braids tied with blue bows; a small pale face with two simple vertical black oval eyes and a tiny mouth; dark-purple dress with a lavender hem and a blue neck bow; purple boots. Preserve the reference's soft pastel, softly shaded storybook illustration with stable color blocks.\n<Subject 2> is her single brown wooden broom from reference image 1, with golden bristles and a blue binding on screen-left, its wooden handle pointing screen-right.\n<Subject 3> is her single brown wand with the little ivory mascot-shaped topper from reference image 1. The topper's simple dark eyes and pink cheeks remain painted decoration.\n\nsummary:\n[reference generation] Create one 10-second reusable character animation on a completely flat chroma-green background. One continuous fixed-camera full-body shot. <Subject 1> rides <Subject 2>, facing screen-right in the reference three-quarter view, holding <Subject 3> with both hands. Output 768x768 at 24 fps; generate 243 internal frames and retain the first 240 frames.\n\nretention_analysis:\n<Subject 1> (appears throughout [Shot 1]): fully_preserved - identity, face design, hat face, outfit, braids, short chibi proportions, palette and soft illustrated rendering. Cloth and hair may move slightly without changing their shapes or counts.\n<Subject 2> (appears throughout [Shot 1]): fully_preserved - shape, bristle arrangement, blue binding and orientation; hips stay in contact with the broom shaft throughout.\n<Subject 3> (appears throughout [Shot 1]): fully_preserved - one rigid wand, same topper and both-hand grip. It remains a separate prop from the broom.\nReference image 1 supplies only the character, props, pose and visual style. Replace its gray background with uniform opaque #00FF00 in EVERY output frame, including the first. Do not reproduce a gray opening frame or a gray-to-green transition. It is a loose subject reference, not a literal first-frame anchor.\n\ndetailed_description:\n[Shot 1 | 0.000-10.125s | reference image 1]\nFixed orthographic-like full-body camera, no pan, zoom, tracking, orbit or cut. Entire hat tip, braids, boots, wand and broom always visible. The witch and broom group occupies about 70% of the canvas width and 78% of height, leaving at least 8% green clearance on all sides; leave a compact clear upper-right area for the wand action. Center position and apparent scale remain constant. The reference facing direction never reverses. Flight is conveyed by subtle body hovering and trailing hair and fabric; there is no scenery. Both hands remain on the same wand throughout; the broom flies without hand steering.\n\nAction timeline:\n0.000-1.500s: steady airborne idle in the reference riding pose, both hands holding the wand diagonally across the torso.\n1.500-3.000s: both hands together raise the same wand toward the upper-right. A small warm-white opaque core with a narrow pale lavender rim grows just beyond the wand tip, gradually charging. The broom maintains steady flight and the torso stays seated.\n3.000-7.000s: sustain exactly one continuous spell. A compact warm-white core at the wand tip feeds a short pale lavender ribbon of energy pointing upper-right, no longer than 20% of frame width. The ribbon has a clearly bounded bright core and restrained opaque star accents, not broad fog. Maintain the same hand grip and wand orientation throughout the four-second sustained release; subtle slow energy pulses, no repeated wand swings or repeated bursts. Keep the effect separate from face, hat and broom.\n7.000-8.500s: taper the ribbon into the wand tip, shrink the core and make every detached star disappear. Both hands lower the same wand toward its opening diagonal pose.\n8.500-10.000s: resume calm flight in the opening pose, with the spell fully absent.\n10.000-10.125s: continue calm flight without a new action; this buffer is trimmed from delivery.\n\nBackground and keying requirements: flat fully opaque chroma green #00FF00, no texture, gradient, horizon, floor, shadow, gray vignette or green reflections on the character. Soft stable diffuse character lighting, stable local colors, clear edges, no motion blur. Magic, if specified, uses warm white and pale lavender; keep its core clearly bounded, with no green or cyan effects and no wide transparent glow or smoke. All effects stay within the canvas and avoid the face. No other person, prop or character appears; the faces on the hat and wand never become separate living creatures. No extra limbs, long legs, changed face, duplicated broom, flexible wand, disappearing hands, sliding off the broom, pedaling, wardrobe changes, frame flicker, text, subtitles or watermark. Maintain the small mouth and quiet expression without lip movement.\n\noverall_soundscape:\nSilent output, no dialogue or ambient audio.\n\nnon_diegetic_music:\nNone.\n",
+      "width": 768,
+      "height": 768,
+      "length": 243,
+      "ref_image_size": "match",
+      "ref_images.ref_image_0": [
+        "137",
+        0
+      ]
+    }
+  },
+  "137": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "witch_flight_green_v1_character_original.png"
+    }
+  },
+  "142": {
+    "class_type": "MiniMaxH3TurboLoRA",
+    "inputs": {
+      "model": [
+        "127",
+        0
+      ],
+      "lora_name": "minimax_h3_turbo_v4_step600_ema.safetensors",
+      "strength": 1,
+      "low_vram": false
+    }
+  },
+  "143": {
+    "class_type": "MiniMaxH3SigmaShift",
+    "inputs": {
+      "model": [
+        "142",
+        0
+      ],
+      "shift_video": 12,
+      "shift_audio": 3
+    }
+  },
+  "144": {
+    "class_type": "ModelAttentionBackend",
+    "inputs": {
+      "model": [
+        "143",
+        0
+      ],
+      "attention": "comfy kitchen attention"
+    }
+  },
+  "146": {
+    "class_type": "ImageFromBatch",
+    "inputs": {
+      "image": [
+        "122",
+        0
+      ],
+      "batch_index": 0,
+      "length": 240
+    }
+  }
+}

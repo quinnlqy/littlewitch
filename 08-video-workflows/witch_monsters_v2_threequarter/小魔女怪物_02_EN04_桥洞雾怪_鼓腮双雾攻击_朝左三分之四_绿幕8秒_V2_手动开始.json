@@ -1,0 +1,2022 @@
+{
+  "id": "b437efbc-3841-4a7c-b5d7-fd22dacff39e",
+  "revision": 1,
+  "last_node_id": 157,
+  "last_link_id": 37,
+  "nodes": [
+    {
+      "id": 147,
+      "type": "LoadImage",
+      "pos": [
+        0,
+        0
+      ],
+      "size": [
+        340,
+        500
+      ],
+      "flags": {},
+      "order": 7,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "图像",
+          "name": "image",
+          "type": "COMBO",
+          "widget": {
+            "name": "image"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "选择文件上传",
+          "name": "upload",
+          "type": "IMAGEUPLOAD",
+          "widget": {
+            "name": "upload"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "图像",
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            19
+          ]
+        },
+        {
+          "localized_name": "遮罩",
+          "name": "MASK",
+          "type": "MASK",
+          "links": [
+            20
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "witch_monster_v2_head.png",
+        "image"
+      ],
+      "widgets_values_named": {
+        "image": "witch_monster_v2_head.png",
+        "upload": "image"
+      },
+      "title": "角色原图｜透明PNG｜身份真源"
+    },
+    {
+      "id": 148,
+      "type": "ImageScale",
+      "title": "按原比例放大｜保留原画",
+      "pos": [
+        370,
+        0
+      ],
+      "size": [
+        330,
+        150
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 19
+        },
+        {
+          "name": "upscale_method",
+          "type": "COMBO",
+          "link": null,
+          "widget": {
+            "name": "upscale_method"
+          }
+        },
+        {
+          "name": "width",
+          "type": "INT",
+          "link": null,
+          "widget": {
+            "name": "width"
+          }
+        },
+        {
+          "name": "height",
+          "type": "INT",
+          "link": null,
+          "widget": {
+            "name": "height"
+          }
+        },
+        {
+          "name": "crop",
+          "type": "COMBO",
+          "link": null,
+          "widget": {
+            "name": "crop"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            25
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ImageScale"
+      },
+      "widgets_values": [
+        "lanczos",
+        391,
+        512,
+        "disabled"
+      ],
+      "widgets_values_named": {
+        "upscale_method": "lanczos",
+        "width": 391,
+        "height": 512,
+        "crop": "disabled"
+      }
+    },
+    {
+      "id": 149,
+      "type": "InvertMask",
+      "title": "透明遮罩反转为主体Alpha",
+      "pos": [
+        0,
+        550
+      ],
+      "size": [
+        330,
+        150
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "mask",
+          "type": "MASK",
+          "link": 20
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": [
+            21
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "InvertMask"
+      },
+      "widgets_values": [],
+      "widgets_values_named": {}
+    },
+    {
+      "id": 150,
+      "type": "MaskToImage",
+      "title": "Alpha转图",
+      "pos": [
+        370,
+        250
+      ],
+      "size": [
+        330,
+        150
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "mask",
+          "type": "MASK",
+          "link": 21
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            22
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "MaskToImage"
+      },
+      "widgets_values": [],
+      "widgets_values_named": {}
+    },
+    {
+      "id": 151,
+      "type": "ImageScale",
+      "title": "Alpha同步缩放",
+      "pos": [
+        730,
+        250
+      ],
+      "size": [
+        330,
+        150
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 22
+        },
+        {
+          "name": "upscale_method",
+          "type": "COMBO",
+          "link": null,
+          "widget": {
+            "name": "upscale_method"
+          }
+        },
+        {
+          "name": "width",
+          "type": "INT",
+          "link": null,
+          "widget": {
+            "name": "width"
+          }
+        },
+        {
+          "name": "height",
+          "type": "INT",
+          "link": null,
+          "widget": {
+            "name": "height"
+          }
+        },
+        {
+          "name": "crop",
+          "type": "COMBO",
+          "link": null,
+          "widget": {
+            "name": "crop"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            23
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ImageScale"
+      },
+      "widgets_values": [
+        "bilinear",
+        391,
+        512,
+        "disabled"
+      ],
+      "widgets_values_named": {
+        "upscale_method": "bilinear",
+        "width": 391,
+        "height": 512,
+        "crop": "disabled"
+      }
+    },
+    {
+      "id": 152,
+      "type": "ImageToMask",
+      "title": "读取缩放后的Alpha",
+      "pos": [
+        1090,
+        250
+      ],
+      "size": [
+        330,
+        150
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 23
+        },
+        {
+          "name": "channel",
+          "type": "COMBO",
+          "link": null,
+          "widget": {
+            "name": "channel"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": [
+            26
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ImageToMask"
+      },
+      "widgets_values": [
+        "red"
+      ],
+      "widgets_values_named": {
+        "channel": "red"
+      }
+    },
+    {
+      "id": 153,
+      "type": "EmptyImage",
+      "title": "纯绿底｜768×768",
+      "pos": [
+        730,
+        0
+      ],
+      "size": [
+        330,
+        150
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "width",
+          "type": "INT",
+          "link": null,
+          "widget": {
+            "name": "width"
+          }
+        },
+        {
+          "name": "height",
+          "type": "INT",
+          "link": null,
+          "widget": {
+            "name": "height"
+          }
+        },
+        {
+          "name": "batch_size",
+          "type": "INT",
+          "link": null,
+          "widget": {
+            "name": "batch_size"
+          }
+        },
+        {
+          "name": "color",
+          "type": "INT",
+          "link": null,
+          "widget": {
+            "name": "color"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            24
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "EmptyImage"
+      },
+      "widgets_values": [
+        768,
+        768,
+        1,
+        65280
+      ],
+      "widgets_values_named": {
+        "width": 768,
+        "height": 768,
+        "batch_size": 1,
+        "color": 65280
+      }
+    },
+    {
+      "id": 154,
+      "type": "ImageCompositeMasked",
+      "title": "角色＋纯绿底｜同一首尾帧",
+      "pos": [
+        1090,
+        0
+      ],
+      "size": [
+        330,
+        150
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "destination",
+          "type": "IMAGE",
+          "link": 24
+        },
+        {
+          "name": "source",
+          "type": "IMAGE",
+          "link": 25
+        },
+        {
+          "name": "x",
+          "type": "INT",
+          "link": null,
+          "widget": {
+            "name": "x"
+          }
+        },
+        {
+          "name": "y",
+          "type": "INT",
+          "link": null,
+          "widget": {
+            "name": "y"
+          }
+        },
+        {
+          "name": "resize_source",
+          "type": "BOOLEAN",
+          "link": null,
+          "widget": {
+            "name": "resize_source"
+          }
+        },
+        {
+          "name": "mask",
+          "type": "MASK",
+          "link": 26
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            15,
+            16,
+            27,
+            32,
+            36
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ImageCompositeMasked"
+      },
+      "widgets_values": [
+        188,
+        128,
+        false
+      ],
+      "widgets_values_named": {
+        "x": 188,
+        "y": 128,
+        "resize_source": false
+      }
+    },
+    {
+      "id": 155,
+      "type": "PreviewImage",
+      "title": "绿幕首尾参考预览",
+      "pos": [
+        1450,
+        0
+      ],
+      "size": [
+        400,
+        420
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 27
+        }
+      ],
+      "outputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "links": []
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "PreviewImage"
+      },
+      "widgets_values": [],
+      "widgets_values_named": {}
+    },
+    {
+      "id": 127,
+      "type": "UNETLoader",
+      "pos": [
+        0,
+        820
+      ],
+      "size": [
+        640,
+        90
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "UNet名称",
+          "name": "unet_name",
+          "type": "COMBO",
+          "widget": {
+            "name": "unet_name"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "数据类型",
+          "name": "weight_dtype",
+          "type": "COMBO",
+          "widget": {
+            "name": "weight_dtype"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "模型",
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            17
+          ]
+        }
+      ],
+      "title": "H3 FL2VA INT8",
+      "properties": {
+        "Node name for S&R": "UNETLoader",
+        "models": [
+          {
+            "name": "minimax_h3_ref2va_pruned_int8_convrot.safetensors",
+            "url": "https://huggingface.co/Comfy-Org/MiniMax-H3/resolve/main/diffusion_models/minimax_h3_ref2va_pruned_int8_convrot.safetensors",
+            "directory": "diffusion_models"
+          }
+        ]
+      },
+      "widgets_values": [
+        "minimax_h3_fl2va_pruned_int8_convrot.safetensors",
+        "default"
+      ],
+      "widgets_values_named": {
+        "unet_name": "minimax_h3_fl2va_pruned_int8_convrot.safetensors",
+        "weight_dtype": "default"
+      }
+    },
+    {
+      "id": 128,
+      "type": "CLIPLoader",
+      "pos": [
+        0,
+        980
+      ],
+      "size": [
+        640,
+        120
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "CLIP名称",
+          "name": "clip_name",
+          "type": "COMBO",
+          "widget": {
+            "name": "clip_name"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "类型",
+          "name": "type",
+          "type": "COMBO",
+          "widget": {
+            "name": "type"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "设备",
+          "name": "device",
+          "shape": 7,
+          "type": "COMBO",
+          "widget": {
+            "name": "device"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "CLIP",
+          "name": "CLIP",
+          "type": "CLIP",
+          "links": [
+            13
+          ]
+        }
+      ],
+      "title": "H3文本编码器 NVFP4",
+      "properties": {
+        "Node name for S&R": "CLIPLoader"
+      },
+      "widgets_values": [
+        "qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors",
+        "minimax",
+        "default"
+      ],
+      "widgets_values_named": {
+        "clip_name": "qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors",
+        "type": "minimax",
+        "device": "default"
+      }
+    },
+    {
+      "id": 119,
+      "type": "VAELoader",
+      "pos": [
+        0,
+        1160
+      ],
+      "size": [
+        640,
+        70
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "vae名称",
+          "name": "vae_name",
+          "type": "COMBO",
+          "widget": {
+            "name": "vae_name"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "VAE",
+          "name": "VAE",
+          "type": "VAE",
+          "links": [
+            3,
+            14,
+            31,
+            35
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "VAELoader",
+        "models": [
+          {
+            "name": "minimax_h3_video_vae_fp16.safetensors",
+            "url": "https://huggingface.co/Comfy-Org/MiniMax-H3/resolve/main/vae/minimax_h3_video_vae_fp16.safetensors",
+            "directory": "vae"
+          }
+        ]
+      },
+      "widgets_values": [
+        "minimax_h3_video_vae_fp16.safetensors"
+      ],
+      "widgets_values_named": {
+        "vae_name": "minimax_h3_video_vae_fp16.safetensors"
+      },
+      "title": "H3视频VAE"
+    },
+    {
+      "id": 142,
+      "type": "MiniMaxH3TurboLoRA",
+      "pos": [
+        0,
+        1330
+      ],
+      "size": [
+        430,
+        160
+      ],
+      "flags": {},
+      "order": 8,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "model",
+          "name": "model",
+          "type": "MODEL",
+          "link": 17
+        },
+        {
+          "localized_name": "lora_name",
+          "name": "lora_name",
+          "type": "COMBO",
+          "widget": {
+            "name": "lora_name"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "strength",
+          "name": "strength",
+          "type": "FLOAT",
+          "widget": {
+            "name": "strength"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "low_vram",
+          "name": "low_vram",
+          "type": "BOOLEAN",
+          "widget": {
+            "name": "low_vram"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "模型",
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            18
+          ]
+        }
+      ],
+      "title": "Turbo v4-600｜强度1",
+      "properties": {
+        "Node name for S&R": "MiniMaxH3TurboLoRA"
+      },
+      "widgets_values": [
+        "minimax_h3_turbo_v4_step600_ema.safetensors",
+        1,
+        false
+      ],
+      "widgets_values_named": {
+        "lora_name": "minimax_h3_turbo_v4_step600_ema.safetensors",
+        "strength": 1,
+        "low_vram": false
+      }
+    },
+    {
+      "id": 143,
+      "type": "MiniMaxH3SigmaShift",
+      "pos": [
+        0,
+        1530
+      ],
+      "size": [
+        430,
+        160
+      ],
+      "flags": {},
+      "order": 10,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "model",
+          "name": "model",
+          "type": "MODEL",
+          "link": 18
+        },
+        {
+          "localized_name": "视频偏移",
+          "name": "shift_video",
+          "type": "FLOAT",
+          "widget": {
+            "name": "shift_video"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "音频偏移",
+          "name": "shift_audio",
+          "type": "FLOAT",
+          "widget": {
+            "name": "shift_audio"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "模型",
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            4,
+            10
+          ]
+        }
+      ],
+      "title": "显式SigmaShift 12／3",
+      "properties": {
+        "Node name for S&R": "MiniMaxH3SigmaShift"
+      },
+      "widgets_values": [
+        12,
+        3
+      ],
+      "widgets_values_named": {
+        "shift_video": 12,
+        "shift_audio": 3
+      }
+    },
+    {
+      "id": 123,
+      "type": "MiniMaxH3TurboSampler",
+      "pos": [
+        390,
+        1530
+      ],
+      "size": [
+        350,
+        250
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "localized_name": "采样器",
+          "name": "SAMPLER",
+          "type": "SAMPLER",
+          "links": [
+            7
+          ]
+        }
+      ],
+      "title": "Turbo采样器",
+      "properties": {
+        "Node name for S&R": "MiniMaxH3TurboSampler"
+      },
+      "widgets_values_named": {},
+      "widgets_values": []
+    },
+    {
+      "id": 124,
+      "type": "BasicScheduler",
+      "pos": [
+        390,
+        1630
+      ],
+      "size": [
+        370,
+        130
+      ],
+      "flags": {},
+      "order": 13,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "模型",
+          "name": "model",
+          "type": "MODEL",
+          "link": 4
+        },
+        {
+          "localized_name": "调度器",
+          "name": "scheduler",
+          "type": "COMBO",
+          "widget": {
+            "name": "scheduler"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "步数",
+          "name": "steps",
+          "type": "INT",
+          "widget": {
+            "name": "steps"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "降噪",
+          "name": "denoise",
+          "type": "FLOAT",
+          "widget": {
+            "name": "denoise"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "Sigmas",
+          "name": "SIGMAS",
+          "type": "SIGMAS",
+          "links": [
+            8
+          ]
+        }
+      ],
+      "title": "simple｜6步",
+      "properties": {
+        "Node name for S&R": "BasicScheduler"
+      },
+      "widgets_values": [
+        "simple",
+        6,
+        1
+      ],
+      "widgets_values_named": {
+        "scheduler": "simple",
+        "steps": 6,
+        "denoise": 1
+      }
+    },
+    {
+      "id": 138,
+      "type": "PrimitiveStringMultiline",
+      "pos": [
+        760,
+        700
+      ],
+      "size": [
+        570,
+        940
+      ],
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "值",
+          "name": "value",
+          "type": "STRING",
+          "widget": {
+            "name": "value"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "字符串",
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            28
+          ]
+        }
+      ],
+      "title": "02｜桥洞雾怪｜鼓腮双雾攻击｜完整提示词",
+      "properties": {
+        "Node name for S&R": "PrimitiveStringMultiline"
+      },
+      "widgets_values": [
+        "How the reference pictures align with the target video — Picture 1 (from Shot 1) aligns with the 0.00-second mark of the target video; Picture 2 (from Shot 1) aligns with the 8.00-second mark of the target video.\n\nintegrated_multimodal_description: [Shot 1] A fixed-camera eight-second 2D sprite clip. One pale grey-blue ghost with exactly two dark eyes, a tiny quiet mouth, one continuous soft body and exactly three lower wisps. Its silhouette is limbless and its little mouth retains the source size.\n\n0.00-1.00s: quiet source pose. 1.00-1.60s: gradually puff the cheeks by a SMALL amount, maximum 12 percent wider, keeping the mouth tiny and the head size unchanged. 1.60-1.80s: one short blowing mouth motion toward screen-left; cheeks relax while the three wisps flick locally. 1.80-3.50s: return to the same quiet pose. 3.50-8.00s: remain calm, with only tiny breathing and wisp motion. Exactly one cheek-puff-and-release action. The delivered sprite remains self-contained, its surroundings stay empty flat green.\n\nThe supplied left-facing three-quarter sprite remains at the same size and fixed canvas center, with its face and body both directed toward screen-left. Keep the source near-side/far-side occlusion and exact painted colors, texture and part counts. The camera and viewing angle are completely fixed. Only the stated small local motions occur. The entire area outside this one sprite is a completely flat, opaque, uniformly lit chroma-green color #00FF00 in EVERY frame, identical to the reference background. All empty background pixels stay the same solid green throughout; it remains an empty color field with constant exposure. Keep all existing parts connected and preserve the original anatomy. All motion ends in the supplied neutral pose; the body and face keep their left-facing three-quarter orientation throughout.\n\noverall_soundscape: N/A\n\nnon_diegetic_music: N/A\n"
+      ],
+      "widgets_values_named": {
+        "value": "How the reference pictures align with the target video — Picture 1 (from Shot 1) aligns with the 0.00-second mark of the target video; Picture 2 (from Shot 1) aligns with the 8.00-second mark of the target video.\n\nintegrated_multimodal_description: [Shot 1] A fixed-camera eight-second 2D sprite clip. One pale grey-blue ghost with exactly two dark eyes, a tiny quiet mouth, one continuous soft body and exactly three lower wisps. Its silhouette is limbless and its little mouth retains the source size.\n\n0.00-1.00s: quiet source pose. 1.00-1.60s: gradually puff the cheeks by a SMALL amount, maximum 12 percent wider, keeping the mouth tiny and the head size unchanged. 1.60-1.80s: one short blowing mouth motion toward screen-left; cheeks relax while the three wisps flick locally. 1.80-3.50s: return to the same quiet pose. 3.50-8.00s: remain calm, with only tiny breathing and wisp motion. Exactly one cheek-puff-and-release action. The delivered sprite remains self-contained, its surroundings stay empty flat green.\n\nThe supplied left-facing three-quarter sprite remains at the same size and fixed canvas center, with its face and body both directed toward screen-left. Keep the source near-side/far-side occlusion and exact painted colors, texture and part counts. The camera and viewing angle are completely fixed. Only the stated small local motions occur. The entire area outside this one sprite is a completely flat, opaque, uniformly lit chroma-green color #00FF00 in EVERY frame, identical to the reference background. All empty background pixels stay the same solid green throughout; it remains an empty color field with constant exposure. Keep all existing parts connected and preserve the original anatomy. All motion ends in the supplied neutral pose; the body and face keep their left-facing three-quarter orientation throughout.\n\noverall_soundscape: N/A\n\nnon_diegetic_music: N/A\n"
+      },
+      "color": "#232",
+      "bgcolor": "#353"
+    },
+    {
+      "id": 136,
+      "type": "MiniMaxH3ImageToVideo",
+      "pos": [
+        1380,
+        700
+      ],
+      "size": [
+        410,
+        530
+      ],
+      "flags": {},
+      "order": 9,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "clip",
+          "name": "clip",
+          "type": "CLIP",
+          "link": 13
+        },
+        {
+          "localized_name": "vae",
+          "name": "vae",
+          "type": "VAE",
+          "link": 14
+        },
+        {
+          "localized_name": "首帧",
+          "name": "first_frame",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 15
+        },
+        {
+          "localized_name": "末帧",
+          "name": "last_frame",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 16
+        },
+        {
+          "localized_name": "提示词",
+          "name": "prompt",
+          "type": "STRING",
+          "widget": {
+            "name": "prompt"
+          },
+          "link": 28
+        },
+        {
+          "localized_name": "宽度",
+          "name": "width",
+          "type": "INT",
+          "widget": {
+            "name": "width"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "高度",
+          "name": "height",
+          "type": "INT",
+          "widget": {
+            "name": "height"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "长度",
+          "name": "length",
+          "type": "INT",
+          "widget": {
+            "name": "length"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "正向",
+          "name": "positive",
+          "type": "CONDITIONING",
+          "links": [
+            29
+          ]
+        },
+        {
+          "localized_name": "Latent",
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": [
+            9,
+            30,
+            34
+          ]
+        }
+      ],
+      "title": "首尾相同｜192帧｜8秒",
+      "properties": {
+        "Node name for S&R": "MiniMaxH3ImageToVideo"
+      },
+      "widgets_values": [
+        "",
+        768,
+        768,
+        192
+      ],
+      "widgets_values_named": {
+        "prompt": "",
+        "width": 768,
+        "height": 768,
+        "length": 192
+      }
+    },
+    {
+      "id": 129,
+      "type": "RandomNoise",
+      "pos": [
+        1380,
+        1000
+      ],
+      "size": [
+        360,
+        90
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "噪波随机种",
+          "name": "noise_seed",
+          "type": "INT",
+          "widget": {
+            "name": "noise_seed"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "噪波",
+          "name": "NOISE",
+          "type": "NOISE",
+          "links": [
+            5
+          ]
+        }
+      ],
+      "title": "固定种子｜便于对照",
+      "properties": {
+        "Node name for S&R": "RandomNoise"
+      },
+      "widgets_values": [
+        202610200101,
+        "fixed"
+      ],
+      "widgets_values_named": {
+        "noise_seed": 202610200101,
+        "control_after_generate": "fixed"
+      }
+    },
+    {
+      "id": 126,
+      "type": "BasicGuider",
+      "pos": [
+        1380,
+        1180
+      ],
+      "size": [
+        360,
+        60
+      ],
+      "flags": {},
+      "order": 14,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "模型",
+          "name": "model",
+          "type": "MODEL",
+          "link": 10
+        },
+        {
+          "localized_name": "条件",
+          "name": "conditioning",
+          "type": "CONDITIONING",
+          "link": 37
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "引导器",
+          "name": "GUIDER",
+          "type": "GUIDER",
+          "links": [
+            6
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "BasicGuider"
+      },
+      "title": "动作＋首尾图条件",
+      "widgets_values_named": {},
+      "widgets_values": []
+    },
+    {
+      "id": 125,
+      "type": "SamplerCustomAdvanced",
+      "pos": [
+        1380,
+        1360
+      ],
+      "size": [
+        230,
+        140
+      ],
+      "flags": {},
+      "order": 15,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "噪波",
+          "name": "noise",
+          "type": "NOISE",
+          "link": 5
+        },
+        {
+          "localized_name": "引导器",
+          "name": "guider",
+          "type": "GUIDER",
+          "link": 6
+        },
+        {
+          "localized_name": "采样器",
+          "name": "sampler",
+          "type": "SAMPLER",
+          "link": 7
+        },
+        {
+          "localized_name": "西格玛",
+          "name": "sigmas",
+          "type": "SIGMAS",
+          "link": 8
+        },
+        {
+          "localized_name": "Latent图像",
+          "name": "latent_image",
+          "type": "LATENT",
+          "link": 9
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "Latent",
+          "name": "output",
+          "type": "LATENT",
+          "links": [
+            2
+          ]
+        },
+        {
+          "localized_name": "降噪Latent",
+          "name": "denoised_output",
+          "type": "LATENT",
+          "links": []
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "SamplerCustomAdvanced"
+      },
+      "title": "只生成当前这一条视频",
+      "widgets_values_named": {},
+      "widgets_values": []
+    },
+    {
+      "id": 122,
+      "type": "VAEDecode",
+      "pos": [
+        1800,
+        700
+      ],
+      "size": [
+        230,
+        60
+      ],
+      "flags": {
+        "collapsed": false
+      },
+      "order": 16,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "Latent",
+          "name": "samples",
+          "type": "LATENT",
+          "link": 2
+        },
+        {
+          "localized_name": "vae",
+          "name": "vae",
+          "type": "VAE",
+          "link": 3
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "图像",
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            12
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "VAEDecode"
+      },
+      "title": "解码全部192帧｜不裁掉末帧",
+      "widgets_values_named": {},
+      "widgets_values": []
+    },
+    {
+      "id": 130,
+      "type": "CreateVideo",
+      "pos": [
+        1800,
+        900
+      ],
+      "size": [
+        270,
+        150
+      ],
+      "flags": {},
+      "order": 18,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "图像",
+          "name": "images",
+          "type": "IMAGE",
+          "link": 12
+        },
+        {
+          "localized_name": "音频",
+          "name": "audio",
+          "shape": 7,
+          "type": "AUDIO",
+          "link": null
+        },
+        {
+          "localized_name": "帧率",
+          "name": "fps",
+          "type": "FLOAT",
+          "widget": {
+            "name": "fps"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "bit_depth",
+          "name": "bit_depth",
+          "shape": 7,
+          "type": "COMBO",
+          "widget": {
+            "name": "bit_depth"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "color_space",
+          "name": "color_space",
+          "shape": 7,
+          "type": "COMBO",
+          "widget": {
+            "name": "color_space"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "codec",
+          "name": "codec",
+          "shape": 7,
+          "type": "COMBO",
+          "widget": {
+            "name": "codec"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "视频",
+          "name": "VIDEO",
+          "type": "VIDEO",
+          "links": [
+            1
+          ]
+        }
+      ],
+      "title": "24fps｜8秒｜静音",
+      "properties": {
+        "Node name for S&R": "CreateVideo"
+      },
+      "widgets_values": [
+        24,
+        8,
+        "sRGB",
+        "none"
+      ],
+      "widgets_values_named": {
+        "fps": 24,
+        "bit_depth": 8,
+        "color_space": "sRGB",
+        "codec": "none"
+      }
+    },
+    {
+      "id": 92,
+      "type": "SaveVideo",
+      "pos": [
+        1800,
+        1120
+      ],
+      "size": [
+        620,
+        150
+      ],
+      "flags": {},
+      "order": 19,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "视频",
+          "name": "video",
+          "type": "VIDEO",
+          "link": 1
+        },
+        {
+          "localized_name": "文件名前缀",
+          "name": "filename_prefix",
+          "type": "STRING",
+          "widget": {
+            "name": "filename_prefix"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "格式",
+          "name": "format",
+          "type": "COMFY_DYNAMICCOMBO_V3",
+          "widget": {
+            "name": "format"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "编解码器",
+          "name": "format.codec",
+          "type": "COMFY_DYNAMICCOMBO_V3",
+          "widget": {
+            "name": "format.codec"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "encoding",
+          "name": "format.codec.encoding",
+          "shape": 7,
+          "type": "COMFY_DYNAMICCOMBO_V3",
+          "widget": {
+            "name": "format.codec.encoding"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "编码器",
+          "name": "codec",
+          "shape": 7,
+          "type": "COMFY_DYNAMICCOMBO_V3",
+          "widget": {
+            "name": "codec"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "video",
+          "name": "video",
+          "type": "VIDEO",
+          "links": []
+        }
+      ],
+      "title": "保存本条MP4｜其他工作流不会被启动",
+      "properties": {},
+      "widgets_values": [
+        "witch_monsters_v2_threequarter/02_EN04_桥洞雾怪_鼓腮双雾攻击",
+        "mp4",
+        "h264",
+        "auto",
+        "auto"
+      ],
+      "widgets_values_named": {
+        "filename_prefix": "witch_monsters_v2_threequarter/02_EN04_桥洞雾怪_鼓腮双雾攻击",
+        "format": "mp4",
+        "format.codec": "h264",
+        "format.codec.encoding": "auto",
+        "codec": "auto"
+      }
+    },
+    {
+      "id": 141,
+      "type": "MarkdownNote",
+      "pos": [
+        0,
+        1830
+      ],
+      "size": [
+        560,
+        650
+      ],
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "title": "动作方案与逐条运行说明",
+      "properties": {},
+      "widgets_values": [
+        "# 02 · 桥洞雾怪 · 鼓腮双雾攻击\n\n0.60秒鼓腮→嘴部吹气与回弹→恢复；双弹由程序发射。\n\n单次动作素材：蓄力→释放→恢复；不是不断连放的攻击循环。全程朝屏幕左侧的3/4角度，脸与身体一起转向左侧；近远侧遮挡固定，不回正面、不转身。位置固定，完整主体在画面中，纯绿背景，无镜头运动。\n\n严格以实际PNG为外观真源。透明PNG由标准节点保留Alpha并合成绿底，首尾用同一张图，不重画参考。\n\n\n\n弹丸、雾墙、锁定线、整体移动、受击闪白和死亡散雾由游戏程序处理。攻击片段的准确释放点见完整提示词；不能把整条8秒片长直接当作游戏技能冷却。\n\n768×768｜24fps｜192帧=8秒｜H3 FL2VA INT8＋NVFP4｜Turbo6｜默认完整注意力｜静音。\n\n只准备，未提交视频任务。点击“运行”仅生成这一条。先确认当前标签是本条，批次数量保持1，不要一次排入全部工作流。\n\n生成后检查：身份、连接、脚是否长回、背景、边缘、首尾接缝及动作时序。首尾约束有助于循环，不代表已验证无缝。\n\n输出：outputs/comfyui/witch_monsters_v2_threequarter/02_EN04_桥洞雾怪_鼓腮双雾攻击\n\n生成修订R1：共用提示词改为简洁的绿幕与朝向约束。常驻动作去除攻击相关语境；中段增加同图稳定帧（4s、6s），保持绿底、身份与恢复姿态。用户已授权依次生成全部V2视频。"
+      ],
+      "widgets_values_named": {
+        "text": "# 02 · 桥洞雾怪 · 鼓腮双雾攻击\n\n0.60秒鼓腮→嘴部吹气与回弹→恢复；双弹由程序发射。\n\n单次动作素材：蓄力→释放→恢复；不是不断连放的攻击循环。全程朝屏幕左侧的3/4角度，脸与身体一起转向左侧；近远侧遮挡固定，不回正面、不转身。位置固定，完整主体在画面中，纯绿背景，无镜头运动。\n\n严格以实际PNG为外观真源。透明PNG由标准节点保留Alpha并合成绿底，首尾用同一张图，不重画参考。\n\n\n\n弹丸、雾墙、锁定线、整体移动、受击闪白和死亡散雾由游戏程序处理。攻击片段的准确释放点见完整提示词；不能把整条8秒片长直接当作游戏技能冷却。\n\n768×768｜24fps｜192帧=8秒｜H3 FL2VA INT8＋NVFP4｜Turbo6｜默认完整注意力｜静音。\n\n只准备，未提交视频任务。点击“运行”仅生成这一条。先确认当前标签是本条，批次数量保持1，不要一次排入全部工作流。\n\n生成后检查：身份、连接、脚是否长回、背景、边缘、首尾接缝及动作时序。首尾约束有助于循环，不代表已验证无缝。\n\n输出：outputs/comfyui/witch_monsters_v2_threequarter/02_EN04_桥洞雾怪_鼓腮双雾攻击\n\n生成修订R1：共用提示词改为简洁的绿幕与朝向约束。常驻动作去除攻击相关语境；中段增加同图稳定帧（4s、6s），保持绿底、身份与恢复姿态。用户已授权依次生成全部V2视频。"
+      },
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 156,
+      "type": "MiniMaxH3AddGuide",
+      "title": "绿幕与身份稳定帧｜4秒回到原姿态",
+      "pos": [
+        2210,
+        1450
+      ],
+      "size": [
+        400,
+        210
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "positive",
+          "type": "CONDITIONING",
+          "link": 29
+        },
+        {
+          "name": "latent",
+          "type": "LATENT",
+          "link": 30
+        },
+        {
+          "name": "frame_idx",
+          "type": "INT",
+          "widget": {
+            "name": "frame_idx"
+          },
+          "link": null
+        },
+        {
+          "name": "vae",
+          "type": "VAE",
+          "link": 31
+        },
+        {
+          "name": "audio_vae",
+          "type": "VAE",
+          "link": null
+        },
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 32
+        },
+        {
+          "name": "audio",
+          "type": "AUDIO",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "positive",
+          "type": "CONDITIONING",
+          "links": [
+            33
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "MiniMaxH3AddGuide"
+      },
+      "widgets_values": [
+        96
+      ],
+      "widgets_values_named": {
+        "frame_idx": 96
+      }
+    },
+    {
+      "id": 157,
+      "type": "MiniMaxH3AddGuide",
+      "title": "绿幕与身份稳定帧｜6秒回到原姿态",
+      "pos": [
+        2210,
+        1700
+      ],
+      "size": [
+        400,
+        210
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "positive",
+          "type": "CONDITIONING",
+          "link": 33
+        },
+        {
+          "name": "latent",
+          "type": "LATENT",
+          "link": 34
+        },
+        {
+          "name": "frame_idx",
+          "type": "INT",
+          "widget": {
+            "name": "frame_idx"
+          },
+          "link": null
+        },
+        {
+          "name": "vae",
+          "type": "VAE",
+          "link": 35
+        },
+        {
+          "name": "audio_vae",
+          "type": "VAE",
+          "link": null
+        },
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 36
+        },
+        {
+          "name": "audio",
+          "type": "AUDIO",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "positive",
+          "type": "CONDITIONING",
+          "links": [
+            37
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "MiniMaxH3AddGuide"
+      },
+      "widgets_values": [
+        144
+      ],
+      "widgets_values_named": {
+        "frame_idx": 144
+      }
+    }
+  ],
+  "links": [
+    [
+      1,
+      130,
+      0,
+      92,
+      0,
+      "VIDEO"
+    ],
+    [
+      2,
+      125,
+      0,
+      122,
+      0,
+      "LATENT"
+    ],
+    [
+      3,
+      119,
+      0,
+      122,
+      1,
+      "VAE"
+    ],
+    [
+      4,
+      143,
+      0,
+      124,
+      0,
+      "MODEL"
+    ],
+    [
+      5,
+      129,
+      0,
+      125,
+      0,
+      "NOISE"
+    ],
+    [
+      6,
+      126,
+      0,
+      125,
+      1,
+      "GUIDER"
+    ],
+    [
+      7,
+      123,
+      0,
+      125,
+      2,
+      "SAMPLER"
+    ],
+    [
+      8,
+      124,
+      0,
+      125,
+      3,
+      "SIGMAS"
+    ],
+    [
+      9,
+      136,
+      1,
+      125,
+      4,
+      "LATENT"
+    ],
+    [
+      10,
+      143,
+      0,
+      126,
+      0,
+      "MODEL"
+    ],
+    [
+      12,
+      122,
+      0,
+      130,
+      0,
+      "IMAGE"
+    ],
+    [
+      13,
+      128,
+      0,
+      136,
+      0,
+      "CLIP"
+    ],
+    [
+      14,
+      119,
+      0,
+      136,
+      1,
+      "VAE"
+    ],
+    [
+      15,
+      154,
+      0,
+      136,
+      2,
+      "IMAGE"
+    ],
+    [
+      16,
+      154,
+      0,
+      136,
+      3,
+      "IMAGE"
+    ],
+    [
+      17,
+      127,
+      0,
+      142,
+      0,
+      "MODEL"
+    ],
+    [
+      18,
+      142,
+      0,
+      143,
+      0,
+      "MODEL"
+    ],
+    [
+      19,
+      147,
+      0,
+      148,
+      0,
+      "IMAGE"
+    ],
+    [
+      20,
+      147,
+      1,
+      149,
+      0,
+      "MASK"
+    ],
+    [
+      21,
+      149,
+      0,
+      150,
+      0,
+      "MASK"
+    ],
+    [
+      22,
+      150,
+      0,
+      151,
+      0,
+      "IMAGE"
+    ],
+    [
+      23,
+      151,
+      0,
+      152,
+      0,
+      "IMAGE"
+    ],
+    [
+      24,
+      153,
+      0,
+      154,
+      0,
+      "IMAGE"
+    ],
+    [
+      25,
+      148,
+      0,
+      154,
+      1,
+      "IMAGE"
+    ],
+    [
+      26,
+      152,
+      0,
+      154,
+      5,
+      "MASK"
+    ],
+    [
+      27,
+      154,
+      0,
+      155,
+      0,
+      "IMAGE"
+    ],
+    [
+      28,
+      138,
+      0,
+      136,
+      4,
+      "STRING"
+    ],
+    [
+      29,
+      136,
+      0,
+      156,
+      0,
+      "CONDITIONING"
+    ],
+    [
+      30,
+      136,
+      1,
+      156,
+      1,
+      "LATENT"
+    ],
+    [
+      31,
+      119,
+      0,
+      156,
+      3,
+      "VAE"
+    ],
+    [
+      32,
+      154,
+      0,
+      156,
+      5,
+      "IMAGE"
+    ],
+    [
+      33,
+      156,
+      0,
+      157,
+      0,
+      "CONDITIONING"
+    ],
+    [
+      34,
+      136,
+      1,
+      157,
+      1,
+      "LATENT"
+    ],
+    [
+      35,
+      119,
+      0,
+      157,
+      3,
+      "VAE"
+    ],
+    [
+      36,
+      154,
+      0,
+      157,
+      5,
+      "IMAGE"
+    ],
+    [
+      37,
+      157,
+      0,
+      126,
+      1,
+      "CONDITIONING"
+    ]
+  ],
+  "groups": [],
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 0.43,
+      "offset": [
+        40,
+        30
+      ]
+    },
+    "frontendVersion": "1.47.11",
+    "VHS_latentpreview": false,
+    "VHS_latentpreviewrate": 0,
+    "VHS_MetadataImage": true,
+    "VHS_KeepIntermediate": true
+  },
+  "version": 0.4
+}

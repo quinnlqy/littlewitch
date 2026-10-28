@@ -1,0 +1,34 @@
+subject_definitions:
+<Subject 1> is the single chibi little witch from reference image 1: oversized ivory floppy pointed hat with a dark-purple underside, one blue bow, two black rectangular eyes, a tiny inverted-V mouth and pink cheeks on the HAT; pale blonde bangs and two braids tied with blue bows; a small pale face with two simple vertical black oval eyes and a tiny mouth; dark-purple dress with a lavender hem and a blue neck bow; purple boots. Preserve the reference's soft pastel, softly shaded storybook illustration with stable color blocks.
+<Subject 2> is her single brown wooden broom from reference image 1, with golden bristles and a blue binding on screen-left, its wooden handle pointing screen-right.
+<Subject 3> is her single brown wand with the little ivory mascot-shaped topper from reference image 1. The topper's simple dark eyes and pink cheeks remain painted decoration.
+
+summary:
+[reference generation] Create one 5-second reusable character animation on a completely flat chroma-green background. One continuous fixed-camera full-body shot. <Subject 1> rides <Subject 2>, facing screen-right in the reference three-quarter view, holding <Subject 3> with both hands. Output 768x768 at 24 fps; generate 124 internal frames and retain the first 120 frames.
+
+retention_analysis:
+<Subject 1> (appears throughout [Shot 1]): fully_preserved - identity, face design, hat face, outfit, braids, short chibi proportions, palette and soft illustrated rendering. Cloth and hair may move slightly without changing their shapes or counts.
+<Subject 2> (appears throughout [Shot 1]): fully_preserved - shape, bristle arrangement, blue binding and orientation; hips stay in contact with the broom shaft throughout.
+<Subject 3> (appears throughout [Shot 1]): fully_preserved - one rigid wand, same topper and both-hand grip. It remains a separate prop from the broom.
+Reference image 1 supplies only the character, props, pose and visual style. Replace its gray background with uniform opaque #00FF00 in EVERY output frame, including the first. Do not reproduce a gray opening frame or a gray-to-green transition. It is a loose subject reference, not a literal first-frame anchor.
+
+detailed_description:
+[Shot 1 | 0.000-5.167s | reference image 1]
+Fixed orthographic-like full-body camera, no pan, zoom, tracking, orbit or cut. Entire hat tip, braids, boots, wand and broom always visible. The witch and broom group occupies about 70% of the canvas width and 78% of height, leaving at least 8% green clearance on all sides; leave a compact clear upper-right area for the wand action. Center position and apparent scale remain constant. The reference facing direction never reverses. Flight is conveyed by subtle body hovering and trailing hair and fabric; there is no scenery. Both hands remain on the same wand throughout; the broom flies without hand steering.
+
+Action timeline:
+0.000-1.000s: steady airborne idle in the reference riding pose; both hands hold the same wand diagonally across her torso.
+1.000-1.500s: while continuing gentle flight, both hands together raise the wand a little toward the open upper-right area. The wand is a single rigid prop.
+1.500-2.000s: execute exactly one small decisive wand flick; a compact warm-white star with a pale lavender rim flashes once immediately beyond the wand tip and travels a short distance toward screen-right, remaining inside the frame. Keep the actual release brief, about half a second.
+2.000-3.000s: the star contracts and disappears cleanly; both hands lower the same wand back across the torso, with no second cast.
+3.000-5.000s: return to the opening calm flight pose, no remaining spell particles. Keep the full broom and both boots visible.
+5.000-5.167s: continue idle flight with no new action; this buffer is trimmed from delivery.
+
+Background and keying requirements: flat fully opaque chroma green #00FF00, no texture, gradient, horizon, floor, shadow, gray vignette or green reflections on the character. Soft stable diffuse character lighting, stable local colors, clear edges, no motion blur. Magic, if specified, uses warm white and pale lavender; keep its core clearly bounded, with no green or cyan effects and no wide transparent glow or smoke. All effects stay within the canvas and avoid the face. No other person, prop or character appears; the faces on the hat and wand never become separate living creatures. No extra limbs, long legs, changed face, duplicated broom, flexible wand, disappearing hands, sliding off the broom, pedaling, wardrobe changes, frame flicker, text, subtitles or watermark. Maintain the small mouth and quiet expression without lip movement.
+
+overall_soundscape:
+Silent output, no dialogue or ambient audio.
+
+non_diegetic_music:
+None.
+

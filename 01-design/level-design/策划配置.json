@@ -1,0 +1,541 @@
+{
+  "version": "1.12.0",
+  "date": "2026-10-24",
+  "kind": "v1.12.0 设计基准；公开整理版，非运行时配置模块",
+  "stage": {
+    "id": "ST01",
+    "name": "湖畔夜巡",
+    "target_seconds": 160,
+    "observation_range": [
+      150,
+      170
+    ],
+    "global_failure_timeout": null
+  },
+  "player": {
+    "hp_initial": 5,
+    "hp_max": 5,
+    "start": [
+      100,
+      133
+    ],
+    "speed": [
+      160,
+      155
+    ],
+    "area": [
+      28,
+      335,
+      43,
+      225
+    ],
+    "return_x_max": 428,
+    "hurt_iframes": 1.5
+  },
+  "shot": {
+    "interval": 0.15,
+    "speed": 380,
+    "life": 1.4,
+    "radius": 4,
+    "levels": [
+      {
+        "level": 1,
+        "need": 0,
+        "n": 1,
+        "main": 1,
+        "side": 0,
+        "angle": 0
+      },
+      {
+        "level": 2,
+        "need": 22,
+        "n": 3,
+        "main": 1.2,
+        "side": 0.2,
+        "angle": 0.04
+      },
+      {
+        "level": 3,
+        "need": 82,
+        "n": 3,
+        "main": 1.4,
+        "side": 0.3,
+        "angle": 0.07
+      }
+    ],
+    "implementation_difference": "current source damage x2; return to this baseline before pacing retest"
+  },
+  "fire": {
+    "initial": 0,
+    "capacity": 3,
+    "source": "valid_player_defeat_carrier",
+    "type": "flame",
+    "cost": 1,
+    "cooldown": 1.0,
+    "duration": 1.0,
+    "ticks": [
+      0,
+      0.12,
+      0.24,
+      0.36,
+      0.48,
+      0.6,
+      0.72,
+      0.84
+    ],
+    "damage_per_tick": 2,
+    "band_half_height": 18,
+    "origin": "current player/muzzle, shared with rendering",
+    "carrier_damage": 0,
+    "reward_hold": 0.1,
+    "reward_fly": 0.6,
+    "reward_destination": "current actual flame icon center",
+    "credit": "arrival once",
+    "pending_reserves_capacity": true,
+    "overflow_score": 100
+  },
+  "bloom": {
+    "initial": 0,
+    "cap": 100,
+    "mote_gain": 5,
+    "boss_actual_hp_gain": 0.5,
+    "duration": 5,
+    "shot_damage_mul": 1.5,
+    "shot_radius": 6,
+    "additional_normal_enemy_pierce": 1,
+    "clear_radius": 56,
+    "clear_once": true,
+    "charge_during_effect": false,
+    "time_authority": "one remaining timer for boost/invulnerability/FX/HUD",
+    "stop_at_final_boss_defeat": true,
+    "extra_score_drop": false,
+    "extra_score_level": false
+  },
+  "heart": {
+    "rate": {
+      "fish": 0.08,
+      "head": 0.12
+    },
+    "phases": [
+      "PH01",
+      "PH03"
+    ],
+    "require_missing_hp": true,
+    "max_live": 1,
+    "max_spawn_per_run": 3,
+    "missed_counts_toward_cap": true,
+    "heal": 1,
+    "full_hp_score": 100,
+    "life": 8,
+    "far_home_speed": 88,
+    "magnet_radius": 80,
+    "near_speed": 220,
+    "direct_radius": 24,
+    "auto_home_outside_80": true,
+    "pause_freezes": true,
+    "reset_clears": true
+  },
+  "boss": {
+    "b1": {
+      "hp": 190,
+      "cycle": 5.8,
+      "defeat_motes": 10,
+      "defeat_score": 1000,
+      "defeat_heal": 1
+    },
+    "b2": {
+      "hp": 320,
+      "thresholds": [
+        224,
+        112
+      ],
+      "phase_orders": {
+        "F1": [
+          "wall",
+          "orb"
+        ],
+        "F2": [
+          "charge",
+          "breath",
+          "wall"
+        ],
+        "F3": [
+          "tide",
+          "orb",
+          "charge"
+        ]
+      },
+      "weak_mul": 1.5,
+      "weak_windows": {
+        "breath_recover": 1.8,
+        "charge_stagger": 0.75,
+        "charge_recover": 1.2,
+        "tide_recover": 1.4
+      },
+      "defeat_motes": 14,
+      "defeat_score": 2500
+    },
+    "internal_phase_trans": 0.7,
+    "defeat_trans": 0.8,
+    "defeat_trans_danger": false,
+    "support_recovery_window_only": true,
+    "support_max": 3
+  },
+  "waves": [
+    [
+      "PH01",
+      0.8,
+      "imp",
+      3,
+      124
+    ],
+    [
+      "PH01",
+      3.4,
+      "imp",
+      3,
+      172
+    ],
+    [
+      "PH01",
+      6,
+      "imp",
+      3,
+      94
+    ],
+    [
+      "PH01",
+      8.6,
+      "imp",
+      3,
+      146
+    ],
+    [
+      "PH01",
+      11.2,
+      "carrier",
+      1,
+      126
+    ],
+    [
+      "PH01",
+      13.8,
+      "imp",
+      3,
+      78
+    ],
+    [
+      "PH01",
+      16.4,
+      "imp",
+      3,
+      184
+    ],
+    [
+      "PH01",
+      19,
+      "fish",
+      3,
+      160
+    ],
+    [
+      "PH01",
+      21.6,
+      "fish",
+      3,
+      94
+    ],
+    [
+      "PH01",
+      24.2,
+      "imp",
+      3,
+      142
+    ],
+    [
+      "PH01",
+      24.9,
+      "carrier",
+      1,
+      178
+    ],
+    [
+      "PH01",
+      26.8,
+      "fish",
+      3,
+      180
+    ],
+    [
+      "PH01",
+      29.4,
+      "fish",
+      3,
+      88
+    ],
+    [
+      "PH01",
+      32,
+      "imp",
+      3,
+      134
+    ],
+    [
+      "PH01",
+      34.6,
+      "fish",
+      3,
+      168
+    ],
+    [
+      "PH01",
+      37.2,
+      "carrier",
+      1,
+      130
+    ],
+    [
+      "PH01",
+      39.8,
+      "imp",
+      3,
+      86
+    ],
+    [
+      "PH01",
+      42,
+      "fish",
+      3,
+      142
+    ],
+    [
+      "PH03",
+      0.5,
+      "head",
+      2,
+      90
+    ],
+    [
+      "PH03",
+      2.8,
+      "head",
+      2,
+      174
+    ],
+    [
+      "PH03",
+      5,
+      "bat",
+      3,
+      80
+    ],
+    [
+      "PH03",
+      7.2,
+      "bat",
+      3,
+      185
+    ],
+    [
+      "PH03",
+      9.4,
+      "imp",
+      3,
+      110
+    ],
+    [
+      "PH03",
+      11.6,
+      "head",
+      3,
+      174
+    ],
+    [
+      "PH03",
+      12.7,
+      "carrier",
+      1,
+      82
+    ],
+    [
+      "PH03",
+      13.8,
+      "fish",
+      3,
+      110
+    ],
+    [
+      "PH03",
+      16,
+      "bat",
+      3,
+      78
+    ],
+    [
+      "PH03",
+      18.2,
+      "imp",
+      3,
+      145
+    ],
+    [
+      "PH03",
+      20.4,
+      "fish",
+      3,
+      100
+    ],
+    [
+      "PH03",
+      22.6,
+      "head",
+      3,
+      178
+    ],
+    [
+      "PH03",
+      24.8,
+      "bat",
+      3,
+      80
+    ],
+    [
+      "PH03",
+      25.9,
+      "carrier",
+      1,
+      178
+    ],
+    [
+      "PH03",
+      27,
+      "fish",
+      3,
+      150
+    ],
+    [
+      "PH03",
+      29.2,
+      "imp",
+      3,
+      100
+    ],
+    [
+      "PH03",
+      31.4,
+      "head",
+      3,
+      174
+    ],
+    [
+      "PH03",
+      33.6,
+      "carrier",
+      1,
+      142
+    ],
+    [
+      "PH03",
+      35.8,
+      "fish",
+      3,
+      136
+    ],
+    [
+      "PH03",
+      38,
+      "bat",
+      3,
+      82
+    ],
+    [
+      "PH03",
+      40.2,
+      "imp",
+      3,
+      150
+    ]
+  ],
+  "supply": {
+    "waves": 39,
+    "enemies": 103,
+    "motes": 109,
+    "teaching": 2,
+    "bossMotes": 24,
+    "fixedTotalMotes": 135,
+    "supportMaxMotes": 6,
+    "withMaxSupportMotes": 141
+  },
+  "return": {
+    "seconds": 10,
+    "count": 24,
+    "interval": 0.25,
+    "start_y": 80,
+    "x_formula": "80+(53*i)%320",
+    "velocity": [
+      -8,
+      48
+    ],
+    "direct_radius": 36,
+    "magnet_radius": 96,
+    "magnet_speed": 220,
+    "score_each": 200,
+    "settle_attracted_at_end": true
+  },
+  "ui": {
+    "style": "A月光悬浮",
+    "desktop_frame_ratio": [
+      16,
+      9
+    ],
+    "desktop_design": [
+      1280,
+      720
+    ],
+    "desktop_skill_diameter_at_1280": 92,
+    "desktop_skill_min": 80,
+    "phone_skill_diameter": 56,
+    "tablet_skill_diameter": 72,
+    "touch_target_min": 44,
+    "background": "same-camera continuous scenery across full container; no composited-frame edge stretch",
+    "input_capability_independent_of_dimensions": true,
+    "device_matrix": [
+      [
+        1280,
+        720
+      ],
+      [
+        1366,
+        768
+      ],
+      [
+        1920,
+        1080
+      ],
+      [
+        2560,
+        1080
+      ],
+      [
+        568,
+        320
+      ],
+      [
+        844,
+        390
+      ],
+      [
+        1024,
+        768
+      ],
+      [
+        1280,
+        800
+      ],
+      [
+        1366,
+        1024
+      ]
+    ]
+  }
+}

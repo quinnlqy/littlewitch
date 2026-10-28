@@ -1,0 +1,73 @@
+{
+  "comfyui": {
+    "version": "0.38.0",
+    "commit": "6b747c0428c343e1417219641db93a4fb7cb69ae",
+    "repository": "https://github.com/Comfy-Org/ComfyUI"
+  },
+  "turbo_nodes": {
+    "name": "ComfyUI-MiniMax-H3-Turbo",
+    "version": "1.2.3",
+    "commit": "4274783a23afcfdbea3b4876cb79effd6c510785",
+    "repository": "https://github.com/Larryvrh/ComfyUI-MiniMax-H3-Turbo"
+  },
+  "attention": "comfy kitchen attention",
+  "comfy_kitchen_requirement": "comfy-kitchen==0.2.36",
+  "node_types": [
+    "BasicGuider",
+    "BasicScheduler",
+    "CLIPLoader",
+    "CreateVideo",
+    "EmptyImage",
+    "ImageCompositeMasked",
+    "ImageFromBatch",
+    "ImageScale",
+    "ImageToMask",
+    "InvertMask",
+    "LoadImage",
+    "MaskToImage",
+    "MiniMaxH3AddGuide",
+    "MiniMaxH3ImageToVideo",
+    "MiniMaxH3ReferenceToVideo",
+    "MiniMaxH3SigmaShift",
+    "MiniMaxH3TurboLoRA",
+    "MiniMaxH3TurboSampler",
+    "ModelAttentionBackend",
+    "PreviewImage",
+    "RandomNoise",
+    "SamplerCustomAdvanced",
+    "SaveVideo",
+    "UNETLoader",
+    "VAEDecode",
+    "VAELoader"
+  ],
+  "models": [
+    {
+      "filename": "minimax_h3_video_vae_fp16.safetensors",
+      "loader": "VAELoader",
+      "directory": "vae",
+      "recorded_url": "https://huggingface.co/Comfy-Org/MiniMax-H3/resolve/main/vae/minimax_h3_video_vae_fp16.safetensors"
+    },
+    {
+      "filename": "minimax_h3_ref2va_pruned_int8_convrot.safetensors",
+      "loader": "UNETLoader",
+      "directory": "diffusion_models",
+      "recorded_url": "https://huggingface.co/Comfy-Org/MiniMax-H3/resolve/main/diffusion_models/minimax_h3_ref2va_pruned_int8_convrot.safetensors"
+    },
+    {
+      "filename": "qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors",
+      "loader": "CLIPLoader",
+      "directory": "text_encoders"
+    },
+    {
+      "filename": "minimax_h3_turbo_v4_step600_ema.safetensors",
+      "loader": "MiniMaxH3TurboLoRA",
+      "directory": "loras"
+    },
+    {
+      "filename": "minimax_h3_fl2va_pruned_int8_convrot.safetensors",
+      "loader": "UNETLoader",
+      "directory": "diffusion_models"
+    }
+  ],
+  "note": "版本与模型名取自原本机环境及工作流，记录的是项目使用配置，不表示已验证其他环境或建议升级。模型权重、ComfyUI本体与Python/CUDA运行时未随包复制。"
+}

@@ -1,0 +1,973 @@
+{
+  "id": "c214aac8-03f8-48ca-b366-692d6b09d37f",
+  "revision": 0,
+  "last_node_id": 146,
+  "last_link_id": 288,
+  "nodes": [
+    {
+      "id": 92,
+      "type": "SaveVideo",
+      "pos": [
+        2050,
+        610
+      ],
+      "size": [
+        1210,
+        126
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "video",
+          "type": "VIDEO",
+          "link": 260
+        }
+      ],
+      "outputs": [
+        {
+          "name": "video",
+          "type": "VIDEO",
+          "links": []
+        }
+      ],
+      "properties": {},
+      "widgets_values": [
+        "witch_flight_green_v1/03_飞行_长施法",
+        "mp4",
+        "h264"
+      ],
+      "title": "保存绿幕视频｜飞行_长施法"
+    },
+    {
+      "id": 119,
+      "type": "VAELoader",
+      "pos": [
+        0,
+        300
+      ],
+      "size": [
+        640,
+        70
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "VAE",
+          "type": "VAE",
+          "links": [
+            251,
+            273
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "VAELoader",
+        "models": [
+          {
+            "name": "minimax_h3_video_vae_fp16.safetensors",
+            "url": "https://huggingface.co/Comfy-Org/MiniMax-H3/resolve/main/vae/minimax_h3_video_vae_fp16.safetensors",
+            "directory": "vae"
+          }
+        ]
+      },
+      "widgets_values": [
+        "minimax_h3_video_vae_fp16.safetensors"
+      ]
+    },
+    {
+      "id": 122,
+      "type": "VAEDecode",
+      "pos": [
+        2050,
+        0
+      ],
+      "size": [
+        230,
+        60
+      ],
+      "flags": {
+        "collapsed": false
+      },
+      "order": 5,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "samples",
+          "type": "LATENT",
+          "link": 280
+        },
+        {
+          "name": "vae",
+          "type": "VAE",
+          "link": 251
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            285
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "VAEDecode"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 123,
+      "type": "MiniMaxH3TurboSampler",
+      "pos": [
+        1600,
+        420
+      ],
+      "size": [
+        350,
+        250
+      ],
+      "flags": {},
+      "order": 11,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "SAMPLER",
+          "type": "SAMPLER",
+          "links": [
+            255
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "MiniMaxH3TurboSampler"
+      },
+      "widgets_values": [],
+      "title": "Turbo Sampler｜自动适配当前H3调度"
+    },
+    {
+      "id": 124,
+      "type": "BasicScheduler",
+      "pos": [
+        1600,
+        0
+      ],
+      "size": [
+        370,
+        130
+      ],
+      "flags": {},
+      "order": 7,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 286
+        }
+      ],
+      "outputs": [
+        {
+          "name": "SIGMAS",
+          "type": "SIGMAS",
+          "links": [
+            256
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "BasicScheduler"
+      },
+      "widgets_values": [
+        "simple",
+        6,
+        1
+      ],
+      "title": "Turbo v4｜6步·simple"
+    },
+    {
+      "id": 125,
+      "type": "SamplerCustomAdvanced",
+      "pos": [
+        1600,
+        620
+      ],
+      "size": [
+        230,
+        140
+      ],
+      "flags": {},
+      "order": 8,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "noise",
+          "type": "NOISE",
+          "link": 253
+        },
+        {
+          "name": "guider",
+          "type": "GUIDER",
+          "link": 254
+        },
+        {
+          "name": "sampler",
+          "type": "SAMPLER",
+          "link": 255
+        },
+        {
+          "name": "sigmas",
+          "type": "SIGMAS",
+          "link": 256
+        },
+        {
+          "name": "latent_image",
+          "type": "LATENT",
+          "link": 271
+        }
+      ],
+      "outputs": [
+        {
+          "name": "output",
+          "type": "LATENT",
+          "links": [
+            280
+          ]
+        },
+        {
+          "name": "denoised_output",
+          "type": "LATENT",
+          "links": []
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "SamplerCustomAdvanced"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 126,
+      "type": "BasicGuider",
+      "pos": [
+        1600,
+        220
+      ],
+      "size": [
+        360,
+        60
+      ],
+      "flags": {},
+      "order": 9,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 287
+        },
+        {
+          "name": "conditioning",
+          "type": "CONDITIONING",
+          "link": 288
+        }
+      ],
+      "outputs": [
+        {
+          "name": "GUIDER",
+          "type": "GUIDER",
+          "links": [
+            254
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "BasicGuider"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 127,
+      "type": "UNETLoader",
+      "pos": [
+        0,
+        0
+      ],
+      "size": [
+        640,
+        90
+      ],
+      "flags": {},
+      "order": 10,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            281
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "UNETLoader"
+      },
+      "widgets_values": [
+        "minimax_h3_ref2va_pruned_int8_convrot.safetensors",
+        "default"
+      ],
+      "title": "H3 Ref2VA INT8｜支持图与动作视频参考"
+    },
+    {
+      "id": 128,
+      "type": "CLIPLoader",
+      "pos": [
+        0,
+        140
+      ],
+      "size": [
+        640,
+        120
+      ],
+      "flags": {},
+      "order": 11,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "CLIP",
+          "type": "CLIP",
+          "links": [
+            272
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CLIPLoader"
+      },
+      "widgets_values": [
+        "qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors",
+        "minimax",
+        "default"
+      ],
+      "title": "H3编码器｜已安装NVFP4 AWQ"
+    },
+    {
+      "id": 129,
+      "type": "RandomNoise",
+      "pos": [
+        1110,
+        370
+      ],
+      "size": [
+        360,
+        90
+      ],
+      "flags": {},
+      "order": 12,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "NOISE",
+          "type": "NOISE",
+          "links": [
+            253
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "RandomNoise"
+      },
+      "widgets_values": [
+        2026101903,
+        "fixed"
+      ],
+      "title": "固定种子｜便于对照"
+    },
+    {
+      "id": 130,
+      "type": "CreateVideo",
+      "pos": [
+        2050,
+        400
+      ],
+      "size": [
+        270,
+        110
+      ],
+      "flags": {},
+      "order": 13,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 258
+        },
+        {
+          "name": "audio",
+          "shape": 7,
+          "type": "AUDIO",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "VIDEO",
+          "type": "VIDEO",
+          "links": [
+            260
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CreateVideo"
+      },
+      "widgets_values": [
+        24,
+        8,
+        "sRGB",
+        "none"
+      ],
+      "title": "24fps｜静音"
+    },
+    {
+      "id": 136,
+      "type": "MiniMaxH3ReferenceToVideo",
+      "pos": [
+        1110,
+        0
+      ],
+      "size": [
+        410,
+        530
+      ],
+      "flags": {},
+      "order": 14,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 272
+        },
+        {
+          "name": "prompt",
+          "type": "STRING",
+          "widget": {
+            "name": "prompt"
+          },
+          "link": 279
+        },
+        {
+          "name": "width",
+          "type": "INT",
+          "widget": {
+            "name": "width"
+          },
+          "link": null
+        },
+        {
+          "name": "height",
+          "type": "INT",
+          "widget": {
+            "name": "height"
+          },
+          "link": null
+        },
+        {
+          "name": "length",
+          "type": "INT",
+          "widget": {
+            "name": "length"
+          },
+          "link": null
+        },
+        {
+          "name": "ref_image_size",
+          "type": "COMBO",
+          "widget": {
+            "name": "ref_image_size"
+          },
+          "link": null
+        },
+        {
+          "name": "vae",
+          "type": "VAE",
+          "shape": 7,
+          "link": 273
+        },
+        {
+          "name": "ref_images.ref_image_0",
+          "type": "IMAGE",
+          "shape": 7,
+          "link": 278
+        }
+      ],
+      "outputs": [
+        {
+          "name": "positive",
+          "type": "CONDITIONING",
+          "links": [
+            288
+          ]
+        },
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": [
+            271
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "MiniMaxH3ReferenceToVideo"
+      },
+      "widgets_values": [
+        "subject_definitions:\n<Subject 1> is the single chibi little witch from reference image 1: oversized ivory floppy pointed hat with a dark-purple underside, one blue bow, two black rectangular eyes, a tiny inverted-V mouth and pink cheeks on the HAT; pale blonde bangs and two braids tied with blue bows; a small pale face with two simple vertical black oval eyes and a tiny mouth; dark-purple dress with a lavender hem and a blue neck bow; purple boots. Preserve the reference's soft pastel, softly shaded storybook illustration with stable color blocks.\n<Subject 2> is her single brown wooden broom from reference image 1, with golden bristles and a blue binding on screen-left, its wooden handle pointing screen-right.\n<Subject 3> is her single brown wand with the little ivory mascot-shaped topper from reference image 1. The topper's simple dark eyes and pink cheeks remain painted decoration.\n\nsummary:\n[reference generation] Create one 10-second reusable character animation on a completely flat chroma-green background. One continuous fixed-camera full-body shot. <Subject 1> rides <Subject 2>, facing screen-right in the reference three-quarter view, holding <Subject 3> with both hands. Output 768x768 at 24 fps; generate 243 internal frames and retain the first 240 frames.\n\nretention_analysis:\n<Subject 1> (appears throughout [Shot 1]): fully_preserved - identity, face design, hat face, outfit, braids, short chibi proportions, palette and soft illustrated rendering. Cloth and hair may move slightly without changing their shapes or counts.\n<Subject 2> (appears throughout [Shot 1]): fully_preserved - shape, bristle arrangement, blue binding and orientation; hips stay in contact with the broom shaft throughout.\n<Subject 3> (appears throughout [Shot 1]): fully_preserved - one rigid wand, same topper and both-hand grip. It remains a separate prop from the broom.\nReference image 1 supplies only the character, props, pose and visual style. Replace its gray background with uniform opaque #00FF00 in EVERY output frame, including the first. Do not reproduce a gray opening frame or a gray-to-green transition. It is a loose subject reference, not a literal first-frame anchor.\n\ndetailed_description:\n[Shot 1 | 0.000-10.125s | reference image 1]\nFixed orthographic-like full-body camera, no pan, zoom, tracking, orbit or cut. Entire hat tip, braids, boots, wand and broom always visible. The witch and broom group occupies about 70% of the canvas width and 78% of height, leaving at least 8% green clearance on all sides; leave a compact clear upper-right area for the wand action. Center position and apparent scale remain constant. The reference facing direction never reverses. Flight is conveyed by subtle body hovering and trailing hair and fabric; there is no scenery. Both hands remain on the same wand throughout; the broom flies without hand steering.\n\nAction timeline:\n0.000-1.500s: steady airborne idle in the reference riding pose, both hands holding the wand diagonally across the torso.\n1.500-3.000s: both hands together raise the same wand toward the upper-right. A small warm-white opaque core with a narrow pale lavender rim grows just beyond the wand tip, gradually charging. The broom maintains steady flight and the torso stays seated.\n3.000-7.000s: sustain exactly one continuous spell. A compact warm-white core at the wand tip feeds a short pale lavender ribbon of energy pointing upper-right, no longer than 20% of frame width. The ribbon has a clearly bounded bright core and restrained opaque star accents, not broad fog. Maintain the same hand grip and wand orientation throughout the four-second sustained release; subtle slow energy pulses, no repeated wand swings or repeated bursts. Keep the effect separate from face, hat and broom.\n7.000-8.500s: taper the ribbon into the wand tip, shrink the core and make every detached star disappear. Both hands lower the same wand toward its opening diagonal pose.\n8.500-10.000s: resume calm flight in the opening pose, with the spell fully absent.\n10.000-10.125s: continue calm flight without a new action; this buffer is trimmed from delivery.\n\nBackground and keying requirements: flat fully opaque chroma green #00FF00, no texture, gradient, horizon, floor, shadow, gray vignette or green reflections on the character. Soft stable diffuse character lighting, stable local colors, clear edges, no motion blur. Magic, if specified, uses warm white and pale lavender; keep its core clearly bounded, with no green or cyan effects and no wide transparent glow or smoke. All effects stay within the canvas and avoid the face. No other person, prop or character appears; the faces on the hat and wand never become separate living creatures. No extra limbs, long legs, changed face, duplicated broom, flexible wand, disappearing hands, sliding off the broom, pedaling, wardrobe changes, frame flicker, text, subtitles or watermark. Maintain the small mouth and quiet expression without lip movement.\n\noverall_soundscape:\nSilent output, no dialogue or ambient audio.\n\nnon_diegetic_music:\nNone.\n",
+        768,
+        768,
+        243,
+        "match"
+      ],
+      "title": "Ref2VA｜单图身份参考·绿幕从第1帧开始"
+    },
+    {
+      "id": 137,
+      "type": "LoadImage",
+      "pos": [
+        0,
+        460
+      ],
+      "size": [
+        420,
+        610
+      ],
+      "flags": {},
+      "order": 15,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            278
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": []
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "witch_flight_green_v1_character_original.png",
+        "image"
+      ],
+      "title": "角色原图｜仅提取人物与道具·灰底不保留"
+    },
+    {
+      "id": 138,
+      "type": "PrimitiveStringMultiline",
+      "pos": [
+        500,
+        0
+      ],
+      "size": [
+        560,
+        850
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            279
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "PrimitiveStringMultiline"
+      },
+      "widgets_values": [
+        "subject_definitions:\n<Subject 1> is the single chibi little witch from reference image 1: oversized ivory floppy pointed hat with a dark-purple underside, one blue bow, two black rectangular eyes, a tiny inverted-V mouth and pink cheeks on the HAT; pale blonde bangs and two braids tied with blue bows; a small pale face with two simple vertical black oval eyes and a tiny mouth; dark-purple dress with a lavender hem and a blue neck bow; purple boots. Preserve the reference's soft pastel, softly shaded storybook illustration with stable color blocks.\n<Subject 2> is her single brown wooden broom from reference image 1, with golden bristles and a blue binding on screen-left, its wooden handle pointing screen-right.\n<Subject 3> is her single brown wand with the little ivory mascot-shaped topper from reference image 1. The topper's simple dark eyes and pink cheeks remain painted decoration.\n\nsummary:\n[reference generation] Create one 10-second reusable character animation on a completely flat chroma-green background. One continuous fixed-camera full-body shot. <Subject 1> rides <Subject 2>, facing screen-right in the reference three-quarter view, holding <Subject 3> with both hands. Output 768x768 at 24 fps; generate 243 internal frames and retain the first 240 frames.\n\nretention_analysis:\n<Subject 1> (appears throughout [Shot 1]): fully_preserved - identity, face design, hat face, outfit, braids, short chibi proportions, palette and soft illustrated rendering. Cloth and hair may move slightly without changing their shapes or counts.\n<Subject 2> (appears throughout [Shot 1]): fully_preserved - shape, bristle arrangement, blue binding and orientation; hips stay in contact with the broom shaft throughout.\n<Subject 3> (appears throughout [Shot 1]): fully_preserved - one rigid wand, same topper and both-hand grip. It remains a separate prop from the broom.\nReference image 1 supplies only the character, props, pose and visual style. Replace its gray background with uniform opaque #00FF00 in EVERY output frame, including the first. Do not reproduce a gray opening frame or a gray-to-green transition. It is a loose subject reference, not a literal first-frame anchor.\n\ndetailed_description:\n[Shot 1 | 0.000-10.125s | reference image 1]\nFixed orthographic-like full-body camera, no pan, zoom, tracking, orbit or cut. Entire hat tip, braids, boots, wand and broom always visible. The witch and broom group occupies about 70% of the canvas width and 78% of height, leaving at least 8% green clearance on all sides; leave a compact clear upper-right area for the wand action. Center position and apparent scale remain constant. The reference facing direction never reverses. Flight is conveyed by subtle body hovering and trailing hair and fabric; there is no scenery. Both hands remain on the same wand throughout; the broom flies without hand steering.\n\nAction timeline:\n0.000-1.500s: steady airborne idle in the reference riding pose, both hands holding the wand diagonally across the torso.\n1.500-3.000s: both hands together raise the same wand toward the upper-right. A small warm-white opaque core with a narrow pale lavender rim grows just beyond the wand tip, gradually charging. The broom maintains steady flight and the torso stays seated.\n3.000-7.000s: sustain exactly one continuous spell. A compact warm-white core at the wand tip feeds a short pale lavender ribbon of energy pointing upper-right, no longer than 20% of frame width. The ribbon has a clearly bounded bright core and restrained opaque star accents, not broad fog. Maintain the same hand grip and wand orientation throughout the four-second sustained release; subtle slow energy pulses, no repeated wand swings or repeated bursts. Keep the effect separate from face, hat and broom.\n7.000-8.500s: taper the ribbon into the wand tip, shrink the core and make every detached star disappear. Both hands lower the same wand toward its opening diagonal pose.\n8.500-10.000s: resume calm flight in the opening pose, with the spell fully absent.\n10.000-10.125s: continue calm flight without a new action; this buffer is trimmed from delivery.\n\nBackground and keying requirements: flat fully opaque chroma green #00FF00, no texture, gradient, horizon, floor, shadow, gray vignette or green reflections on the character. Soft stable diffuse character lighting, stable local colors, clear edges, no motion blur. Magic, if specified, uses warm white and pale lavender; keep its core clearly bounded, with no green or cyan effects and no wide transparent glow or smoke. All effects stay within the canvas and avoid the face. No other person, prop or character appears; the faces on the hat and wand never become separate living creatures. No extra limbs, long legs, changed face, duplicated broom, flexible wand, disappearing hands, sliding off the broom, pedaling, wardrobe changes, frame flicker, text, subtitles or watermark. Maintain the small mouth and quiet expression without lip movement.\n\noverall_soundscape:\nSilent output, no dialogue or ambient audio.\n\nnon_diegetic_music:\nNone.\n"
+      ],
+      "title": "飞行_长施法｜动作时间线与纯绿幕约束",
+      "color": "#232",
+      "bgcolor": "#353"
+    },
+    {
+      "id": 141,
+      "type": "MarkdownNote",
+      "pos": [
+        1100,
+        1000
+      ],
+      "size": [
+        560,
+        650
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "properties": {},
+      "widgets_values": [
+        "# 小魔女 03 · 飞行_长施法\n\n长施法10秒：0–1.5秒飞行；1.5–3秒抬杖蓄力；3–7秒维持一次连续魔法；7–8.5秒减弱、消散和收杖；8.5–10秒恢复飞行。\n\n768×768，24fps，10秒。原图为角色参考，未连接首帧锚点，以免把灰色背景锁进视频。\n纯绿幕#00FF00从第一帧开始。角色比例、镜头和朝向锁定；完整帽子和扫帚留在画面内。\n\nH3 Ref2VA INT8 + NVFP4编码器，Turbo v4-600，6步simple，SigmaShift12/3，Kitchen完整注意力。没有Veda。内部243帧，截取前240帧。\n\n只准备，尚未提交或验证动画效果。等待用户确认，由用户点击“开始工作/运行”。\n先运行01检查角色与绿幕，再分别运行02和03。生成后需检查脸、手、扫帚接触、背景平整度和施法节奏。\n输出：outputs/comfyui/witch_flight_green_v1/03_飞行_长施法"
+      ],
+      "title": "使用说明"
+    },
+    {
+      "id": 142,
+      "type": "MiniMaxH3TurboLoRA",
+      "pos": [
+        0,
+        1150
+      ],
+      "size": [
+        430,
+        160
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 281
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            282
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "MiniMaxH3TurboLoRA"
+      },
+      "widgets_values": [
+        "minimax_h3_turbo_v4_step600_ema.safetensors",
+        1,
+        false
+      ],
+      "title": "Turbo v4-600｜强度1｜保持细节"
+    },
+    {
+      "id": 143,
+      "type": "MiniMaxH3SigmaShift",
+      "pos": [
+        500,
+        1000
+      ],
+      "size": [
+        430,
+        160
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 282
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            283
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "MiniMaxH3SigmaShift"
+      },
+      "widgets_values": [
+        12,
+        3
+      ],
+      "title": "视频／音频流调度｜12／3"
+    },
+    {
+      "id": 144,
+      "type": "ModelAttentionBackend",
+      "pos": [
+        500,
+        1200
+      ],
+      "size": [
+        430,
+        160
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 283
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            286,
+            287
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ModelAttentionBackend"
+      },
+      "widgets_values": [
+        "comfy kitchen attention"
+      ],
+      "title": "Kitchen INT8完整注意力"
+    },
+    {
+      "id": 146,
+      "type": "ImageFromBatch",
+      "pos": [
+        2050,
+        200
+      ],
+      "size": [
+        430,
+        160
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 285
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            258
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ImageFromBatch"
+      },
+      "widgets_values": [
+        0,
+        240
+      ],
+      "title": "截取240帧｜准确10秒"
+    }
+  ],
+  "links": [
+    [
+      251,
+      119,
+      0,
+      122,
+      1,
+      "VAE"
+    ],
+    [
+      253,
+      129,
+      0,
+      125,
+      0,
+      "NOISE"
+    ],
+    [
+      254,
+      126,
+      0,
+      125,
+      1,
+      "GUIDER"
+    ],
+    [
+      255,
+      123,
+      0,
+      125,
+      2,
+      "SAMPLER"
+    ],
+    [
+      256,
+      124,
+      0,
+      125,
+      3,
+      "SIGMAS"
+    ],
+    [
+      258,
+      146,
+      0,
+      130,
+      0,
+      "IMAGE"
+    ],
+    [
+      260,
+      130,
+      0,
+      92,
+      0,
+      "VIDEO"
+    ],
+    [
+      271,
+      136,
+      1,
+      125,
+      4,
+      "LATENT"
+    ],
+    [
+      272,
+      128,
+      0,
+      136,
+      0,
+      "CLIP"
+    ],
+    [
+      273,
+      119,
+      0,
+      136,
+      6,
+      "VAE"
+    ],
+    [
+      278,
+      137,
+      0,
+      136,
+      7,
+      "IMAGE"
+    ],
+    [
+      280,
+      125,
+      0,
+      122,
+      0,
+      "LATENT"
+    ],
+    [
+      279,
+      138,
+      0,
+      136,
+      1,
+      "STRING"
+    ],
+    [
+      281,
+      127,
+      0,
+      142,
+      0,
+      "MODEL"
+    ],
+    [
+      282,
+      142,
+      0,
+      143,
+      0,
+      "MODEL"
+    ],
+    [
+      283,
+      143,
+      0,
+      144,
+      0,
+      "MODEL"
+    ],
+    [
+      285,
+      122,
+      0,
+      146,
+      0,
+      "IMAGE"
+    ],
+    [
+      286,
+      144,
+      0,
+      124,
+      0,
+      "MODEL"
+    ],
+    [
+      287,
+      144,
+      0,
+      126,
+      0,
+      "MODEL"
+    ],
+    [
+      288,
+      136,
+      0,
+      126,
+      1,
+      "CONDITIONING"
+    ]
+  ],
+  "groups": [],
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 0.5,
+      "offset": [
+        80,
+        70
+      ]
+    },
+    "frontendVersion": "1.47.11",
+    "VHS_latentpreview": false,
+    "VHS_latentpreviewrate": 0,
+    "VHS_MetadataImage": true,
+    "VHS_KeepIntermediate": true
+  },
+  "version": 0.4
+}

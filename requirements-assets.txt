@@ -1,0 +1,6 @@
+# Optional: tools/clean_green_video.py only. Game build uses Python standard library.
+# Versions found in the local validation Python; not the ComfyUI CUDA environment.
+numpy==2.4.4
+scipy==1.18.1
+imageio==2.37.3
+imageio-ffmpeg==0.6.0

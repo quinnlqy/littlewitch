@@ -1,0 +1,34 @@
+subject_definitions:
+<Subject 1> is the single chibi little witch in reference image 1: oversized ivory floppy pointed hat with dark-purple underside, one blue bow and the original black rectangular eyes, inverted-V mouth and pink cheeks painted on the hat; pale blonde bangs, two braids with blue ties, simple vertical black oval eyes, tiny closed mouth, dark-purple dress with lavender hem and blue neck bow, short legs and purple boots. Preserve the original soft pastel, softly shaded storybook illustration and chibi proportions.
+<Subject 2> is her single brown broom, with golden bristles and a blue binding on screen-left, its handle pointing screen-right.
+<Subject 3> is the single brown wand with an ivory mascot topper. It is a completely inert handheld prop with fixed matte colors and constant brightness. The topper's face is painted decoration.
+
+summary:
+[reference generation] Produce ONLY a broom-riding flight movement for <Subject 1>, with no casting action at any time. Five-second reusable character asset, 768x768, 24fps, one uninterrupted full-body shot on flat opaque chroma green #00FF00. Generate 124 frames and deliver the first 120. Maintain a relaxed, upright, low-wind cruising pose throughout; do not speed up.
+
+retention_analysis:
+<Subject 1> (throughout [Shot 1]): fully_preserved - face, hat design, outfit, two braids, short limbs, palette, proportions and illustration style. Only the specified flying body mechanics and restrained wind response may change.
+<Subject 2> (throughout [Shot 1]): fully_preserved - one solid broom with unchanged shape, orientation and binding; hips remain seated in continuous contact with its shaft.
+<Subject 3> (throughout [Shot 1]): fully_preserved - same single rigid prop, both hands maintaining the original low diagonal grip against the torso. The wand tip stays close to the body, with no separate hand, wrist or arm gesture. Its surface and topper remain matte and unlit for the entire shot.
+Reference image 1 defines only identity, pose, props and rendering. Replace the gray background with flat chroma green from the very first output frame. Do not use the source as a literal gray first frame.
+
+detailed_description:
+[Shot 1 | 0.000-5.167s | reference image 1]
+Fixed camera and fixed scale, original three-quarter view facing screen-right. Keep the whole hat tip, both braids, both boots, wand, broom handle and bristles inside the frame with at least 8% green margin. The group remains centered; flight speed is communicated through body pitch and wind response. The view stays the same with no cuts or camera movement. Do not reserve an area for a wand performance. The hands and wand form one quiet compact unit against the torso and move only together with the torso. Eyes remain calmly looking forward and the mouth remains closed.
+
+Action timeline:
+0.000-0.500s: already airborne in the original upright seated pose, broom shaft nearly horizontal. Both hands hold the inert wand against the torso at the original diagonal angle.
+0.500-4.500s: continue calm cruising with the torso upright and the pelvis anchored to the broom. Use a very shallow slow hover cycle, peak-to-peak vertical travel no more than 1% of frame height and broom pitch within 1 degree. Braid ends, hat tip, skirt edge and bristle tips move only slightly toward screen-left, then gently settle; the bows stay attached. Knees remain together and the boots remain quietly side by side. All hand and wand positions relative to the chest stay unchanged.
+4.500-5.000s: settle into the opening hover phase at the same cruising speed and same upright pose; aim for a calm loop without an added ending gesture.
+5.000-5.167s: continue the same cruising pose; this buffer is trimmed.
+
+Absolute flight-only rule: no wand lift, pointing, flicking, waving, drawing a circle, casting pose, charging, release or recoil. ZERO visible spell effects in EVERY frame: no emitting light from the wand, hat, body or broom; no flashes, sparkles, stars, particles, glowing core, aura, beam, energy ribbon, trail, smoke, dust, speed lines or detached decorative marks. The wand topper keeps exactly its original non-emissive painted appearance, without any brightening. Nothing may appear around the wand tip. The only visible elements are the original witch, broom, inert wand and uniform green background.
+
+Background and stability: fully opaque uniform #00FF00, no gray fade, scenery, floor, horizon, shadow, gradient, changing exposure, green spill, wind graphics or motion blur. Stable soft diffuse lighting and original local colors. Preserve exactly two arms, two hands, two legs and two braids; no extra props, limbs, long legs, pedaling, walking, body sliding, changing grips, duplicated broom, bent wand, live hat face, live topper face, lip movement, text, subtitle or watermark. Preserve silhouette and color blocks without flicker.
+
+overall_soundscape:
+Silent output.
+
+non_diegetic_music:
+None.
+

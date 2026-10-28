@@ -1,0 +1,335 @@
+{
+  "92": {
+    "class_type": "SaveVideo",
+    "inputs": {
+      "video": [
+        "130",
+        0
+      ],
+      "filename_prefix": "witch_monsters_v2_threequarter/04_EN03_吞光灯怪_受惊吐雾攻击",
+      "format": "mp4",
+      "format.codec": "h264",
+      "format.codec.encoding": "auto",
+      "codec": "auto"
+    }
+  },
+  "119": {
+    "class_type": "VAELoader",
+    "inputs": {
+      "vae_name": "minimax_h3_video_vae_fp16.safetensors"
+    }
+  },
+  "122": {
+    "class_type": "VAEDecode",
+    "inputs": {
+      "samples": [
+        "125",
+        0
+      ],
+      "vae": [
+        "119",
+        0
+      ]
+    }
+  },
+  "123": {
+    "class_type": "MiniMaxH3TurboSampler",
+    "inputs": {}
+  },
+  "124": {
+    "class_type": "BasicScheduler",
+    "inputs": {
+      "model": [
+        "143",
+        0
+      ],
+      "scheduler": "simple",
+      "steps": 6,
+      "denoise": 1
+    }
+  },
+  "125": {
+    "class_type": "SamplerCustomAdvanced",
+    "inputs": {
+      "noise": [
+        "129",
+        0
+      ],
+      "guider": [
+        "126",
+        0
+      ],
+      "sampler": [
+        "123",
+        0
+      ],
+      "sigmas": [
+        "124",
+        0
+      ],
+      "latent_image": [
+        "136",
+        1
+      ]
+    }
+  },
+  "126": {
+    "class_type": "BasicGuider",
+    "inputs": {
+      "model": [
+        "143",
+        0
+      ],
+      "conditioning": [
+        "157",
+        0
+      ]
+    }
+  },
+  "127": {
+    "class_type": "UNETLoader",
+    "inputs": {
+      "unet_name": "minimax_h3_fl2va_pruned_int8_convrot.safetensors",
+      "weight_dtype": "default"
+    }
+  },
+  "128": {
+    "class_type": "CLIPLoader",
+    "inputs": {
+      "clip_name": "qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors",
+      "type": "minimax",
+      "device": "default"
+    }
+  },
+  "129": {
+    "class_type": "RandomNoise",
+    "inputs": {
+      "noise_seed": 202610200103
+    }
+  },
+  "130": {
+    "class_type": "CreateVideo",
+    "inputs": {
+      "images": [
+        "122",
+        0
+      ],
+      "fps": 24,
+      "bit_depth": 8,
+      "color_space": "sRGB",
+      "codec": "none"
+    }
+  },
+  "136": {
+    "class_type": "MiniMaxH3ImageToVideo",
+    "inputs": {
+      "clip": [
+        "128",
+        0
+      ],
+      "vae": [
+        "119",
+        0
+      ],
+      "prompt": "How the reference pictures align with the target video — Picture 1 (from Shot 1) aligns with the 0.00-second mark of the target video; Picture 2 (from Shot 1) aligns with the 8.00-second mark of the target video.\n\nintegrated_multimodal_description: [Shot 1] A fixed-camera eight-second 2D sprite clip. One dusty pink and grey lantern creature, exactly two eyes on the shade, one oval open handle, one rigid round lamp chamber containing the original pale flame, two attached side wisps and two thin lower wisps. The handle and chamber retain their shape.\n\n0.00-1.00s: calm source pose. 1.00-1.15s: slightly brighten the original PALE internal flame while preserving its source hue. 1.15-1.40s: tuck the soft side wisps closer to the RIGID chamber; keep the two original small BLACK DOT eyes unchanged in size and dark fill. 1.40-1.55s: hold. 1.55-1.75s: one small startled recoil with a flick of the lower wisps toward screen-left. 1.75-3.50s: settle back to the original pose and internal brightness. 3.50-8.00s: calm idle. The lamp stays whole, with the same handle and chamber throughout; all movement is confined to its original silhouette.\n\nThe supplied left-facing three-quarter sprite remains at the same size and fixed canvas center, with its face and body both directed toward screen-left. Keep the source near-side/far-side occlusion and exact painted colors, texture and part counts. The camera and viewing angle are completely fixed. Only the stated small local motions occur. The entire area outside this one sprite is a completely flat, opaque, uniformly lit chroma-green color #00FF00 in EVERY frame, identical to the reference background. All empty background pixels stay the same solid green throughout; it remains an empty color field with constant exposure. Keep all existing parts connected and preserve the original anatomy. All motion ends in the supplied neutral pose; the body and face keep their left-facing three-quarter orientation throughout.\n\noverall_soundscape: N/A\n\nnon_diegetic_music: N/A\n\nThe original two eyes remain solid dark dots throughout, with exactly the same shape and diameter as the reference. The startled expression is conveyed only by the inward tuck and recoil of the existing soft mist flaps. Those flaps retain their source wisp shapes, with no fingers. The lantern is back to its exact source posture at 2.00 seconds and stays calm afterward.\n",
+      "width": 768,
+      "height": 768,
+      "length": 192,
+      "first_frame": [
+        "154",
+        0
+      ],
+      "last_frame": [
+        "154",
+        0
+      ]
+    }
+  },
+  "142": {
+    "class_type": "MiniMaxH3TurboLoRA",
+    "inputs": {
+      "model": [
+        "127",
+        0
+      ],
+      "lora_name": "minimax_h3_turbo_v4_step600_ema.safetensors",
+      "strength": 1,
+      "low_vram": false
+    }
+  },
+  "143": {
+    "class_type": "MiniMaxH3SigmaShift",
+    "inputs": {
+      "model": [
+        "142",
+        0
+      ],
+      "shift_video": 12,
+      "shift_audio": 3
+    }
+  },
+  "147": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "witch_monster_v2_carrier.png"
+    }
+  },
+  "148": {
+    "class_type": "ImageScale",
+    "inputs": {
+      "image": [
+        "147",
+        0
+      ],
+      "upscale_method": "lanczos",
+      "width": 326,
+      "height": 512,
+      "crop": "disabled"
+    }
+  },
+  "149": {
+    "class_type": "InvertMask",
+    "inputs": {
+      "mask": [
+        "147",
+        1
+      ]
+    }
+  },
+  "150": {
+    "class_type": "MaskToImage",
+    "inputs": {
+      "mask": [
+        "149",
+        0
+      ]
+    }
+  },
+  "151": {
+    "class_type": "ImageScale",
+    "inputs": {
+      "image": [
+        "150",
+        0
+      ],
+      "upscale_method": "bilinear",
+      "width": 326,
+      "height": 512,
+      "crop": "disabled"
+    }
+  },
+  "152": {
+    "class_type": "ImageToMask",
+    "inputs": {
+      "image": [
+        "151",
+        0
+      ],
+      "channel": "red"
+    }
+  },
+  "153": {
+    "class_type": "EmptyImage",
+    "inputs": {
+      "width": 768,
+      "height": 768,
+      "batch_size": 1,
+      "color": 65280
+    }
+  },
+  "154": {
+    "class_type": "ImageCompositeMasked",
+    "inputs": {
+      "destination": [
+        "153",
+        0
+      ],
+      "source": [
+        "148",
+        0
+      ],
+      "x": 221,
+      "y": 128,
+      "resize_source": false,
+      "mask": [
+        "152",
+        0
+      ]
+    }
+  },
+  "155": {
+    "class_type": "PreviewImage",
+    "inputs": {
+      "images": [
+        "154",
+        0
+      ]
+    }
+  },
+  "156": {
+    "class_type": "MiniMaxH3AddGuide",
+    "inputs": {
+      "positive": [
+        "159",
+        0
+      ],
+      "latent": [
+        "136",
+        1
+      ],
+      "frame_idx": 96,
+      "vae": [
+        "119",
+        0
+      ],
+      "image": [
+        "154",
+        0
+      ]
+    }
+  },
+  "157": {
+    "class_type": "MiniMaxH3AddGuide",
+    "inputs": {
+      "positive": [
+        "156",
+        0
+      ],
+      "latent": [
+        "136",
+        1
+      ],
+      "frame_idx": 144,
+      "vae": [
+        "119",
+        0
+      ],
+      "image": [
+        "154",
+        0
+      ]
+    }
+  },
+  "159": {
+    "class_type": "MiniMaxH3AddGuide",
+    "inputs": {
+      "positive": [
+        "136",
+        0
+      ],
+      "latent": [
+        "136",
+        1
+      ],
+      "frame_idx": 48,
+      "vae": [
+        "119",
+        0
+      ],
+      "image": [
+        "154",
+        0
+      ]
+    }
+  }
+}

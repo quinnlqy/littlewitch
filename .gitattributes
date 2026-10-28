@@ -1,0 +1,2 @@
+# Preserve the exact release bytes used by manifest.json across platforms.
+* -text

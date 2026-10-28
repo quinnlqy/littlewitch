@@ -1,0 +1,312 @@
+{
+  "date": "2026-10-28",
+  "description": "从本项目当前工作流精选；原始 UI/API JSON 原样保留，未执行视频生成。",
+  "workflows": [
+    {
+      "group": "witch_flight_green_v1",
+      "id": "02",
+      "name": "小魔女_02_飞行_短施法_绿幕_5秒_H3v038_Turbo6_手动开始",
+      "ui": "witch_flight_green_v1/小魔女_02_飞行_短施法_绿幕_5秒_H3v038_Turbo6_手动开始.json",
+      "api": "witch_flight_green_v1/02_api.json",
+      "prompt": "witch_flight_green_v1/02_prompt_en.txt",
+      "inputs": [
+        "witch_flight_green_v1_character_original.png"
+      ],
+      "width": 768,
+      "height": 768,
+      "sampling_frames": 124,
+      "fps": 24,
+      "steps": 6,
+      "mode": "Ref2VA"
+    },
+    {
+      "group": "witch_flight_green_v1",
+      "id": "03",
+      "name": "小魔女_03_飞行_长施法_绿幕_10秒_H3v038_Turbo6_手动开始",
+      "ui": "witch_flight_green_v1/小魔女_03_飞行_长施法_绿幕_10秒_H3v038_Turbo6_手动开始.json",
+      "api": "witch_flight_green_v1/03_api.json",
+      "prompt": "witch_flight_green_v1/03_prompt_en.txt",
+      "inputs": [
+        "witch_flight_green_v1_character_original.png"
+      ],
+      "width": 768,
+      "height": 768,
+      "sampling_frames": 243,
+      "fps": 24,
+      "steps": 6,
+      "mode": "Ref2VA"
+    },
+    {
+      "group": "witch_flight_green_v2",
+      "id": "01A",
+      "name": "小魔女_01A_平稳飞行_绝不施法_绿幕_5秒_V2_Turbo6_手动开始",
+      "ui": "witch_flight_green_v2/小魔女_01A_平稳飞行_绝不施法_绿幕_5秒_V2_Turbo6_手动开始.json",
+      "api": "witch_flight_green_v2/01A_api.json",
+      "prompt": "witch_flight_green_v2/01A_prompt_en.txt",
+      "inputs": [
+        "witch_flight_green_v1_character_original.png"
+      ],
+      "width": 768,
+      "height": 768,
+      "sampling_frames": 124,
+      "fps": 24,
+      "steps": 6,
+      "mode": "Ref2VA"
+    },
+    {
+      "group": "witch_flight_green_v2",
+      "id": "01B",
+      "name": "小魔女_01B_加速飞行_绝不施法_绿幕_5秒_V2_Turbo6_手动开始",
+      "ui": "witch_flight_green_v2/小魔女_01B_加速飞行_绝不施法_绿幕_5秒_V2_Turbo6_手动开始.json",
+      "api": "witch_flight_green_v2/01B_api.json",
+      "prompt": "witch_flight_green_v2/01B_prompt_en.txt",
+      "inputs": [
+        "witch_flight_green_v1_character_original.png"
+      ],
+      "width": 768,
+      "height": 768,
+      "sampling_frames": 124,
+      "fps": 24,
+      "steps": 6,
+      "mode": "Ref2VA"
+    },
+    {
+      "group": "witch_monsters_v2_threequarter",
+      "id": "01",
+      "name": "小魔女怪物_01_EN04_桥洞雾怪_雾须呼吸循环_朝左三分之四_绿幕8秒_V2_手动开始",
+      "ui": "witch_monsters_v2_threequarter/小魔女怪物_01_EN04_桥洞雾怪_雾须呼吸循环_朝左三分之四_绿幕8秒_V2_手动开始.json",
+      "api": "witch_monsters_v2_threequarter/01_api.json",
+      "prompt": "witch_monsters_v2_threequarter/01_prompt_en.txt",
+      "inputs": [
+        "witch_monster_v2_head.png"
+      ],
+      "width": 768,
+      "height": 768,
+      "sampling_frames": 192,
+      "fps": 24,
+      "steps": 6,
+      "mode": "FL2VA"
+    },
+    {
+      "group": "witch_monsters_v2_threequarter",
+      "id": "02",
+      "name": "小魔女怪物_02_EN04_桥洞雾怪_鼓腮双雾攻击_朝左三分之四_绿幕8秒_V2_手动开始",
+      "ui": "witch_monsters_v2_threequarter/小魔女怪物_02_EN04_桥洞雾怪_鼓腮双雾攻击_朝左三分之四_绿幕8秒_V2_手动开始.json",
+      "api": "witch_monsters_v2_threequarter/02_api.json",
+      "prompt": "witch_monsters_v2_threequarter/02_prompt_en.txt",
+      "inputs": [
+        "witch_monster_v2_head.png"
+      ],
+      "width": 768,
+      "height": 768,
+      "sampling_frames": 192,
+      "fps": 24,
+      "steps": 6,
+      "mode": "FL2VA"
+    },
+    {
+      "group": "witch_monsters_v2_threequarter",
+      "id": "03",
+      "name": "小魔女怪物_03_EN03_吞光灯怪_提灯呼吸循环_朝左三分之四_绿幕8秒_V2_手动开始",
+      "ui": "witch_monsters_v2_threequarter/小魔女怪物_03_EN03_吞光灯怪_提灯呼吸循环_朝左三分之四_绿幕8秒_V2_手动开始.json",
+      "api": "witch_monsters_v2_threequarter/03_api.json",
+      "prompt": "witch_monsters_v2_threequarter/03_prompt_en.txt",
+      "inputs": [
+        "witch_monster_v2_carrier.png"
+      ],
+      "width": 768,
+      "height": 768,
+      "sampling_frames": 192,
+      "fps": 24,
+      "steps": 6,
+      "mode": "FL2VA"
+    },
+    {
+      "group": "witch_monsters_v2_threequarter",
+      "id": "04",
+      "name": "小魔女怪物_04_EN03_吞光灯怪_受惊吐雾攻击_朝左三分之四_绿幕8秒_V2_手动开始",
+      "ui": "witch_monsters_v2_threequarter/小魔女怪物_04_EN03_吞光灯怪_受惊吐雾攻击_朝左三分之四_绿幕8秒_V2_手动开始.json",
+      "api": "witch_monsters_v2_threequarter/04_api.json",
+      "prompt": "witch_monsters_v2_threequarter/04_prompt_en.txt",
+      "inputs": [
+        "witch_monster_v2_carrier.png"
+      ],
+      "width": 768,
+      "height": 768,
+      "sampling_frames": 192,
+      "fps": 24,
+      "steps": 6,
+      "mode": "FL2VA"
+    },
+    {
+      "group": "witch_monsters_v2_threequarter",
+      "id": "05",
+      "name": "小魔女怪物_05_EN06_打盹的夜团_无脚打盹循环_朝左三分之四_绿幕8秒_V2_手动开始",
+      "ui": "witch_monsters_v2_threequarter/小魔女怪物_05_EN06_打盹的夜团_无脚打盹循环_朝左三分之四_绿幕8秒_V2_手动开始.json",
+      "api": "witch_monsters_v2_threequarter/05_api.json",
+      "prompt": "witch_monsters_v2_threequarter/05_prompt_en.txt",
+      "inputs": [
+        "witch_monster_v2_boss1.png"
+      ],
+      "width": 768,
+      "height": 768,
+      "sampling_frames": 192,
+      "fps": 24,
+      "steps": 6,
+      "mode": "FL2VA"
+    },
+    {
+      "group": "witch_monsters_v2_threequarter",
+      "id": "06",
+      "name": "小魔女怪物_06_EN06_打盹的夜团_哈欠三连吐_朝左三分之四_绿幕8秒_V2_手动开始",
+      "ui": "witch_monsters_v2_threequarter/小魔女怪物_06_EN06_打盹的夜团_哈欠三连吐_朝左三分之四_绿幕8秒_V2_手动开始.json",
+      "api": "witch_monsters_v2_threequarter/06_api.json",
+      "prompt": "witch_monsters_v2_threequarter/06_prompt_en.txt",
+      "inputs": [
+        "witch_monster_v2_boss1.png"
+      ],
+      "width": 768,
+      "height": 768,
+      "sampling_frames": 192,
+      "fps": 24,
+      "steps": 6,
+      "mode": "FL2VA"
+    },
+    {
+      "group": "witch_monsters_v2_threequarter",
+      "id": "07",
+      "name": "小魔女怪物_07_EN06_打盹的夜团_松团散雾本体_朝左三分之四_绿幕8秒_V2_手动开始",
+      "ui": "witch_monsters_v2_threequarter/小魔女怪物_07_EN06_打盹的夜团_松团散雾本体_朝左三分之四_绿幕8秒_V2_手动开始.json",
+      "api": "witch_monsters_v2_threequarter/07_api.json",
+      "prompt": "witch_monsters_v2_threequarter/07_prompt_en.txt",
+      "inputs": [
+        "witch_monster_v2_boss1.png"
+      ],
+      "width": 768,
+      "height": 768,
+      "sampling_frames": 192,
+      "fps": 24,
+      "steps": 6,
+      "mode": "FL2VA"
+    },
+    {
+      "group": "witch_monsters_v2_threequarter",
+      "id": "08",
+      "name": "小魔女怪物_08_EN07_湖边大夜怪_无脚云团循环_朝左三分之四_绿幕8秒_V2_手动开始",
+      "ui": "witch_monsters_v2_threequarter/小魔女怪物_08_EN07_湖边大夜怪_无脚云团循环_朝左三分之四_绿幕8秒_V2_手动开始.json",
+      "api": "witch_monsters_v2_threequarter/08_api.json",
+      "prompt": "witch_monsters_v2_threequarter/08_prompt_en.txt",
+      "inputs": [
+        "witch_monster_v2_boss2.png"
+      ],
+      "width": 768,
+      "height": 768,
+      "sampling_frames": 192,
+      "fps": 24,
+      "steps": 6,
+      "mode": "FL2VA"
+    },
+    {
+      "group": "witch_monsters_v2_threequarter",
+      "id": "09",
+      "name": "小魔女怪物_09_EN07_湖边大夜怪_夜雾横推本体_朝左三分之四_绿幕8秒_V2_手动开始",
+      "ui": "witch_monsters_v2_threequarter/小魔女怪物_09_EN07_湖边大夜怪_夜雾横推本体_朝左三分之四_绿幕8秒_V2_手动开始.json",
+      "api": "witch_monsters_v2_threequarter/09_api.json",
+      "prompt": "witch_monsters_v2_threequarter/09_prompt_en.txt",
+      "inputs": [
+        "witch_monster_v2_boss2.png"
+      ],
+      "width": 768,
+      "height": 768,
+      "sampling_frames": 192,
+      "fps": 24,
+      "steps": 6,
+      "mode": "FL2VA"
+    },
+    {
+      "group": "witch_monsters_v2_threequarter",
+      "id": "10",
+      "name": "小魔女怪物_10_EN07_湖边大夜怪_追光雾球本体_朝左三分之四_绿幕8秒_V2_手动开始",
+      "ui": "witch_monsters_v2_threequarter/小魔女怪物_10_EN07_湖边大夜怪_追光雾球本体_朝左三分之四_绿幕8秒_V2_手动开始.json",
+      "api": "witch_monsters_v2_threequarter/10_api.json",
+      "prompt": "witch_monsters_v2_threequarter/10_prompt_en.txt",
+      "inputs": [
+        "witch_monster_v2_boss2.png"
+      ],
+      "width": 768,
+      "height": 768,
+      "sampling_frames": 192,
+      "fps": 24,
+      "steps": 6,
+      "mode": "FL2VA"
+    },
+    {
+      "group": "witch_monsters_v2_threequarter",
+      "id": "11",
+      "name": "小魔女怪物_11_EN01_蓝翼夜怪_短翼飞行循环_朝左三分之四_绿幕8秒_V2_手动开始",
+      "ui": "witch_monsters_v2_threequarter/小魔女怪物_11_EN01_蓝翼夜怪_短翼飞行循环_朝左三分之四_绿幕8秒_V2_手动开始.json",
+      "api": "witch_monsters_v2_threequarter/11_api.json",
+      "prompt": "witch_monsters_v2_threequarter/11_prompt_en.txt",
+      "inputs": [
+        "witch_monster_v2_imp.png"
+      ],
+      "width": 768,
+      "height": 768,
+      "sampling_frames": 192,
+      "fps": 24,
+      "steps": 6,
+      "mode": "FL2VA"
+    },
+    {
+      "group": "witch_monsters_v2_threequarter",
+      "id": "12",
+      "name": "小魔女怪物_12_EN02_雾鳍飞鱼_摆尾游雾循环_朝左三分之四_绿幕8秒_V2_手动开始",
+      "ui": "witch_monsters_v2_threequarter/小魔女怪物_12_EN02_雾鳍飞鱼_摆尾游雾循环_朝左三分之四_绿幕8秒_V2_手动开始.json",
+      "api": "witch_monsters_v2_threequarter/12_api.json",
+      "prompt": "witch_monsters_v2_threequarter/12_prompt_en.txt",
+      "inputs": [
+        "witch_monster_v2_fish.png"
+      ],
+      "width": 768,
+      "height": 768,
+      "sampling_frames": 192,
+      "fps": 24,
+      "steps": 6,
+      "mode": "FL2VA"
+    },
+    {
+      "group": "witch_monsters_v2_threequarter",
+      "id": "13",
+      "name": "小魔女怪物_13_EN05_暮影蝠_长翼飞行循环_朝左三分之四_绿幕8秒_V2_手动开始",
+      "ui": "witch_monsters_v2_threequarter/小魔女怪物_13_EN05_暮影蝠_长翼飞行循环_朝左三分之四_绿幕8秒_V2_手动开始.json",
+      "api": "witch_monsters_v2_threequarter/13_api.json",
+      "prompt": "witch_monsters_v2_threequarter/13_prompt_en.txt",
+      "inputs": [
+        "witch_monster_v2_bat.png"
+      ],
+      "width": 768,
+      "height": 768,
+      "sampling_frames": 192,
+      "fps": 24,
+      "steps": 6,
+      "mode": "FL2VA"
+    },
+    {
+      "group": "witch_monsters_v2_threequarter",
+      "id": "14",
+      "name": "小魔女怪物_14_EN05_暮影蝠_折翼蓄力俯冲_朝左三分之四_绿幕8秒_V2_手动开始",
+      "ui": "witch_monsters_v2_threequarter/小魔女怪物_14_EN05_暮影蝠_折翼蓄力俯冲_朝左三分之四_绿幕8秒_V2_手动开始.json",
+      "api": "witch_monsters_v2_threequarter/14_api.json",
+      "prompt": "witch_monsters_v2_threequarter/14_prompt_en.txt",
+      "inputs": [
+        "witch_monster_v2_bat.png"
+      ],
+      "width": 768,
+      "height": 768,
+      "sampling_frames": 192,
+      "fps": 24,
+      "steps": 6,
+      "mode": "FL2VA"
+    }
+  ]
+}

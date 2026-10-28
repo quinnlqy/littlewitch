@@ -1,0 +1,1610 @@
+{
+  "date": "2026-10-28",
+  "scope": "离线游戏、可构建源码、精选设计素材、本地H3工作流与HTML使用说明",
+  "file_count_excluding_this_manifest": 240,
+  "bytes_excluding_this_manifest": 52314537,
+  "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 83,
+      "sha256": "02c20fe803880531d829971049e0ed0dd571b973b183f9c4938552101d4c244e"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 322,
+      "sha256": "38b961e35afd2a52dbc9e9e95fd0f36541d9d09ea9444ce4cc30ed838eeb1ce3"
+    },
+    {
+      "path": "01-design/level-design/README.md",
+      "bytes": 715,
+      "sha256": "f962acbb69ae854eb098d236db275b591cc828c617e8b9b449a067fcc4e9887a"
+    },
+    {
+      "path": "01-design/level-design/assets/A月光悬浮-桌面参考.png",
+      "bytes": 2083319,
+      "sha256": "b649e987d335b603e31f40b94dda29825149b3559f5ffeaba78bdfab6f176292",
+      "width": 1672,
+      "height": 941,
+      "mode": "RGB"
+    },
+    {
+      "path": "01-design/level-design/assets/大夜怪技能特效-六项视觉参考.png",
+      "bytes": 2451984,
+      "sha256": "7bc0be7c28adf5f4f61cfbf05fdcfe97360db2fdd8e12943b1bd4894dffc6330",
+      "width": 2132,
+      "height": 738,
+      "mode": "RGB"
+    },
+    {
+      "path": "01-design/level-design/assets/小魔女形象.png",
+      "bytes": 169572,
+      "sha256": "f91010fc3d6fa525427f0db850d6e31739419522d3b8ebc53985c746cc0e3022",
+      "width": 768,
+      "height": 768,
+      "mode": "RGB"
+    },
+    {
+      "path": "01-design/level-design/assets/当前怪物素材对照.jpg",
+      "bytes": 50499,
+      "sha256": "dcb5368aa2d579bb3a912f19902a72c5934a2f08a4d05a9d1e708782f009a684",
+      "width": 1400,
+      "height": 620,
+      "mode": "RGB"
+    },
+    {
+      "path": "01-design/level-design/第一关游戏策划案.html",
+      "bytes": 63440,
+      "sha256": "be938d17dce218981597d8bc523b9f16c79313b24a2c7b3d1727387c1354ba5e"
+    },
+    {
+      "path": "01-design/level-design/第一关游戏策划案.md",
+      "bytes": 47081,
+      "sha256": "cb5c1b546060a4f75fa3f11a9244fd333c0bb5c4e74357a302eae98cc4b57296"
+    },
+    {
+      "path": "01-design/level-design/策划配置.json",
+      "bytes": 7861,
+      "sha256": "974712cdc5cbc8877f009fd1da46f0ed297cc1b027b34ec10fbb9de83b89a4f6"
+    },
+    {
+      "path": "01-design/level-design/配置表/Boss三阶段.csv",
+      "bytes": 300,
+      "sha256": "7bd560fd48ff01cb2b24ca8389c3a45771e73a8b573a3614b713c82c999bcad7"
+    },
+    {
+      "path": "01-design/level-design/配置表/Boss攻击与特效.csv",
+      "bytes": 1264,
+      "sha256": "51b678fc94f8b4e8faed0d88e964b4b9eb29da79081df63de86371f8a6471a4a"
+    },
+    {
+      "path": "01-design/level-design/配置表/双端UI.csv",
+      "bytes": 741,
+      "sha256": "be4de4c55fdea5cdabad0e8f986d3041455d0154ab8bbee40587cb207e151fec"
+    },
+    {
+      "path": "01-design/level-design/配置表/射击成长.csv",
+      "bytes": 312,
+      "sha256": "11df7689b75db7f4da90b8aedab3b56548d0ee0b0e18787661640ca9f67171f0"
+    },
+    {
+      "path": "01-design/level-design/配置表/怪物与奖励.csv",
+      "bytes": 883,
+      "sha256": "98b0f45fce3358289ed316118ed1261714c81ebcef286099fbe85bf286a5a4d0"
+    },
+    {
+      "path": "01-design/level-design/配置表/波次.csv",
+      "bytes": 2669,
+      "sha256": "8ca3d93a444faf7435f039d6e875b61416a7a002875fddc4e66f48d212c052a4"
+    },
+    {
+      "path": "01-design/level-design/配置表/道具与回收.csv",
+      "bytes": 658,
+      "sha256": "50ab820a180955b0603f33bb67f970f535845e4b8258b13699a3845db3d4cd09"
+    },
+    {
+      "path": "01-design/level-design/配置表/阶段与场景.csv",
+      "bytes": 625,
+      "sha256": "49d18171887ae8a90e179c3fee75f0b28b798e6373b76e64a8cc26eef287d98f"
+    },
+    {
+      "path": "01-design/level-design/配置表/验收清单.csv",
+      "bytes": 5706,
+      "sha256": "dae5962be4f9fb70ef29d549c878d6289fcf4423b35359087ba2526925ef4db8"
+    },
+    {
+      "path": "01-design/怪物图鉴.html",
+      "bytes": 515788,
+      "sha256": "1dce35563fb3a4e5f87cdf126b9cac49d40272a185c95486bbba8b9a8e2cd5d2"
+    },
+    {
+      "path": "02-character/README.md",
+      "bytes": 999,
+      "sha256": "0fe1573b32a2d6259181b1ce434289877b55ba4bc0d7c57517b6252c52b10a16"
+    },
+    {
+      "path": "02-character/animations/attack-preview.gif",
+      "bytes": 232863,
+      "sha256": "14d664a3ec5d5dd8c0089d17fb8ef2d3d17104c26dba98a43e3bad6b9aead143",
+      "width": 180,
+      "height": 180,
+      "mode": "P"
+    },
+    {
+      "path": "02-character/animations/attack.png",
+      "bytes": 529833,
+      "sha256": "c70bfdb18b4b72f0c93532ec7b31eac10e218df8a32346d2e06a668919aea4c8",
+      "width": 1296,
+      "height": 564,
+      "mode": "RGBA"
+    },
+    {
+      "path": "02-character/animations/boostLoop-preview.gif",
+      "bytes": 103814,
+      "sha256": "138ad17e335f659b8ae1b20d2261502a371879fb8b7966fc02621d8c16883224",
+      "width": 180,
+      "height": 180,
+      "mode": "P"
+    },
+    {
+      "path": "02-character/animations/boostLoop.png",
+      "bytes": 238936,
+      "sha256": "089156a084bffa4cdfbd3c06b1aef192ea411207e133ba152d58c717078a9121",
+      "width": 900,
+      "height": 294,
+      "mode": "RGBA"
+    },
+    {
+      "path": "02-character/animations/boostStart-preview.gif",
+      "bytes": 122646,
+      "sha256": "817027c1dac0a64c9a03d44cbd36514d1b860674a4e9ccbc047e8c53a8f28938",
+      "width": 180,
+      "height": 180,
+      "mode": "P"
+    },
+    {
+      "path": "02-character/animations/boostStart.png",
+      "bytes": 284935,
+      "sha256": "b1db11cc83c2dfbdd9aff64ca4eacd38a4beb50b04ef3790f7f9a9c69133541e",
+      "width": 900,
+      "height": 441,
+      "mode": "RGBA"
+    },
+    {
+      "path": "02-character/animations/flight-preview.gif",
+      "bytes": 60346,
+      "sha256": "d3153923fb1a2342e89e43771809ea2cd7f84369e05f85551f7c74f027450157",
+      "width": 180,
+      "height": 180,
+      "mode": "P"
+    },
+    {
+      "path": "02-character/animations/flight.png",
+      "bytes": 82707,
+      "sha256": "3559adaac9a8da5a556d1d0b7e075c0b26a6c8af8e9cecf11287b0ac83710ef0",
+      "width": 900,
+      "height": 147,
+      "mode": "RGBA"
+    },
+    {
+      "path": "02-character/animations/long-preview.gif",
+      "bytes": 226179,
+      "sha256": "3e61c69406b661a673730a8b5a9b1cb4c8076cee4662e29345003388cf85ed92",
+      "width": 180,
+      "height": 180,
+      "mode": "P"
+    },
+    {
+      "path": "02-character/animations/long.png",
+      "bytes": 501814,
+      "sha256": "cea429fe04ff60e706a4d91ae57d8472ca8566c834db0a637d2ab71fcde28032",
+      "width": 1116,
+      "height": 605,
+      "mode": "RGBA"
+    },
+    {
+      "path": "02-character/animations/manifest.json",
+      "bytes": 8118,
+      "sha256": "7cf49d4d82c3fb788b162d9dbda990aea079decc7f66327d4c8cb92c297c3e3c"
+    },
+    {
+      "path": "02-character/animations/move-preview.gif",
+      "bytes": 118704,
+      "sha256": "0ad6beb8dfda5d8a350026da57b97f3820a0c22773800532462ace87eeeb5e66",
+      "width": 180,
+      "height": 180,
+      "mode": "P"
+    },
+    {
+      "path": "02-character/animations/move.png",
+      "bytes": 154540,
+      "sha256": "3e7c6fa19ca66ded9b1a09384adff43cdb799de62f6da5d0717ba8e2b40698c8",
+      "width": 900,
+      "height": 294,
+      "mode": "RGBA"
+    },
+    {
+      "path": "02-character/concept/broom-riding-concept.png",
+      "bytes": 639300,
+      "sha256": "093e9a8241f322c1e9aab97687f371d6b2dfd8184bbcec6e3bdad8ba9957b6d7",
+      "width": 1024,
+      "height": 1024,
+      "mode": "RGB"
+    },
+    {
+      "path": "02-character/concept/character-modelsheet.png",
+      "bytes": 1297911,
+      "sha256": "78f0074dc042823c6699ddb4997d3aa532ba519cc44a070cb5124c4ccf600b28",
+      "width": 1536,
+      "height": 1024,
+      "mode": "RGB"
+    },
+    {
+      "path": "02-character/illustrations/witch_lose.webp",
+      "bytes": 192464,
+      "sha256": "dd7657f4a858e51ace730ecbef67d5bb4581d40846123c43a0611c349ef1ff00",
+      "width": 977,
+      "height": 1316,
+      "mode": "RGBA"
+    },
+    {
+      "path": "02-character/illustrations/witch_title.webp",
+      "bytes": 137084,
+      "sha256": "fc0c033d7913b5136e1c5279b4d3680b5e138134cb421cc4385bb6052da5b8bb",
+      "width": 917,
+      "height": 914,
+      "mode": "RGBA"
+    },
+    {
+      "path": "02-character/source-images/witch_lose.jpg",
+      "bytes": 263626,
+      "sha256": "e66107baf7baf1046fdde9de9c9dfc13eea4972dfbd27c1b52cfa0163a91b4c3",
+      "width": 1024,
+      "height": 1536,
+      "mode": "RGB"
+    },
+    {
+      "path": "02-character/source-images/witch_title_src.png",
+      "bytes": 830465,
+      "sha256": "72b8846399c5f5d8f61720ce150464cdf5ca607745834f9116f00166f84a76f2",
+      "width": 1024,
+      "height": 1024,
+      "mode": "RGB"
+    },
+    {
+      "path": "03-monsters/README.md",
+      "bytes": 729,
+      "sha256": "b90e19847863ee176b640aedd8b185d3099c16342d8a9f249922857c5079086c"
+    },
+    {
+      "path": "03-monsters/animations/bat-preview.gif",
+      "bytes": 66441,
+      "sha256": "cdd71e3b98f136b0b803a5a3f8b9d55ed12cfee58b2c5f749a4a55cb0d38b84a",
+      "width": 180,
+      "height": 180,
+      "mode": "P"
+    },
+    {
+      "path": "03-monsters/animations/bat.png",
+      "bytes": 44470,
+      "sha256": "ac458f7798f84ab01e5e25c07c7d67b5541a9879f0a6ac5902ce7b199e4765d9",
+      "width": 696,
+      "height": 324,
+      "mode": "P"
+    },
+    {
+      "path": "03-monsters/animations/batAtk-preview.gif",
+      "bytes": 40316,
+      "sha256": "c80ea0b80649a0091766837da2d13add201647e4d0f66c3151c699b7af5dd511",
+      "width": 180,
+      "height": 180,
+      "mode": "P"
+    },
+    {
+      "path": "03-monsters/animations/batAtk.png",
+      "bytes": 28050,
+      "sha256": "d3b0137630dfe119e38bf870c8615196af7d3e44aeb7aee50fa227ec15e2c8b5",
+      "width": 696,
+      "height": 243,
+      "mode": "P"
+    },
+    {
+      "path": "03-monsters/animations/boss1-preview.gif",
+      "bytes": 205510,
+      "sha256": "2ab22599f4da41bb27776d1788f330d81f391192d0fc94c336b60f19b20848bd",
+      "width": 180,
+      "height": 180,
+      "mode": "P"
+    },
+    {
+      "path": "03-monsters/animations/boss1.png",
+      "bytes": 160839,
+      "sha256": "b66df3a1b7ad02348fe8e6874ce9573d7fcb6f20343e1a064ab96eebd2a62ae0",
+      "width": 1026,
+      "height": 696,
+      "mode": "P"
+    },
+    {
+      "path": "03-monsters/animations/boss1Atk-preview.gif",
+      "bytes": 167843,
+      "sha256": "ea5a2d6407147b2aeab6ee3ded1144f914631a261df27143873be61bb3697f72",
+      "width": 184,
+      "height": 180,
+      "mode": "P"
+    },
+    {
+      "path": "03-monsters/animations/boss1Atk.png",
+      "bytes": 132902,
+      "sha256": "3c62e2803e2b68d6e854719b6b4e731f4de0a46e418486e97fe665c5aa54d0ee",
+      "width": 1104,
+      "height": 522,
+      "mode": "P"
+    },
+    {
+      "path": "03-monsters/animations/boss1Tell-preview.gif",
+      "bytes": 106055,
+      "sha256": "18eba1573f078c59029e600564be40bf40ededbc17828c1f6d3173e38f8c36e0",
+      "width": 180,
+      "height": 180,
+      "mode": "P"
+    },
+    {
+      "path": "03-monsters/animations/boss1Tell.png",
+      "bytes": 104939,
+      "sha256": "53872e7485c01c06b2c47a63efb0f362aa9886d371834bcfb5016344632fbd57",
+      "width": 1026,
+      "height": 522,
+      "mode": "P"
+    },
+    {
+      "path": "03-monsters/animations/boss2-preview.gif",
+      "bytes": 222477,
+      "sha256": "8568e4e4adeb0bc55d68865357e457bf5b16fa51df000d2973118f440d97dac5",
+      "width": 180,
+      "height": 209,
+      "mode": "P"
+    },
+    {
+      "path": "03-monsters/animations/boss2.png",
+      "bytes": 165112,
+      "sha256": "8c0fc4041ee79e2bd301daebaace13d1cb12701d3a1b18c5fc2e00e917501a25",
+      "width": 1002,
+      "height": 836,
+      "mode": "P"
+    },
+    {
+      "path": "03-monsters/animations/boss2Atk-preview.gif",
+      "bytes": 141493,
+      "sha256": "65a2bccb49a3b9a16393645c743039a0b93e951438a95ef18cf3f336cd7a4859",
+      "width": 195,
+      "height": 209,
+      "mode": "P"
+    },
+    {
+      "path": "03-monsters/animations/boss2Atk.png",
+      "bytes": 114514,
+      "sha256": "fc2dd46ad2e8fa050b735a302cf6361077df2eff7659266dda9390607da27e8e",
+      "width": 1170,
+      "height": 627,
+      "mode": "P"
+    },
+    {
+      "path": "03-monsters/animations/carrier-preview.gif",
+      "bytes": 113474,
+      "sha256": "01684c7be73ea704666de6fdb61f2944d14ce5cff1f981c97896970fd3e1dbe0",
+      "width": 180,
+      "height": 180,
+      "mode": "P"
+    },
+    {
+      "path": "03-monsters/animations/carrier.png",
+      "bytes": 78706,
+      "sha256": "b350a76a346dcbab5e350e7d9500bd242079eab58065cb16625f49f470d935ff",
+      "width": 750,
+      "height": 648,
+      "mode": "P"
+    },
+    {
+      "path": "03-monsters/animations/carrierAtk-preview.gif",
+      "bytes": 38732,
+      "sha256": "68ce7b9c4cbc63d1f3b648764af9b1440bd35b02885bc6ba597a94f6768c97a5",
+      "width": 180,
+      "height": 180,
+      "mode": "P"
+    },
+    {
+      "path": "03-monsters/animations/carrierAtk.png",
+      "bytes": 36448,
+      "sha256": "d187315716286df329db0018850f51acb2038a8f5020c029da116b9b0ba4f80d",
+      "width": 750,
+      "height": 486,
+      "mode": "P"
+    },
+    {
+      "path": "03-monsters/animations/fish-preview.gif",
+      "bytes": 42499,
+      "sha256": "988285eb4a0da2f387a89c1404ce7d3663ab06bedc9f0d818e03bd7281ef1b47",
+      "width": 180,
+      "height": 180,
+      "mode": "P"
+    },
+    {
+      "path": "03-monsters/animations/fish.png",
+      "bytes": 24609,
+      "sha256": "9bd7dd5b4e4e66287fc50784bfdddf2f0798bd3f5f7d0c14595f972b964ecda4",
+      "width": 576,
+      "height": 324,
+      "mode": "P"
+    },
+    {
+      "path": "03-monsters/animations/head-preview.gif",
+      "bytes": 39996,
+      "sha256": "f9ee52eb2f2ce8c5d82e6a3b1b59590a91ef2be47e1b6d637c425f9c56376b2c",
+      "width": 180,
+      "height": 180,
+      "mode": "P"
+    },
+    {
+      "path": "03-monsters/animations/head.png",
+      "bytes": 24656,
+      "sha256": "6e33b1130c6513d68a1b61a9763867ae512ca117c1c2021a8bd8c528d13c9c40",
+      "width": 384,
+      "height": 324,
+      "mode": "P"
+    },
+    {
+      "path": "03-monsters/animations/headAtk-preview.gif",
+      "bytes": 28187,
+      "sha256": "570d2346814882594d4229652bee6b4ccb1a60f69efe97b90eadf3891c149691",
+      "width": 180,
+      "height": 180,
+      "mode": "P"
+    },
+    {
+      "path": "03-monsters/animations/headAtk.png",
+      "bytes": 17297,
+      "sha256": "862355619d960c56b22d06ef5dc58f5c1d9eba6f0dc5c13e3568e9ed64f4bacf",
+      "width": 384,
+      "height": 243,
+      "mode": "P"
+    },
+    {
+      "path": "03-monsters/animations/imp-preview.gif",
+      "bytes": 57808,
+      "sha256": "ca8a86da8c188ef1c1696ea4fcba9aa9e87e41555a9fce924d79849d0b52b892",
+      "width": 180,
+      "height": 180,
+      "mode": "P"
+    },
+    {
+      "path": "03-monsters/animations/imp.png",
+      "bytes": 38733,
+      "sha256": "9fab1842a6b64898f74eca8e68c2080412322d400fa0dfffa4a3a079fd745b20",
+      "width": 546,
+      "height": 348,
+      "mode": "P"
+    },
+    {
+      "path": "03-monsters/animations/manifest.json",
+      "bytes": 15879,
+      "sha256": "ae0800651773cf4109bd13f171575ebee438f0b86b3dbf3eeeb2412843eb0dea"
+    },
+    {
+      "path": "03-monsters/static/bat.png",
+      "bytes": 14907,
+      "sha256": "d3820a18d3bf58ba095778a74475d20302de238e98c0565727a49ed976b79443",
+      "width": 120,
+      "height": 110,
+      "mode": "RGBA"
+    },
+    {
+      "path": "03-monsters/static/boss1.png",
+      "bytes": 64151,
+      "sha256": "2ce3d26c43b3de483971c906200c6bf97c2d2ca4d871fb29bff3e5945c8b7e77",
+      "width": 232,
+      "height": 250,
+      "mode": "RGBA"
+    },
+    {
+      "path": "03-monsters/static/boss2.png",
+      "bytes": 56457,
+      "sha256": "c43bc1bce0d7e3339ad590ec2b25ff5b658c841735fb9f60bfc0a42cc599697c",
+      "width": 206,
+      "height": 250,
+      "mode": "RGBA"
+    },
+    {
+      "path": "03-monsters/static/carrier.png",
+      "bytes": 10489,
+      "sha256": "5030f1644b92787b0d22cfc04cf6b5f7e35b3e0f23f181e85166949eeed8a951",
+      "width": 70,
+      "height": 110,
+      "mode": "RGBA"
+    },
+    {
+      "path": "03-monsters/static/fish.png",
+      "bytes": 10040,
+      "sha256": "39117f1f19ac40adbdb2397d48f32f8692b63c74d98ffa0d3294c2a5c738146f",
+      "width": 77,
+      "height": 110,
+      "mode": "RGBA"
+    },
+    {
+      "path": "03-monsters/static/head.png",
+      "bytes": 7606,
+      "sha256": "c53213e01cbdf52330bb52586d227d0222c3822c848ec1c20d04d3164e583e91",
+      "width": 84,
+      "height": 110,
+      "mode": "RGBA"
+    },
+    {
+      "path": "03-monsters/static/imp.png",
+      "bytes": 9476,
+      "sha256": "834b8751ea77cefb5a5b73ac41d52ed4aa4434fbda0f25ef5e3c2a299d45cfa3",
+      "width": 79,
+      "height": 110,
+      "mode": "RGBA"
+    },
+    {
+      "path": "04-environments/README.md",
+      "bytes": 496,
+      "sha256": "c1d46da8862bd983cc79728179043cd92c39260d9bf52f5e164cbd1ceffb42f6"
+    },
+    {
+      "path": "04-environments/layers/cloud1.png",
+      "bytes": 49673,
+      "sha256": "0aafae6987a5cd2fe95482f18ff5d082ac77e2c48764840d77d990756e2646f7",
+      "width": 228,
+      "height": 175,
+      "mode": "RGBA"
+    },
+    {
+      "path": "04-environments/layers/cloud2.png",
+      "bytes": 74731,
+      "sha256": "830c2767b4add6d3d7a114029408f0f580937f41919470c837187e695d26296f",
+      "width": 260,
+      "height": 215,
+      "mode": "RGBA"
+    },
+    {
+      "path": "04-environments/layers/cloud3.png",
+      "bytes": 38550,
+      "sha256": "6dfa7f628c43695454c3e40ba384ac7c3cb53b26beb6f200e902a18602be8d96",
+      "width": 208,
+      "height": 154,
+      "mode": "RGBA"
+    },
+    {
+      "path": "04-environments/layers/lake_far.webp",
+      "bytes": 102588,
+      "sha256": "4e7a5dcf970ba4ef3cfa5e537f0184c3c5d515458ff28c728d0d59dcf582219d",
+      "width": 2720,
+      "height": 326,
+      "mode": "RGBA"
+    },
+    {
+      "path": "04-environments/layers/lake_mid.webp",
+      "bytes": 293532,
+      "sha256": "ebf2a0dc6885fc8846e1de4d8a8f923b932b8ab8063995ddf65d215f353c5f0f",
+      "width": 1920,
+      "height": 320,
+      "mode": "RGBA"
+    },
+    {
+      "path": "04-environments/layers/mist1.png",
+      "bytes": 13930,
+      "sha256": "ab618c759b6f889e425da85895db4f35312d48dfe850c33cf952257bc8734ce7",
+      "width": 334,
+      "height": 58,
+      "mode": "RGBA"
+    },
+    {
+      "path": "04-environments/layers/mist2.png",
+      "bytes": 13589,
+      "sha256": "ec5859d0024052f8238e5ff5c6864d2e61ddaa292284bb38c8653bc3fd657d5d",
+      "width": 247,
+      "height": 77,
+      "mode": "RGBA"
+    },
+    {
+      "path": "04-environments/layers/moon.png",
+      "bytes": 72368,
+      "sha256": "14af2386db4413d9498cda89ed5c9bcd1c3c0675ed0ae755721e6f9b292fef28",
+      "width": 219,
+      "height": 220,
+      "mode": "RGBA"
+    },
+    {
+      "path": "04-environments/layers/mount.png",
+      "bytes": 209960,
+      "sha256": "b3f0529f0d65de65798766217ff264576e58e6dcecb37abe97eb68cb42a21b67",
+      "width": 1360,
+      "height": 133,
+      "mode": "RGBA"
+    },
+    {
+      "path": "04-environments/layers/sc05.webp",
+      "bytes": 185034,
+      "sha256": "f0d4fa27108b172e9ac138ea01c64df861e46e47c991ba6e76921e64cd19807a",
+      "width": 1920,
+      "height": 540,
+      "mode": "RGBA"
+    },
+    {
+      "path": "04-environments/layers/title_bg.webp",
+      "bytes": 218832,
+      "sha256": "f154dc37318db443837b1207deba899b76540d66d4798180c2ab3be4a73398ad",
+      "width": 1600,
+      "height": 1066,
+      "mode": "RGB"
+    },
+    {
+      "path": "04-environments/layers/town.png",
+      "bytes": 234311,
+      "sha256": "6c430eaba1e5ffa1fd98c50831a0bda8a922f2b9456a61b0438cd5cda7dbf2f9",
+      "width": 1360,
+      "height": 125,
+      "mode": "RGBA"
+    },
+    {
+      "path": "04-environments/source-images/lake_far_src.png",
+      "bytes": 2121231,
+      "sha256": "681bfb58e16381df25b6b69dd8a28acb9e4c445b638237e686314d69e57d675d",
+      "width": 1536,
+      "height": 1024,
+      "mode": "RGB"
+    },
+    {
+      "path": "04-environments/source-images/lake_mid_mask.png",
+      "bytes": 255069,
+      "sha256": "1e0d77e9500a3369a5dfc1fb8e6da23fb029c73e7babaffdef8f131fbf544b2f",
+      "width": 960,
+      "height": 180,
+      "mode": "RGB"
+    },
+    {
+      "path": "04-environments/source-images/lake_mid_src.png",
+      "bytes": 2484654,
+      "sha256": "d56c3aa6dc2f29dbd5ea8b03129d261ae305e9cdc14e4efebffd13c4d9f5b621",
+      "width": 1536,
+      "height": 1024,
+      "mode": "RGB"
+    },
+    {
+      "path": "04-environments/source-images/sc05_far_src.png",
+      "bytes": 1844180,
+      "sha256": "0099be47507227d4097c6956b4c20731e5774d39acdb171b6d89d256f3c8103f",
+      "width": 1536,
+      "height": 1024,
+      "mode": "RGB"
+    },
+    {
+      "path": "04-environments/source-images/sc05_mid_src.png",
+      "bytes": 2226986,
+      "sha256": "70531dbf61317df07dfb5408e610fa2897d2cdab63b2a6202c6cc9e75346b6a2",
+      "width": 1536,
+      "height": 1024,
+      "mode": "RGB"
+    },
+    {
+      "path": "05-effects-and-items/README.md",
+      "bytes": 492,
+      "sha256": "212354bff75e411b7223e839abd2d073d1b16df1f7285ad52572cf6870e09c29"
+    },
+    {
+      "path": "05-effects-and-items/effects/fx_breath.webp",
+      "bytes": 45490,
+      "sha256": "a74d8dd2f7b3b8023c31302589259eab126530766dd55f416173fb50ae2660ff",
+      "width": 768,
+      "height": 256,
+      "mode": "RGB"
+    },
+    {
+      "path": "05-effects-and-items/effects/fx_bridge.webp",
+      "bytes": 58566,
+      "sha256": "184b1797a07313db4866bb43e2e090735a4e85ddd505a930c7ea7e430e5a1dc5",
+      "width": 571,
+      "height": 540,
+      "mode": "RGBA"
+    },
+    {
+      "path": "05-effects-and-items/effects/fx_fireball.webp",
+      "bytes": 8746,
+      "sha256": "c97c80abd8310bd42cff0d6bee04b96ef2ce3f6adf615a0949981c1988db0396",
+      "width": 256,
+      "height": 128,
+      "mode": "RGB"
+    },
+    {
+      "path": "05-effects-and-items/effects/fx_mist.webp",
+      "bytes": 21308,
+      "sha256": "e77e4e4c3bb6b6fe68265a6664fef75d4b180e1d6e6f22cb4917a06567b8105d",
+      "width": 320,
+      "height": 320,
+      "mode": "RGB"
+    },
+    {
+      "path": "05-effects-and-items/effects/fx_misttex.webp",
+      "bytes": 21472,
+      "sha256": "728182b00c8eb9ff496d94c5ae4c4c7a8717a9512746e19401ac6c4c407bf8cb",
+      "width": 512,
+      "height": 220,
+      "mode": "RGB"
+    },
+    {
+      "path": "05-effects-and-items/effects/fx_orb.webp",
+      "bytes": 13018,
+      "sha256": "7a2cc2f96bff18192edfb12716c278da89dfb4b509544ae62ab4d8ee4d89dae3",
+      "width": 320,
+      "height": 320,
+      "mode": "RGB"
+    },
+    {
+      "path": "05-effects-and-items/effects/fx_ring.webp",
+      "bytes": 18662,
+      "sha256": "438e3f1c7574aa66f2ab79f010e004a564d66a0325509462c6a58c16ed84e8a0",
+      "width": 320,
+      "height": 320,
+      "mode": "RGB"
+    },
+    {
+      "path": "05-effects-and-items/effects/fx_swirl.webp",
+      "bytes": 22028,
+      "sha256": "86919b3d1b57fc63dd06c08721c56cdfdb4c58269a1bb5a0983c67c7d3cdc583",
+      "width": 360,
+      "height": 360,
+      "mode": "RGB"
+    },
+    {
+      "path": "05-effects-and-items/effects/fx_tidew.webp",
+      "bytes": 35090,
+      "sha256": "6e789f8a5bd2ba3494259f0392b7d57713a453025f938225309719535598f0ee",
+      "width": 768,
+      "height": 200,
+      "mode": "RGB"
+    },
+    {
+      "path": "05-effects-and-items/effects/fx_trail.webp",
+      "bytes": 39878,
+      "sha256": "197f98f74ff358444013ae3818eb550d76c25fe727babcbe2335c9e4264e5965",
+      "width": 768,
+      "height": 256,
+      "mode": "RGB"
+    },
+    {
+      "path": "05-effects-and-items/effects/fx_water.webp",
+      "bytes": 54764,
+      "sha256": "bbfd56383d0e894b7dae07aac6e73bba7404fbe88f45982afa21d5d50f700f55",
+      "width": 1024,
+      "height": 256,
+      "mode": "RGB"
+    },
+    {
+      "path": "05-effects-and-items/effects/fx_wdrop.webp",
+      "bytes": 5744,
+      "sha256": "790e32ace464ea9449e66c1915368b276506b244c0f30fd40a0cdb5a613636be",
+      "width": 160,
+      "height": 160,
+      "mode": "RGB"
+    },
+    {
+      "path": "05-effects-and-items/effects/fx_weak.webp",
+      "bytes": 4278,
+      "sha256": "696c5d50770f938deefdd895251290c6a56693ba7263b5d86fd78a4ef831b0aa",
+      "width": 200,
+      "height": 200,
+      "mode": "RGB"
+    },
+    {
+      "path": "05-effects-and-items/icons/bloom.png",
+      "bytes": 43988,
+      "sha256": "ad78e71872ba467059a2d297b34c8ead7e303b7b0a829eeb37d219172e1db4ee",
+      "width": 256,
+      "height": 250,
+      "mode": "RGBA"
+    },
+    {
+      "path": "05-effects-and-items/icons/flame.png",
+      "bytes": 50340,
+      "sha256": "d8de1465bd0d23775fc28c9f156bbaf3a620f77ee8f3d67967abd3e81ba3d909",
+      "width": 187,
+      "height": 256,
+      "mode": "RGBA"
+    },
+    {
+      "path": "05-effects-and-items/icons/heart.png",
+      "bytes": 62868,
+      "sha256": "08d6bc4b4badda92e811288142614bfe6b899837bc95b1a91ce59c5ad5bfc1c2",
+      "width": 256,
+      "height": 228,
+      "mode": "RGBA"
+    },
+    {
+      "path": "05-effects-and-items/items/cryFire.png",
+      "bytes": 5425,
+      "sha256": "e991b5302a44e615b0f04c0aa011250928041e1a606c56815cf48e073fe41a9b",
+      "width": 33,
+      "height": 64,
+      "mode": "RGBA"
+    },
+    {
+      "path": "05-effects-and-items/items/cryIce.png",
+      "bytes": 5538,
+      "sha256": "38b0a20f5e0069115f9c5891196e0c7f0ae664c101e2c79d59aaa2eb68bfdea0",
+      "width": 34,
+      "height": 64,
+      "mode": "RGBA"
+    },
+    {
+      "path": "05-effects-and-items/items/cup.png",
+      "bytes": 5713,
+      "sha256": "c82c99ad900c02785d8bfa556d651d107dd9cb3ba9460cfd5b188bdd204e3261",
+      "width": 47,
+      "height": 64,
+      "mode": "RGBA"
+    },
+    {
+      "path": "05-effects-and-items/items/energy.png",
+      "bytes": 9649,
+      "sha256": "e44dec84bf2bd0f380fa6649f66fcae893f52644dfc9d5e77a262c631a4dc9e2",
+      "width": 62,
+      "height": 64,
+      "mode": "RGBA"
+    },
+    {
+      "path": "05-effects-and-items/items/star.png",
+      "bytes": 7638,
+      "sha256": "1c951a6577bd10c3fda2ae10fce5fb82b7c99315636137a538d039be0835e9b7",
+      "width": 64,
+      "height": 64,
+      "mode": "RGBA"
+    },
+    {
+      "path": "06-music/README.md",
+      "bytes": 775,
+      "sha256": "6c50dcecc8a7f8e1274b62b05e1e98b773bae3681a9f47680f7dc31170a38258"
+    },
+    {
+      "path": "06-music/bgm_boss.mp3",
+      "bytes": 401544,
+      "sha256": "18d2a8f9866bde06f92efd321f41d70eacd3aa2ba3ec39de25558f1a08d5b8a6"
+    },
+    {
+      "path": "06-music/bgm_lose.mp3",
+      "bytes": 43509,
+      "sha256": "2ba528dd3bf1ded133d0de75c1673eb73dca961ab51268f70ac79ea5cf4123d5"
+    },
+    {
+      "path": "06-music/bgm_normal.mp3",
+      "bytes": 295173,
+      "sha256": "ec69fb1f2ebd80f27ade44d23911e4a35a0b028459c41f52eb297fd029b8d7a9"
+    },
+    {
+      "path": "06-music/bgm_win.mp3",
+      "bytes": 55578,
+      "sha256": "9cfcbe37bd64384e6eda6212cb4fc214dcd6f18b39dc1b78a5dd937584555ad0"
+    },
+    {
+      "path": "07-screenshots/README.md",
+      "bytes": 451,
+      "sha256": "663d198a303ce5deb25a58aa3818ad6640a1191cda829baab52efb961a222151"
+    },
+    {
+      "path": "07-screenshots/boss-scene.png",
+      "bytes": 447887,
+      "sha256": "7b84a78f748792e297a24d7eb742e063f34e6f497ea43447270fd0c5e9b36618",
+      "width": 844,
+      "height": 390,
+      "mode": "RGB"
+    },
+    {
+      "path": "07-screenshots/phone-game.png",
+      "bytes": 460854,
+      "sha256": "8551ed35294c04b78797419ac51f05ab64d22b6001eb8b8dd8180bf144ae4c81",
+      "width": 852,
+      "height": 393,
+      "mode": "RGB"
+    },
+    {
+      "path": "07-screenshots/phone-help.png",
+      "bytes": 281113,
+      "sha256": "922ff97a7a91c529979bf56c8088495d055805a6147485777d3173ffa962afa6",
+      "width": 852,
+      "height": 393,
+      "mode": "RGB"
+    },
+    {
+      "path": "07-screenshots/phone-lose.png",
+      "bytes": 445707,
+      "sha256": "d0aae3894384c6e579a946393c62b40a91011179ef6860022be8f8eb26d237ef",
+      "width": 852,
+      "height": 393,
+      "mode": "RGB"
+    },
+    {
+      "path": "07-screenshots/phone-pause.png",
+      "bytes": 287110,
+      "sha256": "1b3270f1b8efab64c0bf583c3c8d294167f3759123eea73f55ab6c38bb61b360",
+      "width": 852,
+      "height": 393,
+      "mode": "RGB"
+    },
+    {
+      "path": "07-screenshots/phone-title.png",
+      "bytes": 502992,
+      "sha256": "4278b2e30611776456126b7c8cc9eae392a3b31fda3f4b8cec6a6e43c8a4602f",
+      "width": 852,
+      "height": 393,
+      "mode": "RGB"
+    },
+    {
+      "path": "07-screenshots/phone-win.png",
+      "bytes": 491136,
+      "sha256": "c88c074715108c3f6a1a8edd80f6298e189f20521284e19293fe99f092728c0c",
+      "width": 852,
+      "height": 393,
+      "mode": "RGB"
+    },
+    {
+      "path": "07-screenshots/return-scene.png",
+      "bytes": 1064975,
+      "sha256": "6478272713ffdfca180549cc4b36bc5fc384ab1a1d026b23d80d0893218a969b",
+      "width": 1280,
+      "height": 720,
+      "mode": "RGB"
+    },
+    {
+      "path": "07-screenshots/tablet-game.png",
+      "bytes": 899104,
+      "sha256": "4280b755c182b4f62de9c788f37fd99fdcf6e1b046753319ea2d8eb5ea5709d5",
+      "width": 1024,
+      "height": 768,
+      "mode": "RGB"
+    },
+    {
+      "path": "07-screenshots/tablet-pause.png",
+      "bytes": 647191,
+      "sha256": "9e70dbeb4061dd8ba60d20e6c769bd3fa1ac1b1b57cfc89c10b73f34aa865244",
+      "width": 1024,
+      "height": 768,
+      "mode": "RGB"
+    },
+    {
+      "path": "07-screenshots/tablet-title.png",
+      "bytes": 1027942,
+      "sha256": "b9536c36e43722a4e5254e2e41afc6d23bc20370ff487d865fd72ad556962f8f",
+      "width": 1024,
+      "height": 768,
+      "mode": "RGB"
+    },
+    {
+      "path": "08-video-workflows/README.md",
+      "bytes": 2516,
+      "sha256": "6350c20daa79ff0e27b4d0166e1add1a9817cff6457d66378dd1bb414954b385"
+    },
+    {
+      "path": "08-video-workflows/dependencies.json",
+      "bytes": 2299,
+      "sha256": "aff62c71723a4581c9265beedff474ddf02866d5e7f16fc2044646dbe44b90ae"
+    },
+    {
+      "path": "08-video-workflows/inputs/witch_flight_green_v1_character_original.png",
+      "bytes": 1760451,
+      "sha256": "8bff2aba923105d1a7e1750e94cfb0bdbf661def0ed20b932929c3af0266c597",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGB"
+    },
+    {
+      "path": "08-video-workflows/inputs/witch_monster_v2_bat.png",
+      "bytes": 14907,
+      "sha256": "d3820a18d3bf58ba095778a74475d20302de238e98c0565727a49ed976b79443",
+      "width": 120,
+      "height": 110,
+      "mode": "RGBA"
+    },
+    {
+      "path": "08-video-workflows/inputs/witch_monster_v2_boss1.png",
+      "bytes": 64151,
+      "sha256": "2ce3d26c43b3de483971c906200c6bf97c2d2ca4d871fb29bff3e5945c8b7e77",
+      "width": 232,
+      "height": 250,
+      "mode": "RGBA"
+    },
+    {
+      "path": "08-video-workflows/inputs/witch_monster_v2_boss2.png",
+      "bytes": 56457,
+      "sha256": "c43bc1bce0d7e3339ad590ec2b25ff5b658c841735fb9f60bfc0a42cc599697c",
+      "width": 206,
+      "height": 250,
+      "mode": "RGBA"
+    },
+    {
+      "path": "08-video-workflows/inputs/witch_monster_v2_carrier.png",
+      "bytes": 10489,
+      "sha256": "5030f1644b92787b0d22cfc04cf6b5f7e35b3e0f23f181e85166949eeed8a951",
+      "width": 70,
+      "height": 110,
+      "mode": "RGBA"
+    },
+    {
+      "path": "08-video-workflows/inputs/witch_monster_v2_fish.png",
+      "bytes": 10040,
+      "sha256": "39117f1f19ac40adbdb2397d48f32f8692b63c74d98ffa0d3294c2a5c738146f",
+      "width": 77,
+      "height": 110,
+      "mode": "RGBA"
+    },
+    {
+      "path": "08-video-workflows/inputs/witch_monster_v2_head.png",
+      "bytes": 7606,
+      "sha256": "c53213e01cbdf52330bb52586d227d0222c3822c848ec1c20d04d3164e583e91",
+      "width": 84,
+      "height": 110,
+      "mode": "RGBA"
+    },
+    {
+      "path": "08-video-workflows/inputs/witch_monster_v2_imp.png",
+      "bytes": 9476,
+      "sha256": "834b8751ea77cefb5a5b73ac41d52ed4aa4434fbda0f25ef5e3c2a299d45cfa3",
+      "width": 79,
+      "height": 110,
+      "mode": "RGBA"
+    },
+    {
+      "path": "08-video-workflows/witch_flight_green_v1/02_api.json",
+      "bytes": 8049,
+      "sha256": "1e12e66d10355faf0f9209ba99615cbf535dc29348be4eb2b8d1306a12bdb7fc"
+    },
+    {
+      "path": "08-video-workflows/witch_flight_green_v1/02_prompt_en.txt",
+      "bytes": 4754,
+      "sha256": "14b1682558dfa2d7aa8dc964c15ec1a1ad7a318aa5348ce9f5c64d36cd6a0f9a"
+    },
+    {
+      "path": "08-video-workflows/witch_flight_green_v1/03_api.json",
+      "bytes": 8368,
+      "sha256": "58b972318985e4def75d87dc2f3eeae1117ddad06581f106082da2a63817d3df"
+    },
+    {
+      "path": "08-video-workflows/witch_flight_green_v1/03_prompt_en.txt",
+      "bytes": 5073,
+      "sha256": "a927c60727a911dd4ff4972095e850ad9428a93aeb5d2e7427d55c305622bde0"
+    },
+    {
+      "path": "08-video-workflows/witch_flight_green_v1/README.md",
+      "bytes": 567,
+      "sha256": "1d9e6a96d698812d3d27bd8901eda98842a3a22b8b7905081c8036e84337ccc8"
+    },
+    {
+      "path": "08-video-workflows/witch_flight_green_v1/小魔女_02_飞行_短施法_绿幕_5秒_H3v038_Turbo6_手动开始.json",
+      "bytes": 26918,
+      "sha256": "bfe288e969d77093ea768957806ab9fea74e0fbd1a806911a52f3a3ff76d5955"
+    },
+    {
+      "path": "08-video-workflows/witch_flight_green_v1/小魔女_03_飞行_长施法_绿幕_10秒_H3v038_Turbo6_手动开始.json",
+      "bytes": 27549,
+      "sha256": "5cbcbdfa89f9ee79d35b993e9ee06e7ee018d68807c2bb72fb44562a14bf7c89"
+    },
+    {
+      "path": "08-video-workflows/witch_flight_green_v2/01A_api.json",
+      "bytes": 8244,
+      "sha256": "c52cb0c6f1ad0c04432f1e7653f2e1f37595e642b3350404000f1d2546db25df"
+    },
+    {
+      "path": "08-video-workflows/witch_flight_green_v2/01A_prompt_en.txt",
+      "bytes": 4939,
+      "sha256": "a7366d43eea0f92241d842266d5df71a71ca7d783c9476dd45e9f66c20475287"
+    },
+    {
+      "path": "08-video-workflows/witch_flight_green_v2/01B_api.json",
+      "bytes": 9097,
+      "sha256": "18c3ef909ef5e2a51a82f29f532c797e31b99ab2e190e5d62da50897cf9537e6"
+    },
+    {
+      "path": "08-video-workflows/witch_flight_green_v2/01B_prompt_en.txt",
+      "bytes": 5791,
+      "sha256": "b220bf9e3dc6e9b9092a89a120fa44b008e0e04a5836ec3cceb832a4362b5510"
+    },
+    {
+      "path": "08-video-workflows/witch_flight_green_v2/README.md",
+      "bytes": 591,
+      "sha256": "84c3708473a24b89f3b1a9253940310c28bb1f579ab4353e62669505c7b870c6"
+    },
+    {
+      "path": "08-video-workflows/witch_flight_green_v2/小魔女_01A_平稳飞行_绝不施法_绿幕_5秒_V2_Turbo6_手动开始.json",
+      "bytes": 27237,
+      "sha256": "550ed740542c0b46a3d4a3990ad277e7cc0f6be3812826d665d94507408be644"
+    },
+    {
+      "path": "08-video-workflows/witch_flight_green_v2/小魔女_01B_加速飞行_绝不施法_绿幕_5秒_V2_Turbo6_手动开始.json",
+      "bytes": 29033,
+      "sha256": "3811589923407403316c20ae023137be17ad427bf3174de7380ae696d710958e"
+    },
+    {
+      "path": "08-video-workflows/witch_monsters_v2_threequarter/01_api.json",
+      "bytes": 7095,
+      "sha256": "caef2d0fdbd6a4e3beb9413494a246c2a73da3938e01dd4bce2a6e959213522b"
+    },
+    {
+      "path": "08-video-workflows/witch_monsters_v2_threequarter/01_prompt_en.txt",
+      "bytes": 1757,
+      "sha256": "bdf79d9d6c3d14281542773132e70c576b168efaa0f06b4851d4593259c85d34"
+    },
+    {
+      "path": "08-video-workflows/witch_monsters_v2_threequarter/02_api.json",
+      "bytes": 6934,
+      "sha256": "39392ddc81e218af7020eaa5a2a5209819513b17e3869f12360e439428abb415"
+    },
+    {
+      "path": "08-video-workflows/witch_monsters_v2_threequarter/02_prompt_en.txt",
+      "bytes": 1901,
+      "sha256": "64474b5fad50ac2ea5071e27ddaaffd0539440648f3a61ba1c0ed013bfad587d"
+    },
+    {
+      "path": "08-video-workflows/witch_monsters_v2_threequarter/03_api.json",
+      "bytes": 7104,
+      "sha256": "888db44cf08e35d1c74583995e112dfbac1fd0c4be615d4b3ca37c01a471bbca"
+    },
+    {
+      "path": "08-video-workflows/witch_monsters_v2_threequarter/03_prompt_en.txt",
+      "bytes": 1763,
+      "sha256": "4c2c314f201ec663677f5d700cfd5da3950a2ab4dc466a7d70e5abb04eb7016d"
+    },
+    {
+      "path": "08-video-workflows/witch_monsters_v2_threequarter/04_api.json",
+      "bytes": 7740,
+      "sha256": "0abefa5d7ebfbc6b50976a706f4a4db50fbc2286070b0ae29e407e01ac3facd9"
+    },
+    {
+      "path": "08-video-workflows/witch_monsters_v2_threequarter/04_prompt_en.txt",
+      "bytes": 2397,
+      "sha256": "6fc3015007fb0900963f5d0ade5e07cc84fa03b03d80b844e077d2a0113446d8"
+    },
+    {
+      "path": "08-video-workflows/witch_monsters_v2_threequarter/05_api.json",
+      "bytes": 7148,
+      "sha256": "cb12a3d214a54eb46e1463bc64e1093c20bf14dfd25e8f56ede9f3bfb493e517"
+    },
+    {
+      "path": "08-video-workflows/witch_monsters_v2_threequarter/05_prompt_en.txt",
+      "bytes": 1806,
+      "sha256": "a016e01de891d8d34e97e62dd4ad8723d9123e61433899bf926a03d5c7f2d893"
+    },
+    {
+      "path": "08-video-workflows/witch_monsters_v2_threequarter/06_api.json",
+      "bytes": 6929,
+      "sha256": "d991c060b5f4364cd97fa258fac43829f1409bbf706bd9c9bee70333c0dd2ee1"
+    },
+    {
+      "path": "08-video-workflows/witch_monsters_v2_threequarter/06_prompt_en.txt",
+      "bytes": 1895,
+      "sha256": "ae7cac87e3a39779bb5abd27b1eb6ccf43a86bb0a4392db39a3aaaf064d5b64f"
+    },
+    {
+      "path": "08-video-workflows/witch_monsters_v2_threequarter/07_api.json",
+      "bytes": 6926,
+      "sha256": "f08f95c6efaa3ecd7b9d3c964db2ee73756b5b301ac6dbd39abd6a3f80ca4623"
+    },
+    {
+      "path": "08-video-workflows/witch_monsters_v2_threequarter/07_prompt_en.txt",
+      "bytes": 1889,
+      "sha256": "c31d9686eefdd187beff5ced57df33bd273172bae431a7a7dd58b12d38f3062b"
+    },
+    {
+      "path": "08-video-workflows/witch_monsters_v2_threequarter/08_api.json",
+      "bytes": 7307,
+      "sha256": "2cc16fa36858318e31decd2749704cb2d651c7b459369b07d774b3d0908ecab2"
+    },
+    {
+      "path": "08-video-workflows/witch_monsters_v2_threequarter/08_prompt_en.txt",
+      "bytes": 1965,
+      "sha256": "c9102246e355f74841daad1b589c500d37110ad642fc11abe0b4a2dd543fc848"
+    },
+    {
+      "path": "08-video-workflows/witch_monsters_v2_threequarter/09_api.json",
+      "bytes": 7893,
+      "sha256": "5630eba53cf5748ae9628ee73d3411cc9b9e1a50e511b3f460ce344277b1b526"
+    },
+    {
+      "path": "08-video-workflows/witch_monsters_v2_threequarter/09_prompt_en.txt",
+      "bytes": 2246,
+      "sha256": "0f9bf6415fc1a4d259cba93a4d2533a49145850b163099ae3afa99fbb302bc7a"
+    },
+    {
+      "path": "08-video-workflows/witch_monsters_v2_threequarter/10_api.json",
+      "bytes": 6975,
+      "sha256": "021620c6ec809f495261af31ef0104a7995a90f4345dcb336f7831fec094618b"
+    },
+    {
+      "path": "08-video-workflows/witch_monsters_v2_threequarter/10_prompt_en.txt",
+      "bytes": 1938,
+      "sha256": "a69d40bb23c14950950e81ef85a6843e1cebfc0e2b0fbc11a58d95a60e1e5656"
+    },
+    {
+      "path": "08-video-workflows/witch_monsters_v2_threequarter/11_api.json",
+      "bytes": 7076,
+      "sha256": "0cce44d8afa6ae7427fc8751deebdff495d91023156b0bb4176f807877f93660"
+    },
+    {
+      "path": "08-video-workflows/witch_monsters_v2_threequarter/11_prompt_en.txt",
+      "bytes": 1739,
+      "sha256": "201ffada34c25000e2b0c21b95c64a612503f6aa40745f898a2d828c354ead54"
+    },
+    {
+      "path": "08-video-workflows/witch_monsters_v2_threequarter/12_api.json",
+      "bytes": 7112,
+      "sha256": "667ad8359a189770ab5b94605ab3cc3c952c826b583009e3ba60dcfa15cd7b5f"
+    },
+    {
+      "path": "08-video-workflows/witch_monsters_v2_threequarter/12_prompt_en.txt",
+      "bytes": 1774,
+      "sha256": "cfb3ba29c8b1fcb3f18a613d9f75868835732f7ce29e26b602975a0d50c4128e"
+    },
+    {
+      "path": "08-video-workflows/witch_monsters_v2_threequarter/13_api.json",
+      "bytes": 7656,
+      "sha256": "5f13190a95ecd2b7405b995efcbf77040ef997bf3f5afcc3c9923b573216562e"
+    },
+    {
+      "path": "08-video-workflows/witch_monsters_v2_threequarter/13_prompt_en.txt",
+      "bytes": 2320,
+      "sha256": "46877eb55169a0598091c78e4c99fbd3a12bf022034a5f31015ea41d6b43865f"
+    },
+    {
+      "path": "08-video-workflows/witch_monsters_v2_threequarter/14_api.json",
+      "bytes": 7204,
+      "sha256": "3f21a79d28553a60d78f0cd381854077b24989f298e95ba2a8b77d902bbc965b"
+    },
+    {
+      "path": "08-video-workflows/witch_monsters_v2_threequarter/14_prompt_en.txt",
+      "bytes": 2173,
+      "sha256": "7ac9c251a62a09bd5e428c4c3f63f3611e75494037f768f18df25ab56271f911"
+    },
+    {
+      "path": "08-video-workflows/witch_monsters_v2_threequarter/README.md",
+      "bytes": 3376,
+      "sha256": "39d1a8932240c7a48b8858411c2de155daf2c7c4eab90f076a346703b9e566da"
+    },
+    {
+      "path": "08-video-workflows/witch_monsters_v2_threequarter/小魔女怪物_01_EN04_桥洞雾怪_雾须呼吸循环_朝左三分之四_绿幕8秒_V2_手动开始.json",
+      "bytes": 45816,
+      "sha256": "58eb9990d448789be028872e3d9de3ffca186eff09f718e09727e6e1f108f483"
+    },
+    {
+      "path": "08-video-workflows/witch_monsters_v2_threequarter/小魔女怪物_02_EN04_桥洞雾怪_鼓腮双雾攻击_朝左三分之四_绿幕8秒_V2_手动开始.json",
+      "bytes": 44454,
+      "sha256": "b178e146702dd77085c0921978de62aaab54702838874a054dc774d59a78bdaf"
+    },
+    {
+      "path": "08-video-workflows/witch_monsters_v2_threequarter/小魔女怪物_03_EN03_吞光灯怪_提灯呼吸循环_朝左三分之四_绿幕8秒_V2_手动开始.json",
+      "bytes": 45840,
+      "sha256": "def912d47bc6c31d90d51bb9e6046c18063436377bff698ae42d8e0cd87df351"
+    },
+    {
+      "path": "08-video-workflows/witch_monsters_v2_threequarter/小魔女怪物_04_EN03_吞光灯怪_受惊吐雾攻击_朝左三分之四_绿幕8秒_V2_手动开始.json",
+      "bytes": 47254,
+      "sha256": "31ec4c20caeb080ad2da47912e00c7140401f7f4699c5570333a22067390c7a9"
+    },
+    {
+      "path": "08-video-workflows/witch_monsters_v2_threequarter/小魔女怪物_05_EN06_打盹的夜团_无脚打盹循环_朝左三分之四_绿幕8秒_V2_手动开始.json",
+      "bytes": 46123,
+      "sha256": "2d1af69aef4af316b1e22eb2146a3d7f86cd9f5faaa978ea2a05574f2eac249b"
+    },
+    {
+      "path": "08-video-workflows/witch_monsters_v2_threequarter/小魔女怪物_06_EN06_打盹的夜团_哈欠三连吐_朝左三分之四_绿幕8秒_V2_手动开始.json",
+      "bytes": 44600,
+      "sha256": "3b93a7f80b59304736a54a48d14ec91bdcaba2950fa14d8503e4f9003e698d00"
+    },
+    {
+      "path": "08-video-workflows/witch_monsters_v2_threequarter/小魔女怪物_07_EN06_打盹的夜团_松团散雾本体_朝左三分之四_绿幕8秒_V2_手动开始.json",
+      "bytes": 44699,
+      "sha256": "be6a4254ae57ba83e9e6318d8ad2bfe27b5a1cb8de9bf37aff77467fc5d64b69"
+    },
+    {
+      "path": "08-video-workflows/witch_monsters_v2_threequarter/小魔女怪物_08_EN07_湖边大夜怪_无脚云团循环_朝左三分之四_绿幕8秒_V2_手动开始.json",
+      "bytes": 46471,
+      "sha256": "ddceac641beb8f5fefce64f6181179fdbfe427931c77e1193d54eda07b8fb6d4"
+    },
+    {
+      "path": "08-video-workflows/witch_monsters_v2_threequarter/小魔女怪物_09_EN07_湖边大夜怪_夜雾横推本体_朝左三分之四_绿幕8秒_V2_手动开始.json",
+      "bytes": 48919,
+      "sha256": "a3bc81765bcfb071386c639aa5d31022c29c4cf9929b15d408903a0004d2d3c1"
+    },
+    {
+      "path": "08-video-workflows/witch_monsters_v2_threequarter/小魔女怪物_10_EN07_湖边大夜怪_追光雾球本体_朝左三分之四_绿幕8秒_V2_手动开始.json",
+      "bytes": 44773,
+      "sha256": "9fe590921b25bb3a0f5e0fbbb988ec1fdbfb5af5b3660f8a1aff93e3ff6ebe39"
+    },
+    {
+      "path": "08-video-workflows/witch_monsters_v2_threequarter/小魔女怪物_11_EN01_蓝翼夜怪_短翼飞行循环_朝左三分之四_绿幕8秒_V2_手动开始.json",
+      "bytes": 45778,
+      "sha256": "4096d6d419faa33d6ad2d3e04eec8bd541bccce61318650a01e4b56bb7ea4034"
+    },
+    {
+      "path": "08-video-workflows/witch_monsters_v2_threequarter/小魔女怪物_12_EN02_雾鳍飞鱼_摆尾游雾循环_朝左三分之四_绿幕8秒_V2_手动开始.json",
+      "bytes": 45892,
+      "sha256": "3f53c6b84e668020d22c215ae1cf0185d9d2a604cae0bcfbef638ab5099f1b19"
+    },
+    {
+      "path": "08-video-workflows/witch_monsters_v2_threequarter/小魔女怪物_13_EN05_暮影蝠_长翼飞行循环_朝左三分之四_绿幕8秒_V2_手动开始.json",
+      "bytes": 46923,
+      "sha256": "3ab8c8b8e6b2b0411608afda7d3d4d8c1bde3babf7ab5c5c4ec7ee4e7c0e5b0c"
+    },
+    {
+      "path": "08-video-workflows/witch_monsters_v2_threequarter/小魔女怪物_14_EN05_暮影蝠_折翼蓄力俯冲_朝左三分之四_绿幕8秒_V2_手动开始.json",
+      "bytes": 45041,
+      "sha256": "b5950779dfe776544de2cd91a4fdd42212e9ef800fb7b86ccc7986bcecefffaa"
+    },
+    {
+      "path": "08-video-workflows/workflow-index.json",
+      "bytes": 11936,
+      "sha256": "383f7041d964e07c3423a5c1e5bb0ba05674a725f466a6281b00c0402514cbdf"
+    },
+    {
+      "path": "DEPENDENCIES.md",
+      "bytes": 3837,
+      "sha256": "908d3928e016821887487f27f86a745b03203f8f31f688a00b02a21447ad99d4"
+    },
+    {
+      "path": "README.md",
+      "bytes": 3394,
+      "sha256": "46c9aa9f5c33e994818c42e888747d78bf4248d05092ba240c6662194d8d8268"
+    },
+    {
+      "path": "index.html",
+      "bytes": 8976069,
+      "sha256": "38972e85633734a46d1fca9ae68e94a9722592efcd7148ed117ddb85e61f35b7"
+    },
+    {
+      "path": "requirements-assets.txt",
+      "bytes": 234,
+      "sha256": "540ad77f69dc15e8958bfd5b266cf285978f7eba03043c74a47cdb4c0df6c0f5"
+    },
+    {
+      "path": "src/art/fx_breath.webp",
+      "bytes": 45490,
+      "sha256": "a74d8dd2f7b3b8023c31302589259eab126530766dd55f416173fb50ae2660ff",
+      "width": 768,
+      "height": 256,
+      "mode": "RGB"
+    },
+    {
+      "path": "src/art/fx_bridge.webp",
+      "bytes": 58566,
+      "sha256": "184b1797a07313db4866bb43e2e090735a4e85ddd505a930c7ea7e430e5a1dc5",
+      "width": 571,
+      "height": 540,
+      "mode": "RGBA"
+    },
+    {
+      "path": "src/art/fx_fireball.webp",
+      "bytes": 8746,
+      "sha256": "c97c80abd8310bd42cff0d6bee04b96ef2ce3f6adf615a0949981c1988db0396",
+      "width": 256,
+      "height": 128,
+      "mode": "RGB"
+    },
+    {
+      "path": "src/art/fx_mist.webp",
+      "bytes": 21308,
+      "sha256": "e77e4e4c3bb6b6fe68265a6664fef75d4b180e1d6e6f22cb4917a06567b8105d",
+      "width": 320,
+      "height": 320,
+      "mode": "RGB"
+    },
+    {
+      "path": "src/art/fx_misttex.webp",
+      "bytes": 21472,
+      "sha256": "728182b00c8eb9ff496d94c5ae4c4c7a8717a9512746e19401ac6c4c407bf8cb",
+      "width": 512,
+      "height": 220,
+      "mode": "RGB"
+    },
+    {
+      "path": "src/art/fx_orb.webp",
+      "bytes": 13018,
+      "sha256": "7a2cc2f96bff18192edfb12716c278da89dfb4b509544ae62ab4d8ee4d89dae3",
+      "width": 320,
+      "height": 320,
+      "mode": "RGB"
+    },
+    {
+      "path": "src/art/fx_ring.webp",
+      "bytes": 18662,
+      "sha256": "438e3f1c7574aa66f2ab79f010e004a564d66a0325509462c6a58c16ed84e8a0",
+      "width": 320,
+      "height": 320,
+      "mode": "RGB"
+    },
+    {
+      "path": "src/art/fx_swirl.webp",
+      "bytes": 22028,
+      "sha256": "86919b3d1b57fc63dd06c08721c56cdfdb4c58269a1bb5a0983c67c7d3cdc583",
+      "width": 360,
+      "height": 360,
+      "mode": "RGB"
+    },
+    {
+      "path": "src/art/fx_tidew.webp",
+      "bytes": 35090,
+      "sha256": "6e789f8a5bd2ba3494259f0392b7d57713a453025f938225309719535598f0ee",
+      "width": 768,
+      "height": 200,
+      "mode": "RGB"
+    },
+    {
+      "path": "src/art/fx_trail.webp",
+      "bytes": 39878,
+      "sha256": "197f98f74ff358444013ae3818eb550d76c25fe727babcbe2335c9e4264e5965",
+      "width": 768,
+      "height": 256,
+      "mode": "RGB"
+    },
+    {
+      "path": "src/art/fx_water.webp",
+      "bytes": 54764,
+      "sha256": "bbfd56383d0e894b7dae07aac6e73bba7404fbe88f45982afa21d5d50f700f55",
+      "width": 1024,
+      "height": 256,
+      "mode": "RGB"
+    },
+    {
+      "path": "src/art/fx_wdrop.webp",
+      "bytes": 5744,
+      "sha256": "790e32ace464ea9449e66c1915368b276506b244c0f30fd40a0cdb5a613636be",
+      "width": 160,
+      "height": 160,
+      "mode": "RGB"
+    },
+    {
+      "path": "src/art/fx_weak.webp",
+      "bytes": 4278,
+      "sha256": "696c5d50770f938deefdd895251290c6a56693ba7263b5d86fd78a4ef831b0aa",
+      "width": 200,
+      "height": 200,
+      "mode": "RGB"
+    },
+    {
+      "path": "src/art/icons/bloom.png",
+      "bytes": 43988,
+      "sha256": "ad78e71872ba467059a2d297b34c8ead7e303b7b0a829eeb37d219172e1db4ee",
+      "width": 256,
+      "height": 250,
+      "mode": "RGBA"
+    },
+    {
+      "path": "src/art/icons/flame.png",
+      "bytes": 50340,
+      "sha256": "d8de1465bd0d23775fc28c9f156bbaf3a620f77ee8f3d67967abd3e81ba3d909",
+      "width": 187,
+      "height": 256,
+      "mode": "RGBA"
+    },
+    {
+      "path": "src/art/icons/heart.png",
+      "bytes": 62868,
+      "sha256": "08d6bc4b4badda92e811288142614bfe6b899837bc95b1a91ce59c5ad5bfc1c2",
+      "width": 256,
+      "height": 228,
+      "mode": "RGBA"
+    },
+    {
+      "path": "src/art/lake_far.webp",
+      "bytes": 102588,
+      "sha256": "4e7a5dcf970ba4ef3cfa5e537f0184c3c5d515458ff28c728d0d59dcf582219d",
+      "width": 2720,
+      "height": 326,
+      "mode": "RGBA"
+    },
+    {
+      "path": "src/art/lake_mid.webp",
+      "bytes": 293532,
+      "sha256": "ebf2a0dc6885fc8846e1de4d8a8f923b932b8ab8063995ddf65d215f353c5f0f",
+      "width": 1920,
+      "height": 320,
+      "mode": "RGBA"
+    },
+    {
+      "path": "src/art/sc05.webp",
+      "bytes": 185034,
+      "sha256": "f0d4fa27108b172e9ac138ea01c64df861e46e47c991ba6e76921e64cd19807a",
+      "width": 1920,
+      "height": 540,
+      "mode": "RGBA"
+    },
+    {
+      "path": "src/art/title_bg.webp",
+      "bytes": 218832,
+      "sha256": "f154dc37318db443837b1207deba899b76540d66d4798180c2ab3be4a73398ad",
+      "width": 1600,
+      "height": 1066,
+      "mode": "RGB"
+    },
+    {
+      "path": "src/art/witch_lose.webp",
+      "bytes": 192464,
+      "sha256": "dd7657f4a858e51ace730ecbef67d5bb4581d40846123c43a0611c349ef1ff00",
+      "width": 977,
+      "height": 1316,
+      "mode": "RGBA"
+    },
+    {
+      "path": "src/art/witch_title.webp",
+      "bytes": 137084,
+      "sha256": "fc0c033d7913b5136e1c5279b4d3680b5e138134cb421cc4385bb6052da5b8bb",
+      "width": 917,
+      "height": 914,
+      "mode": "RGBA"
+    },
+    {
+      "path": "src/assets.json",
+      "bytes": 4969939,
+      "sha256": "297d73602d4acce8b4e1f99b65e438c93aea950fdeb065daea83552dfaad27c1"
+    },
+    {
+      "path": "src/audio/bgm_boss.mp3",
+      "bytes": 401544,
+      "sha256": "18d2a8f9866bde06f92efd321f41d70eacd3aa2ba3ec39de25558f1a08d5b8a6"
+    },
+    {
+      "path": "src/audio/bgm_lose.mp3",
+      "bytes": 43509,
+      "sha256": "2ba528dd3bf1ded133d0de75c1673eb73dca961ab51268f70ac79ea5cf4123d5"
+    },
+    {
+      "path": "src/audio/bgm_normal.mp3",
+      "bytes": 295173,
+      "sha256": "ec69fb1f2ebd80f27ade44d23911e4a35a0b028459c41f52eb297fd029b8d7a9"
+    },
+    {
+      "path": "src/audio/bgm_win.mp3",
+      "bytes": 55578,
+      "sha256": "9cfcbe37bd64384e6eda6212cb4fc214dcd6f18b39dc1b78a5dd937584555ad0"
+    },
+    {
+      "path": "src/game.src.js",
+      "bytes": 434060,
+      "sha256": "dc3d88199b2b95de295494520a0e33114ace16337575288fab2dfbddd819404e"
+    },
+    {
+      "path": "src/shell.html",
+      "bytes": 342690,
+      "sha256": "1ac46d81309f47f96a43843e9b9d60a16d900a24e9cf3bbe6e38e73f87f24758"
+    },
+    {
+      "path": "tools/README.md",
+      "bytes": 489,
+      "sha256": "49e651e4d86f0fd9670184351a2448cea314a00736efe3e6e1690b0d37808717"
+    },
+    {
+      "path": "tools/build.py",
+      "bytes": 3633,
+      "sha256": "2825db0851b96cb8746d2ef28dda768befc690e743109104b936692412b9dea8"
+    },
+    {
+      "path": "tools/clean_green_video.py",
+      "bytes": 2668,
+      "sha256": "e65208e0b2bcd88d404fde4097e88267b84128f06aecb15ae665a80c8ca366c4"
+    },
+    {
+      "path": "tools/syntax.js",
+      "bytes": 975,
+      "sha256": "302b40e68e71677ca7daf60845a850f0416830b6c885d732b7fab0701b872839"
+    },
+    {
+      "path": "使用说明.html",
+      "bytes": 32825,
+      "sha256": "d81b46d0670c41d8e81e991a34537ecd553250bfaa3da1141e234a6096c4a112"
+    },
+    {
+      "path": "素材总览.html",
+      "bytes": 22537,
+      "sha256": "7adbd0618762d48f3e07dfa3be5edebffd030a56994f8f617824574eb6539ab7"
+    },
+    {
+      "path": "素材来源与使用说明.md",
+      "bytes": 2054,
+      "sha256": "74538780371f170fbd4d06fd493e90d62766bfc2280e7924dc7f9f111bda0169"
+    }
+  ]
+}
