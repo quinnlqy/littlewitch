@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>小魔女夜巡 原型策划初稿</title>
+<style>
+:root{color-scheme:light;font-family:"Microsoft YaHei","PingFang SC",sans-serif;color:#24242a;background:#eae9ed;font-synthesis:none}
+*{box-sizing:border-box}body{margin:0;padding:30px 20px 50px}.paper{max-width:930px;margin:0 auto 26px;padding:48px 58px;background:#fff;box-shadow:0 4px 24px #2221}.eyebrow{font-size:14px;color:#68636f;letter-spacing:1px}h1{font-size:33px;line-height:1.4;margin:12px 0 10px;font-weight:700;color:#19191e}h2{font-size:22px;margin:25px 0 12px;color:#19191e}p,li,td,th{font-size:16px;line-height:1.85}p{margin:9px 0}ul{padding-left:23px;margin:8px 0}li{margin:3px 0}.intro{color:#65616c;font-size:14px;margin-bottom:24px}.flow{padding:17px 20px;background:#f4f1f8;border-left:3px solid #88719d;font-size:17px;line-height:2}.note{font-size:13px;color:#6c6674;line-height:1.8}.footer{display:flex;justify-content:space-between;border-top:1px solid #e7e4eb;padding-top:15px;margin-top:28px;color:#77717e;font-size:12px}table{width:100%;border-collapse:collapse;margin:10px 0}th,td{border:1px solid #dedbe4;padding:9px 12px;text-align:left;vertical-align:top}th{background:#f3f1f6;font-weight:600}th:first-child,td:first-child{width:112px;white-space:nowrap}td{font-size:15px;line-height:1.75}.roadmap th:first-child,.roadmap td:first-child{width:126px}.roadmap th:nth-child(2){width:210px}.checks{display:grid;grid-template-columns:1fr 1fr;gap:8px 24px;padding:0;list-style:none}.checks li{position:relative;padding-left:19px;font-size:15px}.checks li::before{content:"□";position:absolute;left:0;color:#777}.compact{margin-bottom:5px}
+@media(max-width:700px){body{padding:12px 8px}.paper{padding:27px 22px}h1{font-size:27px}h2{font-size:21px}p,li,td,th{font-size:15px}.checks{grid-template-columns:1fr}.table-wrap{overflow-x:auto}.roadmap{min-width:650px}}
+@media print{@page{size:A4;margin:13mm 14mm}body{padding:0;background:#fff}.paper{box-shadow:none;max-width:none;padding:0;margin:0;break-after:page}.paper:last-child{break-after:auto}h1{font-size:26px}h2{font-size:18px;margin:17px 0 8px}p,li{font-size:12px;line-height:1.7}td,th{font-size:11px;line-height:1.6;padding:7px 9px}.intro,.eyebrow{font-size:11px}.flow{font-size:13px;padding:12px 15px}.checks li{font-size:11px}.note{font-size:10px}.footer{font-size:9px;margin-top:18px}.table-wrap{overflow:visible}.roadmap{min-width:0}h2,table,.flow{break-inside:avoid}h2{break-after:avoid}a{color:inherit}}
+.illustration{margin:19px 0 23px;border:1px solid #e3dee9;border-radius:10px;overflow:hidden;background:#faf9fc;break-inside:avoid}.illustration>img{display:block;width:100%;height:auto;max-height:320px;object-fit:contain}.illustration.game-image>img{background:#1b1429}.illustration.character-image>img{background:#e7e3da;max-height:340px}.illustration figcaption{padding:10px 15px;color:#696271;font-size:13px;line-height:1.75;border-top:1px solid #e8e3ed}.illustration figcaption strong{color:#45404e;font-weight:600}.enemy-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1px;background:#e3dee9}.enemy-card{min-width:0;padding:17px 10px 13px;text-align:center;background:#f4f1f8}.enemy-art{height:113px;display:flex;align-items:center;justify-content:center}.enemy-art img{display:block;max-width:136px;max-height:105px;width:auto;height:auto;object-fit:contain}.enemy-card b{display:block;margin-top:9px;font-size:14px;color:#4a4056;font-weight:600}
+@media(max-width:700px){.illustration{margin:15px 0 20px}.illustration>img,.illustration.character-image>img{max-height:280px}.illustration figcaption{font-size:12px;padding:9px 12px}.enemy-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.enemy-art{height:94px}.enemy-art img{max-height:88px;max-width:112px}.enemy-card{padding:12px 7px}.enemy-card b{font-size:13px}}
+@media print{.illustration{margin:10px 0 14px;break-inside:avoid;border-radius:4px}.illustration>img{max-height:150px}.illustration.character-image>img{max-height:170px}.illustration figcaption{font-size:9px;padding:6px 9px}.enemy-grid{grid-template-columns:repeat(4,minmax(0,1fr))}.enemy-card{padding:8px 6px}.enemy-art{height:65px}.enemy-art img{max-height:61px;max-width:95px}.enemy-card b{font-size:10px;margin-top:5px}}
+</style>
+</head>
+<body>
+<main>
+<article class="paper">
+<div class="eyebrow">原型设计 · 教学整理版</div>
+<h1>小魔女夜巡 原型策划初稿</h1>
+<p class="intro">按本期口播中的玩法方向重新整理，供讲解与首轮试做使用。</p>
+<h2>1 游戏概念</h2>
+<p>一款单人横版射击闯关游戏。玩家控制骑扫帚的小魔女，在夜晚的湖边飞行，击败夜怪、收集微光、强化射击，最后打败关底首领，让村庄恢复安静。</p>
+<p>第一版采用 H5 网页形式，先用像素图或简单图形做出一关能从开始玩到结束的原型，验证操作和战斗节奏。</p>
+<figure class="illustration game-image">
+<img src="assets/prototype-game.png" alt="项目早期试玩画面：小魔女在月夜湖畔向右射击，前方有夜怪与收集物" width="960" height="540">
+<figcaption><strong>早期试玩画面参考。</strong>用来说明夜间湖畔、横向飞行与连续射击的呈现方式；界面和数值以本稿的第一版方案为准。</figcaption>
+</figure>
+<h2>2 玩家能做什么</h2>
+<ul><li>在屏幕内上下左右飞行，调整位置，躲开怪物和敌弹。</li><li>向右连续发射魔法弹，击败前方的敌人。</li><li>收集击败怪物后掉落的微光，让普通射击逐渐变强。</li><li>暂停、继续，以及失败或通关后重新开始。</li></ul>
+<p>场景自动向前推进。湖面、房屋和石桥作为背景，保持飞行区域清楚可见。</p>
+<h2>3 基础规则</h2>
+<table><thead><tr><th>项目</th><th>第一版方案</th></tr></thead><tbody>
+<tr><td>桌面操作</td><td>方向键或 WASD 移动，按住空格或 J 射击。</td></tr>
+<tr><td>触屏操作</td><td>左侧拖动控制飞行，战斗中自动射击，右上角暂停。</td></tr>
+<tr><td>生命</td><td>开局 5 点；碰到怪物或敌弹扣 1 点，受伤后短暂无敌并闪烁提示。</td></tr>
+<tr><td>收集成长</td><td>微光自动靠近并被回收；累计 10 颗升至二级、30 颗升至三级。</td></tr>
+<tr><td>射击变化</td><td>一级单发；二级三发；三级保留三发并提高威力；升级时显示短提示。</td></tr>
+<tr><td>通关</td><td>玩家存活，击败中首领与关底首领，完成短暂返程后进入通关结算。</td></tr>
+<tr><td>失败与重开</td><td>生命归零后停止战斗，显示失败与重新开始按钮。重开回到起点，生命、成长、敌人和进度恢复初始状态。</td></tr>
+</tbody></table>
+<p class="note">成长门槛沿用早期微光方案的试做值，后续按实际回收速度和战斗体验调整。</p>
+<h2>4 一关的流程</h2>
+<div class="flow">开始界面 → 村口小怪 → 湖面鱼群 → 中首领<br>→ 桥下混合敌群 → 首领预警 → 关底首领 → 返程 → 通关结算</div>
+<p>开场熟悉移动与射击，湖面敌群引导上下换线，中首领检验躲避与输出。桥下增加敌群组合，关底首领提供主要挑战，返程降低压力并收尾。</p>
+<p class="note">普通路线按编队顺序推进；首领战在击败后进入下一段。单关时长在试玩后调整，通关依据击败首领与完成返程判断。</p>
+<div class="footer"><span>小魔女夜巡 · 原型策划初稿</span><span>第一部分 · 概念与规则</span></div>
+</article>
+<article class="paper">
+<div class="eyebrow">敌人 · 素材 · 实现与验收</div>
+<h2>5 敌人怎么安排</h2>
+<table><thead><tr><th>敌人</th><th>行为与作用</th></tr></thead><tbody>
+<tr><td>编队小怪</td><td>从右侧进入，按直线或波浪路线飞行，练习瞄准和换线。</td></tr>
+<tr><td>射击小怪</td><td>发射少量方向固定的敌弹，让玩家边攻击边躲避。</td></tr>
+<tr><td>中首领</td><td>体型较大，上下移动，周期性发射扇形弹；击败后进入桥下段。</td></tr>
+<tr><td>关底首领</td><td>发射扇形弹与瞄准弹，两种攻击交替；发射前有清楚的蓄力提示。</td></tr>
+</tbody></table>
+<figure class="illustration enemy-reference">
+<div class="enemy-grid">
+<div class="enemy-card"><div class="enemy-art"><img src="assets/enemy-formation.png" alt="编队小怪的形象参考：蓝灰色短翼夜怪"></div><b>编队小怪</b></div>
+<div class="enemy-card"><div class="enemy-art"><img src="assets/enemy-shooter.png" alt="射击小怪的形象参考：被雾包裹的手提灯怪"></div><b>射击小怪</b></div>
+<div class="enemy-card"><div class="enemy-art"><img src="assets/enemy-midboss.png" alt="中首领的形象参考：灰紫色打盹夜团"></div><b>中首领</b></div>
+<div class="enemy-card"><div class="enemy-art"><img src="assets/enemy-finalboss.png" alt="关底首领的形象参考：脸部明亮的大型灰紫夜怪"></div><b>关底首领</b></div>
+</div>
+<figcaption><strong>后续迭代的敌人形象参考。</strong>展示小怪与首领的轮廓和体量差异；首轮可以先用简单图形占位，行为按上表实现。</figcaption>
+</figure>
+<h2>6 画面与界面</h2>
+<p>夜蓝和灰紫色的像素画面，配暖色窗光、月亮、湖面、石桥与小魔女。角色、敌弹和收集物用不同的形状与颜色区分。</p>
+<p>第一版准备小魔女飞行、射击与受伤表现，小怪和两名首领，魔法弹、敌弹、微光，以及一组可滚动的湖畔背景。</p>
+<p>界面显示生命、射击等级与微光成长进度；首领出现时显示血条。开始页交代目标和操作；结束页优先显示成功或失败，以及“再玩一次”。</p>
+<figure class="illustration character-image">
+<img src="assets/character-sheet.png" alt="小魔女多视图设定参考：奶白软帽、蓝色蝴蝶结、双麻花辫和紫色衣裙" width="1536" height="1024">
+<figcaption><strong>后续主角设定参考。</strong>用多视图统一帽子、发型、服装与魔杖；第一版仍可先用像素图或简单图形验证玩法。</figcaption>
+</figure>
+<h2>7 实现顺序</h2>
+<div class="table-wrap"><table class="roadmap"><thead><tr><th>步骤</th><th>做出什么</th><th>怎么验收</th></tr></thead><tbody>
+<tr><td>1 飞行与射击</td><td>移动、连续射击和屏幕边界。</td><td>能边移动边射击，松开移动键能停住，角色不会飞出屏幕。</td></tr>
+<tr><td>2 一组敌人</td><td>入场、命中、击败、受伤和生命。</td><td>能打中并击败敌人；敌人或敌弹碰到玩家会扣血。</td></tr>
+<tr><td>3 收集与成长</td><td>微光掉落、回收和射击升级。</td><td>回收后成长增加，达到门槛时弹型或威力变化。</td></tr>
+<tr><td>4 串起一关</td><td>背景、编队和两场首领战。</td><td>能按顺序玩到两场首领战，击败后正确进入下一段。</td></tr>
+<tr><td>5 补齐状态</td><td>开始、暂停、失败、重开与通关。</td><td>能完整玩一局，失败后可以重来，暂停后能正常继续。</td></tr>
+<tr><td>6 触屏试玩</td><td>拖动飞行、自动射击和按钮布局。</td><td>手机上能移动躲弹，手指与按钮不挡住主要攻击信息。</td></tr>
+</tbody></table></div>
+<h2>8 第一轮试玩要确认什么</h2>
+<ul class="checks"><li>玩家看得懂目标与操作，飞行、射击、受伤都有反馈。</li><li>小怪与首领按顺序出现，空档和攻击密度适合操作。</li><li>微光能回收，射击升级看得出来，重开后成长清零。</li><li>正常操作可以通关，生命归零能真实触发失败。</li><li>暂停冻结战斗，重开清空上一局的敌弹、道具和进度。</li><li>手机横屏显示正常，拖动飞行与自动射击同时工作。</li></ul>
+<p class="note" style="margin-top:24px">整理说明：本稿依据本期口播与已讨论的玩法方向做了简化；沿用早期微光成长门槛，首领攻击与触屏操作按首轮原型收拢。它是本次整理的教学初稿，不是 2026 年 10 月 19 日 v1.0 存档的原文，也不代表上述功能已经完成或通过验收。</p>
+<div class="footer"><span>小魔女夜巡 · 原型策划初稿</span><span>第二部分 · 敌人、素材与验收</span></div>
+</article>
+</main>
+</body>
+</html>

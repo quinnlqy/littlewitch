@@ -1,8 +1,8 @@
 {
-  "date": "2026-10-28",
-  "scope": "离线游戏、可构建源码、精选设计素材、本地H3工作流与HTML使用说明",
-  "file_count_excluding_this_manifest": 240,
-  "bytes_excluding_this_manifest": 52314537,
+  "date": "2026-10-29",
+  "scope": "离线游戏、可构建源码、精选设计素材、本地H3工作流、HTML使用说明与教学策划初稿",
+  "file_count_excluding_this_manifest": 250,
+  "bytes_excluding_this_manifest": 53892762,
   "files": [
     {
       "path": ".gitattributes",
@@ -13,11 +13,6 @@
       "path": ".gitignore",
       "bytes": 322,
       "sha256": "38b961e35afd2a52dbc9e9e95fd0f36541d9d09ea9444ce4cc30ed838eeb1ce3"
-    },
-    {
-      "path": "01-design/level-design/README.md",
-      "bytes": 715,
-      "sha256": "f962acbb69ae854eb098d236db275b591cc828c617e8b9b449a067fcc4e9887a"
     },
     {
       "path": "01-design/level-design/assets/A月光悬浮-桌面参考.png",
@@ -50,6 +45,11 @@
       "width": 1400,
       "height": 620,
       "mode": "RGB"
+    },
+    {
+      "path": "01-design/level-design/README.md",
+      "bytes": 715,
+      "sha256": "f962acbb69ae854eb098d236db275b591cc828c617e8b9b449a067fcc4e9887a"
     },
     {
       "path": "01-design/level-design/第一关游戏策划案.html",
@@ -112,14 +112,77 @@
       "sha256": "dae5962be4f9fb70ef29d549c878d6289fcf4423b35359087ba2526925ef4db8"
     },
     {
+      "path": "01-design/prototype-draft/assets/character-sheet.png",
+      "bytes": 1297911,
+      "sha256": "78f0074dc042823c6699ddb4997d3aa532ba519cc44a070cb5124c4ccf600b28",
+      "width": 1536,
+      "height": 1024,
+      "mode": "RGB"
+    },
+    {
+      "path": "01-design/prototype-draft/assets/enemy-finalboss.png",
+      "bytes": 56457,
+      "sha256": "c43bc1bce0d7e3339ad590ec2b25ff5b658c841735fb9f60bfc0a42cc599697c",
+      "width": 206,
+      "height": 250,
+      "mode": "RGBA"
+    },
+    {
+      "path": "01-design/prototype-draft/assets/enemy-formation.png",
+      "bytes": 9476,
+      "sha256": "834b8751ea77cefb5a5b73ac41d52ed4aa4434fbda0f25ef5e3c2a299d45cfa3",
+      "width": 79,
+      "height": 110,
+      "mode": "RGBA"
+    },
+    {
+      "path": "01-design/prototype-draft/assets/enemy-midboss.png",
+      "bytes": 64151,
+      "sha256": "2ce3d26c43b3de483971c906200c6bf97c2d2ca4d871fb29bff3e5945c8b7e77",
+      "width": 232,
+      "height": 250,
+      "mode": "RGBA"
+    },
+    {
+      "path": "01-design/prototype-draft/assets/enemy-shooter.png",
+      "bytes": 10489,
+      "sha256": "5030f1644b92787b0d22cfc04cf6b5f7e35b3e0f23f181e85166949eeed8a951",
+      "width": 70,
+      "height": 110,
+      "mode": "RGBA"
+    },
+    {
+      "path": "01-design/prototype-draft/assets/prototype-game.png",
+      "bytes": 119397,
+      "sha256": "af392cb94abb9d426fdc334c211e474e1de7d907be1817d02062acf48e4bccc2",
+      "width": 960,
+      "height": 540,
+      "mode": "RGB"
+    },
+    {
+      "path": "01-design/prototype-draft/README.md",
+      "bytes": 936,
+      "sha256": "40119fa6492c5fc6097f5d6e3c1332a1cdd13626497591bd7597ff8c47ab70e2"
+    },
+    {
+      "path": "01-design/prototype-draft/小魔女夜巡原型策划初稿.html",
+      "bytes": 12505,
+      "sha256": "c226be5770a2ac7d4d0ff14ee09d4066e115d786d81f7b1aea5a49af0ec0540c"
+    },
+    {
+      "path": "01-design/prototype-draft/小魔女夜巡原型策划初稿.md",
+      "bytes": 5074,
+      "sha256": "9497bc1d3879eb28ab634defe6bd1aacc96c791200cb3b1709e06470f57c49cc"
+    },
+    {
+      "path": "01-design/README.md",
+      "bytes": 720,
+      "sha256": "93053cf5c6c1ab3dc4c5e95f7ec696bd28cb83227a4f9a7c0bd95b6726a1cb36"
+    },
+    {
       "path": "01-design/怪物图鉴.html",
       "bytes": 515788,
       "sha256": "1dce35563fb3a4e5f87cdf126b9cac49d40272a185c95486bbba8b9a8e2cd5d2"
-    },
-    {
-      "path": "02-character/README.md",
-      "bytes": 999,
-      "sha256": "0fe1573b32a2d6259181b1ce434289877b55ba4bc0d7c57517b6252c52b10a16"
     },
     {
       "path": "02-character/animations/attack-preview.gif",
@@ -255,6 +318,11 @@
       "mode": "RGBA"
     },
     {
+      "path": "02-character/README.md",
+      "bytes": 999,
+      "sha256": "0fe1573b32a2d6259181b1ce434289877b55ba4bc0d7c57517b6252c52b10a16"
+    },
+    {
       "path": "02-character/source-images/witch_lose.jpg",
       "bytes": 263626,
       "sha256": "e66107baf7baf1046fdde9de9c9dfc13eea4972dfbd27c1b52cfa0163a91b4c3",
@@ -269,11 +337,6 @@
       "width": 1024,
       "height": 1024,
       "mode": "RGB"
-    },
-    {
-      "path": "03-monsters/README.md",
-      "bytes": 729,
-      "sha256": "b90e19847863ee176b640aedd8b185d3099c16342d8a9f249922857c5079086c"
     },
     {
       "path": "03-monsters/animations/bat-preview.gif",
@@ -489,6 +552,11 @@
       "sha256": "ae0800651773cf4109bd13f171575ebee438f0b86b3dbf3eeeb2412843eb0dea"
     },
     {
+      "path": "03-monsters/README.md",
+      "bytes": 729,
+      "sha256": "b90e19847863ee176b640aedd8b185d3099c16342d8a9f249922857c5079086c"
+    },
+    {
       "path": "03-monsters/static/bat.png",
       "bytes": 14907,
       "sha256": "d3820a18d3bf58ba095778a74475d20302de238e98c0565727a49ed976b79443",
@@ -543,11 +611,6 @@
       "width": 79,
       "height": 110,
       "mode": "RGBA"
-    },
-    {
-      "path": "04-environments/README.md",
-      "bytes": 496,
-      "sha256": "c1d46da8862bd983cc79728179043cd92c39260d9bf52f5e164cbd1ceffb42f6"
     },
     {
       "path": "04-environments/layers/cloud1.png",
@@ -646,6 +709,11 @@
       "mode": "RGBA"
     },
     {
+      "path": "04-environments/README.md",
+      "bytes": 496,
+      "sha256": "c1d46da8862bd983cc79728179043cd92c39260d9bf52f5e164cbd1ceffb42f6"
+    },
+    {
       "path": "04-environments/source-images/lake_far_src.png",
       "bytes": 2121231,
       "sha256": "681bfb58e16381df25b6b69dd8a28acb9e4c445b638237e686314d69e57d675d",
@@ -684,11 +752,6 @@
       "width": 1536,
       "height": 1024,
       "mode": "RGB"
-    },
-    {
-      "path": "05-effects-and-items/README.md",
-      "bytes": 492,
-      "sha256": "212354bff75e411b7223e839abd2d073d1b16df1f7285ad52572cf6870e09c29"
     },
     {
       "path": "05-effects-and-items/effects/fx_breath.webp",
@@ -859,9 +922,9 @@
       "mode": "RGBA"
     },
     {
-      "path": "06-music/README.md",
-      "bytes": 775,
-      "sha256": "6c50dcecc8a7f8e1274b62b05e1e98b773bae3681a9f47680f7dc31170a38258"
+      "path": "05-effects-and-items/README.md",
+      "bytes": 492,
+      "sha256": "212354bff75e411b7223e839abd2d073d1b16df1f7285ad52572cf6870e09c29"
     },
     {
       "path": "06-music/bgm_boss.mp3",
@@ -884,9 +947,9 @@
       "sha256": "9cfcbe37bd64384e6eda6212cb4fc214dcd6f18b39dc1b78a5dd937584555ad0"
     },
     {
-      "path": "07-screenshots/README.md",
-      "bytes": 451,
-      "sha256": "663d198a303ce5deb25a58aa3818ad6640a1191cda829baab52efb961a222151"
+      "path": "06-music/README.md",
+      "bytes": 775,
+      "sha256": "6c50dcecc8a7f8e1274b62b05e1e98b773bae3681a9f47680f7dc31170a38258"
     },
     {
       "path": "07-screenshots/boss-scene.png",
@@ -945,6 +1008,11 @@
       "mode": "RGB"
     },
     {
+      "path": "07-screenshots/README.md",
+      "bytes": 451,
+      "sha256": "663d198a303ce5deb25a58aa3818ad6640a1191cda829baab52efb961a222151"
+    },
+    {
       "path": "07-screenshots/return-scene.png",
       "bytes": 1064975,
       "sha256": "6478272713ffdfca180549cc4b36bc5fc384ab1a1d026b23d80d0893218a969b",
@@ -975,11 +1043,6 @@
       "width": 1024,
       "height": 768,
       "mode": "RGB"
-    },
-    {
-      "path": "08-video-workflows/README.md",
-      "bytes": 2516,
-      "sha256": "6350c20daa79ff0e27b4d0166e1add1a9817cff6457d66378dd1bb414954b385"
     },
     {
       "path": "08-video-workflows/dependencies.json",
@@ -1049,6 +1112,11 @@
       "width": 79,
       "height": 110,
       "mode": "RGBA"
+    },
+    {
+      "path": "08-video-workflows/README.md",
+      "bytes": 2516,
+      "sha256": "6350c20daa79ff0e27b4d0166e1add1a9817cff6457d66378dd1bb414954b385"
     },
     {
       "path": "08-video-workflows/witch_flight_green_v1/02_api.json",
@@ -1346,14 +1414,14 @@
       "sha256": "908d3928e016821887487f27f86a745b03203f8f31f688a00b02a21447ad99d4"
     },
     {
-      "path": "README.md",
-      "bytes": 3394,
-      "sha256": "46c9aa9f5c33e994818c42e888747d78bf4248d05092ba240c6662194d8d8268"
-    },
-    {
       "path": "index.html",
       "bytes": 8976069,
       "sha256": "38972e85633734a46d1fca9ae68e94a9722592efcd7148ed117ddb85e61f35b7"
+    },
+    {
+      "path": "README.md",
+      "bytes": 3683,
+      "sha256": "6d199e581ffe42b928baf2db6d2005b7b566530b979002d6a973159b5bd4bff3"
     },
     {
       "path": "requirements-assets.txt",
@@ -1572,11 +1640,6 @@
       "sha256": "1ac46d81309f47f96a43843e9b9d60a16d900a24e9cf3bbe6e38e73f87f24758"
     },
     {
-      "path": "tools/README.md",
-      "bytes": 489,
-      "sha256": "49e651e4d86f0fd9670184351a2448cea314a00736efe3e6e1690b0d37808717"
-    },
-    {
       "path": "tools/build.py",
       "bytes": 3633,
       "sha256": "2825db0851b96cb8746d2ef28dda768befc690e743109104b936692412b9dea8"
@@ -1587,24 +1650,29 @@
       "sha256": "e65208e0b2bcd88d404fde4097e88267b84128f06aecb15ae665a80c8ca366c4"
     },
     {
+      "path": "tools/README.md",
+      "bytes": 489,
+      "sha256": "49e651e4d86f0fd9670184351a2448cea314a00736efe3e6e1690b0d37808717"
+    },
+    {
       "path": "tools/syntax.js",
       "bytes": 975,
       "sha256": "302b40e68e71677ca7daf60845a850f0416830b6c885d732b7fab0701b872839"
     },
     {
       "path": "使用说明.html",
-      "bytes": 32825,
-      "sha256": "d81b46d0670c41d8e81e991a34537ecd553250bfaa3da1141e234a6096c4a112"
+      "bytes": 33125,
+      "sha256": "55eec7767fa3a007f264d7dab76611dbe282dd7959eb2a409361936cf11c30dc"
     },
     {
       "path": "素材总览.html",
-      "bytes": 22537,
-      "sha256": "7adbd0618762d48f3e07dfa3be5edebffd030a56994f8f617824574eb6539ab7"
+      "bytes": 22649,
+      "sha256": "1d3747191c1981bced012d818eaf01f8b549f50d0af58d5e4e8ba0e0df9b8a40"
     },
     {
       "path": "素材来源与使用说明.md",
-      "bytes": 2054,
-      "sha256": "74538780371f170fbd4d06fd493e90d62766bfc2280e7924dc7f9f111bda0169"
+      "bytes": 2462,
+      "sha256": "96a080b8d92eb5aaab71022a6c6aa5e31cc4b37a4d8cc77608111a51feba787a"
     }
   ]
 }

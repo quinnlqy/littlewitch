@@ -18,7 +18,7 @@
 <a href="#start">01 / 从哪里开始</a><a href="#play">02 / 离线试玩</a><a href="#assets">03 / 设计与素材</a><a href="#source">04 / 修改与构建</a><a href="#h3">05 / H3 视频工作流</a><a href="#cleanup">06 / 可选绿幕清理</a><a href="#faq">07 / 常见问题</a><a href="#release">08 / 版本与发布说明</a>
 </nav><a class="home" href="素材总览.html">打开素材总览 ↗</a></aside>
 <main>
-<header><div class="eyebrow">Little Witch · Project Guide</div><h1>从试玩到修改，<br>这份资料包怎么用</h1><p>包含离线游戏、完整源码、关卡设计、精选素材，以及本地 MiniMax H3 视频工作流。按你要做的事情选择入口即可。</p><div class="badges"><span class="badge">说明更新：2026-10-28</span><span class="badge">本页可离线阅读</span><span class="badge">18 套 H3 工作流</span><span class="badge">源码可重建游戏</span></div></header>
+<header><div class="eyebrow">Little Witch · Project Guide</div><h1>从试玩到修改，<br>这份资料包怎么用</h1><p>包含离线游戏、完整源码、关卡设计、精选素材，以及本地 MiniMax H3 视频工作流。按你要做的事情选择入口即可。</p><div class="badges"><span class="badge">说明更新：2026-10-29</span><span class="badge">本页可离线阅读</span><span class="badge">18 套 H3 工作流</span><span class="badge">源码可重建游戏</span></div></header>
 
 <section id="start"><h2><span class="num">01</span>从哪里开始</h2>
 <div class="cards"><a class="card" href="index.html"><b>直接玩游戏 →</b><span>打开 index.html，点击“开始夜巡”。无需安装开发工具。</span></a><a class="card" href="素材总览.html"><b>看设计和素材 →</b><span>浏览立绘、动画、场景、界面与音乐，再按目录查看原文件。</span></a><a class="card" href="#source"><b>修改或复用 →</b><span>先读源码构建方法；需要生成新动作时，再看 H3 工作流。</span></a></div>
@@ -35,9 +35,9 @@
 </section>
 
 <section id="assets"><h2><span class="num">03</span>阅读设计与使用素材</h2>
-<p>先打开 <a href="素材总览.html">素材总览</a> 看整体效果；阅读玩法与数值从 <a href="01-design/level-design/第一关游戏策划案.html">完整关卡策划案 v1.12.0</a> 开始。</p>
+<p>先打开 <a href="素材总览.html">素材总览</a> 看整体效果；跟着视频做第一版，可以先读 <a href="01-design/prototype-draft/小魔女夜巡原型策划初稿.html">原型策划初稿（教学插图版）</a>；后续完整规则与数值见 <a href="01-design/level-design/第一关游戏策划案.html">关卡策划案 v1.12.0</a>。</p>
 <div class="table-wrap"><table><thead><tr><th>目录</th><th>适合查看的内容</th><th>使用时注意</th></tr></thead><tbody>
-<tr><td><code>01-design</code></td><td>完整策划、配置表、设计参考图、怪物图鉴</td><td>完整策划为 10 月 24 日设计基准；图鉴数值属于更早版本。</td></tr>
+<tr><td><code>01-design</code></td><td>原型初稿、完整策划、配置表、设计参考图、怪物图鉴</td><td>初稿为按口播重新整理的教学材料；完整策划为 10 月 24 日基准。</td></tr>
 <tr><td><code>02-character</code></td><td>角色设定、标题/失败立绘、6 张动画图集</td><td>概念稿和最终菜单立绘画风有差异，已分目录保存。</td></tr>
 <tr><td><code>03-monsters</code></td><td>5 种小怪、2 名 Boss，13 张动画图集</td><td>Atk 表示攻击，Tell 表示预兆；攻击在游戏里按状态进度播放。</td></tr>
 <tr><td><code>04-environments</code></td><td>背景分层、湖畔与归途原图、遮罩</td><td>最终画面还依赖程序视差、裁剪、色调和光照。</td></tr>
@@ -105,8 +105,8 @@ python tools/clean_green_video.py input.mp4 output.mp4</code></pre>
 
 <section id="release"><h2><span class="num">08</span>版本与发布说明</h2>
 <p>公开资料按当前工程精选，历史备份、失败轮次、调试图、长录屏、重复打包、助手记忆与接口配置未收录。主角动画与怪物图集已保存完整帧，因此没有再收录大量逐帧 PNG。</p>
-<ul><li>完整设计基准为 <strong>v1.12.0 / 2026-10-24</strong>，资料整理日为 <strong>2026-10-28</strong>；设计计划与实现验收状态需要区分。</li><li>怪物图鉴保留形象和动画展示价值，其中旧数值已在页面注明。概念图、设计参考图与工程截图分别存放。</li><li>项目还没有为本包指定开源许可证；4 首音乐的原生成平台授权条款未完整登记。来源与使用状态见 <a href="素材来源与使用说明.md">素材来源与使用说明</a> 和 <a href="06-music/README.md">音乐说明</a>。</li><li>根目录 <a href="manifest.json">manifest.json</a> 保存公开文件清单、体积与 SHA-256，可用于核对文件是否变化。</li></ul>
+<ul><li>2026-10-29 补入带插图的原型策划初稿，供教学和首轮试做；它不是 v1.0 历史存档原文。</li><li>完整设计基准为 <strong>v1.12.0 / 2026-10-24</strong>，资料整理日为 <strong>2026-10-28</strong>；设计计划与实现验收状态需要区分。</li><li>怪物图鉴保留形象和动画展示价值，其中旧数值已在页面注明。概念图、设计参考图与工程截图分别存放。</li><li>项目还没有为本包指定开源许可证；4 首音乐的原生成平台授权条款未完整登记。来源与使用状态见 <a href="素材来源与使用说明.md">素材来源与使用说明</a> 和 <a href="06-music/README.md">音乐说明</a>。</li><li>根目录 <a href="manifest.json">manifest.json</a> 保存公开文件清单、体积与 SHA-256，可用于核对文件是否变化。</li></ul>
 <p>整理时已核对源码重建与离线入口一致、JavaScript 语法、18 套工作流的连线/参考图/提示词。新修改仍需自己试玩与检查；本次没有进行新一轮整局或真机验收，也没有重新生成 H3 视频。</p>
 </section>
-<footer>小魔女夜巡 · 使用说明 · 2026-10-28<br>本页的样式与内容均保存在本地，不加载外部字体、脚本或在线资源。可使用浏览器“打印”功能保存为 PDF。</footer>
+<footer>小魔女夜巡 · 使用说明 · 2026-10-29<br>本页的样式与内容均保存在本地，不加载外部字体、脚本或在线资源。可使用浏览器“打印”功能保存为 PDF。</footer>
 </main></body></html>
