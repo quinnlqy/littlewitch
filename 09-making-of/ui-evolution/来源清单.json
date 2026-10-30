@@ -1,0 +1,107 @@
+{
+  "files": [
+    {
+      "source": "原图/01-早期界面/style_play.png",
+      "target": "原图/01-早期界面/style_play.png",
+      "sha256": "af392cb94abb9d426fdc334c211e474e1de7d907be1817d02062acf48e4bccc2"
+    },
+    {
+      "source": "原图/02-提案前界面/ui_combat.png",
+      "target": "原图/02-提案前界面/ui_combat.png",
+      "sha256": "77bbb7cc7ad39a031199326c961bbc30aa804184e660bf78417db80270a4e60a"
+    },
+    {
+      "source": "原图/03-视觉双方案/方案A-月光悬浮.png",
+      "target": "原图/03-视觉双方案/方案A-月光悬浮.png",
+      "sha256": "856aa9f190f7c9412729ea6b428379e9e2f004961b71898ab380ff8c4beb6ec8"
+    },
+    {
+      "source": "原图/03-视觉双方案/方案B-童话徽章.png",
+      "target": "原图/03-视觉双方案/方案B-童话徽章.png",
+      "sha256": "0aa2c944f78bf4ad610f611af6ada49033f0542d834c2148b218f01f9981118d"
+    },
+    {
+      "source": "原图/04-选定A与双端/A月光悬浮-桌面版.png",
+      "target": "原图/04-选定A与双端/A月光悬浮-桌面版.png",
+      "sha256": "b649e987d335b603e31f40b94dda29825149b3559f5ffeaba78bdfab6f176292"
+    },
+    {
+      "source": "原图/05-暂停页设计/A月光悬浮-桌面暂停页.png",
+      "target": "原图/05-暂停页设计/A月光悬浮-桌面暂停页.png",
+      "sha256": "4016b535eff561339b06e13b038d6c51de45f62de8b272f646fa033d017ad940"
+    },
+    {
+      "source": "原图/06-当前实装/当前实装-桌面-战斗.png",
+      "target": "原图/06-当前实装/当前实装-桌面-战斗.png",
+      "sha256": "b58dd3d063d7f57ad5b1fd27c39425e2a2c7626b10b9ea45eab3c3be087fd493"
+    },
+    {
+      "source": "原图/06-当前实装/当前实装-桌面-暂停.png",
+      "target": "原图/06-当前实装/当前实装-桌面-暂停.png",
+      "sha256": "ebbe3e0557c67aeb80b8fcd683235aa609ffb020f66b0e3a9a693e6da56e217f"
+    },
+    {
+      "source": "原图/06-当前实装/当前实装-手机-战斗.png",
+      "target": "原图/06-当前实装/当前实装-手机-战斗.png",
+      "sha256": "3bbf2596c10f2b611d99fd568f77d5fd704e8210913407a4b91a0daf3256b568"
+    },
+    {
+      "source": "原图/05-暂停页设计/A月光悬浮-手机暂停页.png",
+      "target": "原图/05-暂停页设计/A月光悬浮-手机暂停页.png",
+      "sha256": "8590bb757adf23c75f00ad605912d427262f7422fc30f6b2ba145a0b85d0c762"
+    },
+    {
+      "source": "原图/06-当前实装/当前实装-手机-暂停.png",
+      "target": "原图/06-当前实装/当前实装-手机-暂停.png",
+      "sha256": "3e04e4fc77ca2d638431ba2395b9339b9733640f6a7f4f531180a460f8ded363"
+    },
+    {
+      "source": "原图/04-选定A与双端/A月光悬浮-手机版.png",
+      "target": "原图/04-选定A与双端/A月光悬浮-手机版.png",
+      "sha256": "856aa9f190f7c9412729ea6b428379e9e2f004961b71898ab380ff8c4beb6ec8"
+    },
+    {
+      "source": "原图/03-视觉双方案/两版效果对照.html",
+      "target": "原图/03-视觉双方案/两版效果对照.html",
+      "sha256": "3704d94c0eea2f3666c8cb711b5ac25ae4e802a30cdd78f54ba79e6a81bc375d"
+    },
+    {
+      "source": "原图/03-视觉双方案/适配与DeepSeek交付说明.md",
+      "target": "原图/03-视觉双方案/适配与DeepSeek交付说明.md",
+      "sha256": "584d0df421a8eb06ad7e408373c28868fd4ea22092d6309dace7643f57d9d9dd"
+    },
+    {
+      "source": "原图/03-视觉双方案/生成提示词.json",
+      "target": "原图/03-视觉双方案/生成提示词.json",
+      "sha256": "ca7750cf20ff6e523d17319177e682ef7c5970c2013f3b7f1bb93672a1e326f0"
+    },
+    {
+      "source": "说明文档/v1.1.0/桌面与手机交付说明.md",
+      "target": "说明文档/v1.1.0/桌面与手机交付说明.md",
+      "sha256": "bf03308a8ab537fd318aa237b723f7d932537164aa39ab37c10ccf3ac4acd90b"
+    },
+    {
+      "source": "说明文档/v1.1.0/桌面版生成提示词.json",
+      "target": "说明文档/v1.1.0/桌面版生成提示词.json",
+      "sha256": "2c463feaf2e1623f45dc391b1f9052ac0a6e120d03ce8f2afbc67b97c86404d4"
+    },
+    {
+      "source": "说明文档/v1.2.0/桌面与手机交付说明.md",
+      "target": "说明文档/v1.2.0/桌面与手机交付说明.md",
+      "sha256": "e3ba6a9e8f8344eb4dbbd0f9d679270bfec7051837d2bfe34e9c73e1979e5721"
+    },
+    {
+      "source": "说明文档/v1.2.0/技能资源验收用例.csv",
+      "target": "说明文档/v1.2.0/技能资源验收用例.csv",
+      "sha256": "d264d8bf56c61571c7b33dfebadd4ada9e178787871fe9bb1221b4b2d3d2ebfd"
+    },
+    {
+      "source": "说明文档/v1.3.1/桌面适配与暂停页修改说明.md",
+      "target": "说明文档/v1.3.1/桌面适配与暂停页修改说明.md",
+      "sha256": "1fa90ae85ea8e4d9e8fadb6e543c4ed82b979f39babffb5fb0e6f4bf2a8e12bd"
+    }
+  ],
+  "scope": "概念稿与实装截图分开记录；A/B同期备选，B未采用。早期两张按信息变化排列，不声称是项目最早截图。",
+  "reused_images": "v1.0 A 与 v1.1 手机版同 SHA-256；v1.1 和 v1.2 桌面图同 SHA-256。",
+  "original_proposal_folder": "设计工程\\design\\主界面UI视觉提案-v1.0.0"
+}

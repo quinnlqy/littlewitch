@@ -1,0 +1,15 @@
+{
+  "source": "原工程\\src\\assets.json",
+  "asset": "HERO_ANIM.flight.img.src",
+  "atlas_size": [
+    900,
+    147
+  ],
+  "frame_size": [
+    150,
+    147
+  ],
+  "frames": 6,
+  "gif_note": "依图集顺序以每帧100ms预览；游戏实际播放节奏与裁剪逻辑以源码为准。",
+  "sha256": "3559adaac9a8da5a556d1d0b7e075c0b26a6c8af8e9cecf11287b0ac83710ef0"
+}

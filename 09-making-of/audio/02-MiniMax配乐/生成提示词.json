@@ -1,0 +1,13 @@
+{
+  "provider": "MiniMax",
+  "access_via": "TokenHub",
+  "recorded_model": "minimax-music-v3.0",
+  "source": "原工程\\tools\\gen_music.py",
+  "prompts": {
+    "normal": "gentle halloween night ambience for a cozy indie game, music box, celesta and soft strings, warm and slightly mysterious, 88 bpm, A minor, sparse, no drums, loopable, calm and dreamy, lakeside village at night, strictly instrumental, no vocals, no singing, no humming, no choir, no vocal chops, no lyrics",
+    "boss": "dark ominous boss battle music for a gothic indie game, low string ostinato in A minor, taiko and timpani hits, dissonant brass stabs, slow rising tension then relentless drive, 150 bpm, cinematic and threatening, NOT cute, NOT playful, strictly instrumental, no vocals, no singing, no humming, no choir, no vocal chops, no lyrics",
+    "win": "short triumphant ending jingle for a cozy adventure game, warm brass and celesta, rising resolution, gentle bell at the end, about 8 seconds, uplifting and warm, strictly instrumental, no vocals, no singing, no humming, no choir, no vocal chops, no lyrics",
+    "lose": "short melancholic ending jingle for a cozy adventure game, solo music box and soft cello, descending phrase, gentle fade out, about 6 seconds, sad but gentle, not scary, strictly instrumental, no vocals, no singing, no humming, no choir, no vocal chops, no lyrics"
+  },
+  "processing_record": "2026-10-23 记录说明结算音乐由长曲裁剪并淡出；生成提示词的目标时长不等于最终文件时长。"
+}

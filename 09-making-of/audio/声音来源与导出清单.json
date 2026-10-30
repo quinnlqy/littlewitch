@@ -1,0 +1,453 @@
+{
+  "source": "原工程\\src\\game.src.js",
+  "source_sha256": "0b6dd805f24d25f6592e73fdc696236e89f927bbe42a08df12d3fc6ca6140c27",
+  "source_library": "01-程序生成/代码/程序音频合成.js",
+  "sfx_count": 41,
+  "generated_previews": [
+    {
+      "file": "01-程序生成/音效试听WAV/shoot.wav",
+      "duration": 0.15,
+      "peak": 0.11326,
+      "sample_rate": 48000,
+      "sha256": "2e0c28559ce6a6ce1b6f7519b0f4e161b532b6a4adfdf289d040637ecf86c509",
+      "name": "shoot",
+      "category": "sfx"
+    },
+    {
+      "file": "01-程序生成/音效试听WAV/shootBig.wav",
+      "duration": 0.156,
+      "peak": 0.11144,
+      "sample_rate": 48000,
+      "sha256": "dcb450c2f4a09a8de1b152278aee85121ad87ae581c93d0f3f9b46d1efdfb5d1",
+      "name": "shootBig",
+      "category": "sfx"
+    },
+    {
+      "file": "01-程序生成/音效试听WAV/magicFire.wav",
+      "duration": 0.992,
+      "peak": 0.3041,
+      "sample_rate": 48000,
+      "sha256": "da1a6aa11da1611ad698e691a31738ff8174f816dbebe025112979ced3b8918c",
+      "name": "magicFire",
+      "category": "sfx"
+    },
+    {
+      "file": "01-程序生成/音效试听WAV/fireTick.wav",
+      "duration": 0.15,
+      "peak": 0.08674,
+      "sample_rate": 48000,
+      "sha256": "9b5621dbc4a86d08428819309408b62542275c46a525014ea9097cf05b1dfbdd",
+      "name": "fireTick",
+      "category": "sfx"
+    },
+    {
+      "file": "01-程序生成/音效试听WAV/magicThunder.wav",
+      "duration": 0.453,
+      "peak": 0.13548,
+      "sample_rate": 48000,
+      "sha256": "7eb81b8d99edc4ec92e4db1e7bebfa49c6ae11354edc5b2af8874fc6ba510a70",
+      "name": "magicThunder",
+      "category": "sfx"
+    },
+    {
+      "file": "01-程序生成/音效试听WAV/magicBurst.wav",
+      "duration": 0.586,
+      "peak": 0.0947,
+      "sample_rate": 48000,
+      "sha256": "9920a619f8edc2928b8c769edebd2c8470ca1c3ce50345d646b46b2b036b5122",
+      "name": "magicBurst",
+      "category": "sfx"
+    },
+    {
+      "file": "01-程序生成/音效试听WAV/magicStar.wav",
+      "duration": 0.426,
+      "peak": 0.24039,
+      "sample_rate": 48000,
+      "sha256": "9afc2125ba347792245f2bc226c81dd6483b73152cc79343d515474bc1d5de7d",
+      "name": "magicStar",
+      "category": "sfx"
+    },
+    {
+      "file": "01-程序生成/音效试听WAV/fever.wav",
+      "duration": 0.713,
+      "peak": 0.45231,
+      "sample_rate": 48000,
+      "sha256": "86ae42729ae147a459a0b3523337c6ee85c288dea3b8ced150f1a3976e76058c",
+      "name": "fever",
+      "category": "sfx"
+    },
+    {
+      "file": "01-程序生成/音效试听WAV/feverEnd.wav",
+      "duration": 0.346,
+      "peak": 0.40846,
+      "sample_rate": 48000,
+      "sha256": "885cc99d5afb34e1d9eb00418793fb96f293187404c37f6ea40a4a0a41da8736",
+      "name": "feverEnd",
+      "category": "sfx"
+    },
+    {
+      "file": "01-程序生成/音效试听WAV/hurt.wav",
+      "duration": 0.386,
+      "peak": 0.14585,
+      "sample_rate": 48000,
+      "sha256": "485e796818a5d6e9ae2487f34ee3a4e4e8c731f9eaa2fa2787ca32d74319e5d2",
+      "name": "hurt",
+      "category": "sfx"
+    },
+    {
+      "file": "01-程序生成/音效试听WAV/lowHp.wav",
+      "duration": 0.466,
+      "peak": 0.35212,
+      "sample_rate": 48000,
+      "sha256": "a2e52133c07219c2431ee445a55849a28b2e8a9f11a4a57a48d1ebac2486db37",
+      "name": "lowHp",
+      "category": "sfx"
+    },
+    {
+      "file": "01-程序生成/音效试听WAV/star.wav",
+      "duration": 0.256,
+      "peak": 0.28711,
+      "sample_rate": 48000,
+      "sha256": "5c86e32b59afdc63ee333f0899195b16c4b72de142ec09db98cfcdc2f8a8a7ac",
+      "name": "star",
+      "category": "sfx"
+    },
+    {
+      "file": "01-程序生成/音效试听WAV/crystal.wav",
+      "duration": 0.181,
+      "peak": 0.18187,
+      "sample_rate": 48000,
+      "sha256": "8b9d08577f94e7c58f978bb7fee1d2ef4ae57b3c6eee7c674f00e30e1335ac35",
+      "name": "crystal",
+      "category": "sfx"
+    },
+    {
+      "file": "01-程序生成/音效试听WAV/cup.wav",
+      "duration": 0.226,
+      "peak": 0.18985,
+      "sample_rate": 48000,
+      "sha256": "f50d284d50ffff93332a4ea115757869c33b154ecbf731d6f91899c693cc4e00",
+      "name": "cup",
+      "category": "sfx"
+    },
+    {
+      "file": "01-程序生成/音效试听WAV/levelUp.wav",
+      "duration": 0.458,
+      "peak": 0.44582,
+      "sample_rate": 48000,
+      "sha256": "d4335a6b7b7e6e3ff68f9f252d8aa2242f1a2b8317b770e09918d96318445258",
+      "name": "levelUp",
+      "category": "sfx"
+    },
+    {
+      "file": "01-程序生成/音效试听WAV/impCry.wav",
+      "duration": 0.206,
+      "peak": 0.11994,
+      "sample_rate": 48000,
+      "sha256": "fd63c214be7415c6e6bfbe978cb0f2b53a51d9e2db131f628b77351a9941975c",
+      "name": "impCry",
+      "category": "sfx"
+    },
+    {
+      "file": "01-程序生成/音效试听WAV/fishSplash.wav",
+      "duration": 0.267,
+      "peak": 0.10968,
+      "sample_rate": 48000,
+      "sha256": "4c1122030bef72cae48228725f38387d5ff8a888cc1e0a9f114a081f708fde9d",
+      "name": "fishSplash",
+      "category": "sfx"
+    },
+    {
+      "file": "01-程序生成/音效试听WAV/batFlap.wav",
+      "duration": 0.234,
+      "peak": 0.3099,
+      "sample_rate": 48000,
+      "sha256": "d5f177dc9e60b9b93d7e36d51d9754129a6ffbe50212bb7b228ca0074775d18a",
+      "name": "batFlap",
+      "category": "sfx"
+    },
+    {
+      "file": "01-程序生成/音效试听WAV/headPuff.wav",
+      "duration": 0.286,
+      "peak": 0.11391,
+      "sample_rate": 48000,
+      "sha256": "e8e71f750724c8053f5f1edae51ef813a432e91de5cacbabe08139bca8cbdd39",
+      "name": "headPuff",
+      "category": "sfx"
+    },
+    {
+      "file": "01-程序生成/音效试听WAV/carrierGulp.wav",
+      "duration": 0.346,
+      "peak": 0.12896,
+      "sample_rate": 48000,
+      "sha256": "00915d91e58e786ec1cb12b7de33ef0e01d46889b34d2c0f033bc5052c7712e7",
+      "name": "carrierGulp",
+      "category": "sfx"
+    },
+    {
+      "file": "01-程序生成/音效试听WAV/enemyShot.wav",
+      "duration": 0.186,
+      "peak": 0.1087,
+      "sample_rate": 48000,
+      "sha256": "0d57405739b9bdd93c564a3f0226611f7507e31218a7cd7c557e4d4020114d0d",
+      "name": "enemyShot",
+      "category": "sfx"
+    },
+    {
+      "file": "01-程序生成/音效试听WAV/enemyHit.wav",
+      "duration": 0.15,
+      "peak": 0.08406,
+      "sample_rate": 48000,
+      "sha256": "928fbdd0411d8f335dbce725daf68587040087fde66de981353bb78d31268cca",
+      "name": "enemyHit",
+      "category": "sfx"
+    },
+    {
+      "file": "01-程序生成/音效试听WAV/enemyDie.wav",
+      "duration": 0.286,
+      "peak": 0.11727,
+      "sample_rate": 48000,
+      "sha256": "2f4cd84c9182d8954aebac59633a1472689fcc75c48da79c5c7b066ef611a8c1",
+      "name": "enemyDie",
+      "category": "sfx"
+    },
+    {
+      "file": "01-程序生成/音效试听WAV/fearPuff.wav",
+      "duration": 0.334,
+      "peak": 0.10278,
+      "sample_rate": 48000,
+      "sha256": "855e0f13a769be1ea7935d96e9c23bb2d8ba7755bbb1c91b6463005bcbfadf43",
+      "name": "fearPuff",
+      "category": "sfx"
+    },
+    {
+      "file": "01-程序生成/音效试听WAV/bossRoar.wav",
+      "duration": 0.986,
+      "peak": 0.25471,
+      "sample_rate": 48000,
+      "sha256": "2f1aa052125958285f48e3b64f5b29f5d72ced2cc94bdb44cb0f9d0a18b07ff9",
+      "name": "bossRoar",
+      "category": "sfx"
+    },
+    {
+      "file": "01-程序生成/音效试听WAV/bossWall.wav",
+      "duration": 0.786,
+      "peak": 0.21478,
+      "sample_rate": 48000,
+      "sha256": "20a1be2bf0969990df61c6e29ce7cd50a19870c0334c8a7ae0b8b25074bceeb6",
+      "name": "bossWall",
+      "category": "sfx"
+    },
+    {
+      "file": "01-程序生成/音效试听WAV/bossBreath.wav",
+      "duration": 1.186,
+      "peak": 0.23357,
+      "sample_rate": 48000,
+      "sha256": "d2ee48b9f93923f43c2fcaf9ddebef38e2c09bf3e92e2a302fedb13a563a64f9",
+      "name": "bossBreath",
+      "category": "sfx"
+    },
+    {
+      "file": "01-程序生成/音效试听WAV/bossOrb.wav",
+      "duration": 0.386,
+      "peak": 0.13357,
+      "sample_rate": 48000,
+      "sha256": "9fc85ea2865b9f99cfa5b8bd0e71177dc60ca7ce834f47345608f78572d2927e",
+      "name": "bossOrb",
+      "category": "sfx"
+    },
+    {
+      "file": "01-程序生成/音效试听WAV/charge.wav",
+      "duration": 0.346,
+      "peak": 0.12788,
+      "sample_rate": 48000,
+      "sha256": "067af866837ff053c3b342edb2d014d926626b78d5c25c6a20b2c3cac7c364b3",
+      "name": "charge",
+      "category": "sfx"
+    },
+    {
+      "file": "01-程序生成/音效试听WAV/bossCharge.wav",
+      "duration": 0.686,
+      "peak": 0.21311,
+      "sample_rate": 48000,
+      "sha256": "02d502a4a7a60065b1883bd9834f19a24da4118f56e0f0da69ede0e94227045a",
+      "name": "bossCharge",
+      "category": "sfx"
+    },
+    {
+      "file": "01-程序生成/音效试听WAV/bossHalf.wav",
+      "duration": 0.904,
+      "peak": 0.38757,
+      "sample_rate": 48000,
+      "sha256": "2438b3cc2bdaf11c3a19dded474a3af4894718e294a9871229aeed08b889c1ea",
+      "name": "bossHalf",
+      "category": "sfx"
+    },
+    {
+      "file": "01-程序生成/音效试听WAV/bossWeak.wav",
+      "duration": 0.376,
+      "peak": 0.45428,
+      "sample_rate": 48000,
+      "sha256": "d57f910d4259d4290a2d4c1512c0c0e1df3cd733399b80a157a6727d179dc320",
+      "name": "bossWeak",
+      "category": "sfx"
+    },
+    {
+      "file": "01-程序生成/音效试听WAV/bossBreak.wav",
+      "duration": 1.186,
+      "peak": 0.39091,
+      "sample_rate": 48000,
+      "sha256": "3833ce7c59c7d868e820ac86c2cd72f5d1516e8930199154ef3c614e63408f9c",
+      "name": "bossBreak",
+      "category": "sfx"
+    },
+    {
+      "file": "01-程序生成/音效试听WAV/boom.wav",
+      "duration": 0.436,
+      "peak": 0.16204,
+      "sample_rate": 48000,
+      "sha256": "5b6007148c3a63ed99cecb370d088447b6347754167b4ecde533614b8b80ba37",
+      "name": "boom",
+      "category": "sfx"
+    },
+    {
+      "file": "01-程序生成/音效试听WAV/bigBoom.wav",
+      "duration": 0.886,
+      "peak": 0.23398,
+      "sample_rate": 48000,
+      "sha256": "999544e0223937e7bf19fc761c5b73386f720715cbe1b661a663a3412b1a3142",
+      "name": "bigBoom",
+      "category": "sfx"
+    },
+    {
+      "file": "01-程序生成/音效试听WAV/hit.wav",
+      "duration": 0.15,
+      "peak": 0.0924,
+      "sample_rate": 48000,
+      "sha256": "ac09dffcdc04e8fbc1a168f15828d52139622250d8822af080d14bc404488639",
+      "name": "hit",
+      "category": "sfx"
+    },
+    {
+      "file": "01-程序生成/音效试听WAV/warn.wav",
+      "duration": 0.466,
+      "peak": 0.434,
+      "sample_rate": 48000,
+      "sha256": "25a2962e55651356254a4a4852158e2f0d9ca14b11010b3f5a8b810cc0126748",
+      "name": "warn",
+      "category": "sfx"
+    },
+    {
+      "file": "01-程序生成/音效试听WAV/bomb.wav",
+      "duration": 0.59,
+      "peak": 0.18338,
+      "sample_rate": 48000,
+      "sha256": "37b89c7edb15a09b844deb241e6c80b2f2ae6346f28bb6f9b5888aa0a99b6060",
+      "name": "bomb",
+      "category": "sfx"
+    },
+    {
+      "file": "01-程序生成/音效试听WAV/phaseChange.wav",
+      "duration": 0.554,
+      "peak": 0.19399,
+      "sample_rate": 48000,
+      "sha256": "c699e128d299df6da6759a00781ea9f5a06b11e1f3e162182424a58ee2397541",
+      "name": "phaseChange",
+      "category": "sfx"
+    },
+    {
+      "file": "01-程序生成/音效试听WAV/win.wav",
+      "duration": 1.286,
+      "peak": 0.38368,
+      "sample_rate": 48000,
+      "sha256": "ddec6c822b2253d4426500497b94a32afefa6c36f4eb42f2f28eef57275d6136",
+      "name": "win",
+      "category": "sfx"
+    },
+    {
+      "file": "01-程序生成/音效试听WAV/lose.wav",
+      "duration": 1.706,
+      "peak": 0.4207,
+      "sample_rate": 48000,
+      "sha256": "0e73b6b605ad67165ad12a87740fb2513e5d531770e261da6c8a2e9a1ba43ff2",
+      "name": "lose",
+      "category": "sfx"
+    },
+    {
+      "file": "01-程序生成/程序旋律试听/starLoop.wav",
+      "duration": 5.2,
+      "peak": 0.33831,
+      "sample_rate": 48000,
+      "sha256": "45f212fb4c4dbfff317b7e0db78f7befe460703c4ded4b30f5bf0d42360bd024",
+      "name": "starLoop",
+      "category": "star"
+    },
+    {
+      "file": "01-程序生成/程序旋律试听/normal.wav",
+      "duration": 8.2,
+      "peak": 0.05475,
+      "sample_rate": 48000,
+      "sha256": "8704ac84424ba9b11f784663168edaf0673a312938be44b3df8f045efee44bbc",
+      "name": "normal",
+      "category": "fallback"
+    },
+    {
+      "file": "01-程序生成/程序旋律试听/boss.wav",
+      "duration": 8.2,
+      "peak": 0.05574,
+      "sample_rate": 48000,
+      "sha256": "c8b7f637d21c1b21e018a877b3bff2c755dd77b40b3d6a45a940318469498a5c",
+      "name": "boss",
+      "category": "fallback"
+    }
+  ],
+  "music": [
+    {
+      "name": "normal",
+      "source": "02-MiniMax配乐/原始MP3/bgm_normal.mp3",
+      "original": "02-MiniMax配乐/原始MP3/bgm_normal.mp3",
+      "preview": "02-MiniMax配乐/试听MP3/bgm_normal.mp3",
+      "duration": 73.41,
+      "original_sha256": "ec69fb1f2ebd80f27ade44d23911e4a35a0b028459c41f52eb297fd029b8d7a9",
+      "preview_gain": 0.580064,
+      "processing": "试听副本只作峰值校准与重编码；原 MP3 另存，逐字节保留。"
+    },
+    {
+      "name": "boss",
+      "source": "02-MiniMax配乐/原始MP3/bgm_boss.mp3",
+      "original": "02-MiniMax配乐/原始MP3/bgm_boss.mp3",
+      "preview": "02-MiniMax配乐/试听MP3/bgm_boss.mp3",
+      "duration": 100.0,
+      "original_sha256": "18d2a8f9866bde06f92efd321f41d70eacd3aa2ba3ec39de25558f1a08d5b8a6",
+      "preview_gain": 0.471064,
+      "processing": "试听副本只作峰值校准与重编码；原 MP3 另存，逐字节保留。"
+    },
+    {
+      "name": "win",
+      "source": "02-MiniMax配乐/原始MP3/bgm_win.mp3",
+      "original": "02-MiniMax配乐/原始MP3/bgm_win.mp3",
+      "preview": "02-MiniMax配乐/试听MP3/bgm_win.mp3",
+      "duration": 9.0,
+      "original_sha256": "9cfcbe37bd64384e6eda6212cb4fc214dcd6f18b39dc1b78a5dd937584555ad0",
+      "preview_gain": 3.756815,
+      "processing": "试听副本只作峰值校准与重编码；原 MP3 另存，逐字节保留。"
+    },
+    {
+      "name": "lose",
+      "source": "02-MiniMax配乐/原始MP3/bgm_lose.mp3",
+      "original": "02-MiniMax配乐/原始MP3/bgm_lose.mp3",
+      "preview": "02-MiniMax配乐/试听MP3/bgm_lose.mp3",
+      "duration": 7.0,
+      "original_sha256": "2ba528dd3bf1ded133d0de75c1673eb73dca961ab51268f70ac79ea5cf4123d5",
+      "preview_gain": 4.341446,
+      "processing": "试听副本只作峰值校准与重编码；原 MP3 另存，逐字节保留。"
+    }
+  ],
+  "notes": [
+    "音效 WAV 为本次离线渲染的试听导出；游戏原本通过 Web Audio 实时合成，不是调用这些 WAV。",
+    "音效保留当前 Audio7 音量总线、压缩器和 SFX_TRIM；噪声试听使用固定随机种子1729。",
+    "starLoop 为星光绽放期间的程序合成旋律；normal/boss 程序旋律仅作 MP3 播放失败时的回退。",
+    "win/lose 合成音效是结算配乐未就绪时的回退；不得与 MiniMax 的同名 MP3 混淆。",
+    "magicThunder/magicBurst/magicStar 属于旧版魔法兼容素材，当前第一关只开放炉火。"
+  ]
+}

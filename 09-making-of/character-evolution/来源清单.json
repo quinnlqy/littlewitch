@@ -1,0 +1,478 @@
+{
+  "说明": "原图逐字节复制；展示图仅裁切、缩放排版，未重绘。第 01—06 项整理设定发展，第 07 项为晚间曾接入游戏的另一造型，第 08 项为当前动画参考；图像生成先后与游戏采用先后不可混为一条时间线。同期探索不代表逐张采用。",
+  "records": [
+    "原工程工作记录\\2026-10-19.md",
+    "原工程\\extract_witch2.py",
+    "原工程\\build_witch2.py",
+    "原工程\\index_v13_backup.html",
+    "原工程\\index_v14_backup.html",
+    "原工程工作记录\\2026-10-22.md",
+    "原工程工作记录\\2026-10-23.md"
+  ],
+  "files": [
+    {
+      "source": "原图/01-演变主线/01_A1_witch_warm_flying.png",
+      "target": "原图/01-演变主线/01_A1_witch_warm_flying.png",
+      "group": "main",
+      "title": "最初的红棕色魔女",
+      "description": "红棕色尖帽与披风、棕红色头发、较修长的比例。仍是比较常见的绘本魔女形象。",
+      "crop": null,
+      "stage": "01",
+      "sha256": "c0d4c65e4a700c2d2bec8be4c074203e1ff304a2246fafbd08767bfce2108da7",
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    {
+      "source": "原图/01-演变主线/02_v03_witch_modelsheet.png",
+      "target": "原图/01-演变主线/02_v03_witch_modelsheet.png",
+      "group": "main",
+      "title": "转向无描边平涂",
+      "description": "改成更幼态的短发小女孩；保留深色尖帽与暖红裙子，画面转向平涂和剪纸感。",
+      "crop": [
+        110,
+        95,
+        525,
+        700
+      ],
+      "stage": "02",
+      "sha256": "5ec58f4d4e349247c94582161436794c830109762a691625df358218f10ed1fe",
+      "size": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "source": "原图/01-演变主线/03_bun_witch_modelsheet_v2.png",
+      "target": "原图/01-演变主线/03_bun_witch_modelsheet_v2.png",
+      "group": "main",
+      "title": "白馒头帽子出现",
+      "description": "奶白色帽子加上独立小表情与蓝蝴蝶结；灰棕短发、浅紫披肩和米白裙子，角色辨识度开始形成。",
+      "crop": [
+        85,
+        100,
+        430,
+        715
+      ],
+      "stage": "03",
+      "sha256": "67e623ecc5b0a64930d3fc6ba2d370108107db49bf65764f1096ceb0eaa88be8",
+      "size": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "source": "原图/01-演变主线/04_bun_witch_v3.png",
+      "target": "原图/01-演变主线/04_bun_witch_v3.png",
+      "group": "main",
+      "title": "金色双辫与深紫裙",
+      "description": "发型改为浅金色双麻花辫，服装改为深灰紫色连衣裙。保留馒头帽和蓝蝴蝶结，并补上魔杖与跑步姿态。",
+      "crop": [
+        65,
+        140,
+        425,
+        880
+      ],
+      "stage": "04",
+      "sha256": "78f0074dc042823c6699ddb4997d3aa532ba519cc44a070cb5124c4ccf600b28",
+      "size": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "source": "原图/01-演变主线/05_bun_witch_broom_idle_v2.png",
+      "target": "原图/01-演变主线/05_bun_witch_broom_idle_v2.png",
+      "group": "main",
+      "title": "确定骑扫把姿态",
+      "description": "把站姿设定转换成游戏需要的悬停坐姿，调整手、膝盖、扫把和魔杖的关系。",
+      "crop": null,
+      "stage": "05",
+      "sha256": "44044492a32c475ca9420f4490376add4b7c2fdef950e6a4b7bbdd5faab09e31",
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    {
+      "source": "原图/01-演变主线/06_bun_witch_broom_idle_v3_flat.png",
+      "target": "原图/01-演变主线/06_bun_witch_broom_idle_v3_flat.png",
+      "group": "main",
+      "title": "清理为更干净的平涂",
+      "description": "进一步减弱纹理与体积感，简化色块。随后抠出透明立绘，作为早期游戏内角色素材。",
+      "crop": null,
+      "stage": "06",
+      "sha256": "093e9a8241f322c1e9aab97687f371d6b2dfd8184bbcec6e3bdad8ba9957b6d7",
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    {
+      "source": "原图/01-演变主线/07_A_small_witch_girl_riding_a_br_2026-10-19T12-16-16.png",
+      "target": "原图/01-演变主线/07_A_small_witch_girl_riding_a_br_2026-10-19T12-16-16.png",
+      "group": "main",
+      "title": "曾接入游戏的栗红发版",
+      "description": "10 月 19 日晚另行采用的深靛紫帽、栗红发侧骑造型。提取脚本与 v13/v14 网页备份都能确认它进入过游戏，不能省略为普通备选。",
+      "crop": [
+        85,
+        360,
+        890,
+        990
+      ],
+      "stage": "07",
+      "sha256": "2920e76de8fd9f1303781e3ceba451c2aef2e5658f9294aa8d8b9dc0288c981e",
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    {
+      "source": "原图/01-演变主线/08_witch_flight_green_v1_character_original.png",
+      "target": "原图/01-演变主线/08_witch_flight_green_v1_character_original.png",
+      "group": "main",
+      "title": "当前游戏的动画参考",
+      "description": "最终游戏使用白馒头表情帽、蓝蝴蝶结、金色双辫和深紫服装的动画。此图是动画制作参考；展示位置不代表它一定晚于第 07 张生成。",
+      "crop": null,
+      "stage": "08",
+      "sha256": "8bff2aba923105d1a7e1750e94cfb0bdbf661def0ed20b932929c3af0266c597",
+      "size": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "source": "原图/02-主线补充/A2_witch_violet_flying.png",
+      "target": "原图/02-主线补充/A2_witch_violet_flying.png",
+      "group": "support",
+      "title": "最初的紫色配色备选",
+      "sha256": "79e1918029b3bea221647721eb5444d8a0b56c7d15572e4fc8f9ff37cd552598",
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    {
+      "source": "原图/02-主线补充/B_witch_turnaround.png",
+      "target": "原图/02-主线补充/B_witch_turnaround.png",
+      "group": "support",
+      "title": "最初阶段的三视图",
+      "sha256": "19c80c31cd570e6a9052678140489886b28d441c6c3236e912d0353d1ad096c9",
+      "size": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "source": "原图/02-主线补充/C_witch_expressions.png",
+      "target": "原图/02-主线补充/C_witch_expressions.png",
+      "group": "support",
+      "title": "最初阶段的表情设定",
+      "sha256": "1ed8cdef7cb5191d84a12e02737e25893f01342dbf60f8c8c1b9caa584b92e8d",
+      "size": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "source": "原图/02-主线补充/bun_witch_broom_idle.png",
+      "target": "原图/02-主线补充/bun_witch_broom_idle.png",
+      "group": "support",
+      "title": "骑扫把姿态的第一次尝试",
+      "sha256": "b7bad828946e393110e1af63542a39295bcddbee9745149637c83a6b749dcce0",
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    {
+      "source": "原图/02-主线补充/hero_art_raw.png",
+      "target": "原图/02-主线补充/hero_art_raw.png",
+      "group": "support",
+      "title": "早期游戏使用的透明立绘",
+      "sha256": "28a3fa6a5a7f3e4f754ed4dbd163da75d7d9db8a7be3cc2efbd83b7bd30df4ce",
+      "size": [
+        772,
+        832
+      ]
+    },
+    {
+      "source": "原图/03-同期探索/01-yellow-brim-witch.png",
+      "target": "原图/03-同期探索/01-yellow-brim-witch.png",
+      "group": "parallel",
+      "title": "黄帽檐方向",
+      "sha256": "9e98fc2b8f9c58c7aafcfa11c6e392c550ef998ad7ddb8ef2fa8675d29608e5d",
+      "size": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "source": "原图/03-同期探索/02-sage-traveler-witch.png",
+      "target": "原图/03-同期探索/02-sage-traveler-witch.png",
+      "group": "parallel",
+      "title": "鼠尾草绿旅行魔女",
+      "sha256": "2fe0c42502efafa2bcc116cdca8d5086c1abffa5e4f2de1077dc3d117617c220",
+      "size": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "source": "原图/03-同期探索/03-terracotta-cape-witch.png",
+      "target": "原图/03-同期探索/03-terracotta-cape-witch.png",
+      "group": "parallel",
+      "title": "陶土红披风方向",
+      "sha256": "5e10452cdbe396e2efe1e0ba0dea15d9f115072118d8dbfe83348c84dfbd0ed2",
+      "size": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "source": "原图/03-同期探索/04-baimantou-cloud-witch-v1.png",
+      "target": "原图/03-同期探索/04-baimantou-cloud-witch-v1.png",
+      "group": "parallel",
+      "title": "云朵馒头帽探索",
+      "sha256": "581c2fbfdddc5ee3452bccf429512576d0abaad69bf1ae14f4bfee3eb5bff564",
+      "size": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "source": "原图/03-同期探索/05-baimantou-bold-witch-v2.png",
+      "target": "原图/03-同期探索/05-baimantou-bold-witch-v2.png",
+      "group": "parallel",
+      "title": "装饰更丰富的方向",
+      "sha256": "44cd287bc93bd0447bacb3af5c0ca3841fea317e63630b3e33da66b5e278d8b7",
+      "size": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "source": "原图/03-同期探索/06-baimantou-simple-witch-v3.png",
+      "target": "原图/03-同期探索/06-baimantou-simple-witch-v3.png",
+      "group": "parallel",
+      "title": "进一步简化的方向",
+      "sha256": "52ace01aa53a1dd2636b808e99573a90502b4324b19eb8943dbdef42c5555daf",
+      "size": [
+        1774,
+        887
+      ]
+    },
+    {
+      "source": "原图/03-同期探索/07-baimantou-blue-bow-bun-wand-v4.png",
+      "target": "原图/03-同期探索/07-baimantou-blue-bow-bun-wand-v4.png",
+      "group": "parallel",
+      "title": "蓝蝴蝶结与馒头魔杖",
+      "sha256": "16f9c33c5e4dede0c09168a60adf75efc29e14db7bb80ef57490eae53c533344",
+      "size": [
+        1774,
+        887
+      ]
+    },
+    {
+      "source": "原图/03-同期探索/08-baimantou-cream-blonde-twin-braids-v5.png",
+      "target": "原图/03-同期探索/08-baimantou-cream-blonde-twin-braids-v5.png",
+      "group": "parallel",
+      "title": "金色双辫探索",
+      "sha256": "1a58b7da69e27a555dfd96d539894b8cb6f712d9391221b96d9c66f1c7cd3db4",
+      "size": [
+        1774,
+        887
+      ]
+    },
+    {
+      "source": "原图/04-界面插画/witch_title.jpg",
+      "target": "原图/04-界面插画/witch_title.jpg",
+      "group": "menu",
+      "title": "早期标题页立绘",
+      "sha256": "272e03bac6dd2ccfb888c3d17dc9d3da56643a2d45914636e931e98cd377e88b",
+      "size": [
+        1024,
+        1536
+      ]
+    },
+    {
+      "source": "原图/04-界面插画/witch_title_src.png",
+      "target": "原图/04-界面插画/witch_title_src.png",
+      "group": "menu",
+      "title": "最终标题页立绘原图",
+      "sha256": "72b8846399c5f5d8f61720ce150464cdf5ca607745834f9116f00166f84a76f2",
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    {
+      "source": "原图/04-界面插画/witch_lose.webp",
+      "target": "原图/04-界面插画/witch_lose.webp",
+      "group": "menu",
+      "title": "最终失败页透明立绘",
+      "sha256": "dd7657f4a858e51ace730ecbef67d5bb4581d40846123c43a0611c349ef1ff00",
+      "size": [
+        977,
+        1316
+      ]
+    },
+    {
+      "source": "原图/02-主线补充/witch2_raw.png",
+      "target": "原图/02-主线补充/witch2_raw.png",
+      "group": "support",
+      "title": "栗红发侧骑版的透明原图",
+      "description": "由用户指出的生成图抠出；与 v13/v14 的角色打包流程对应。",
+      "sha256": "9ea853d5de0e293443f04208c15c06209a58946c8dd72009139b29e3283e882c",
+      "size": [
+        742,
+        563
+      ]
+    },
+    {
+      "source": "原图/05-早期未定稿/bun_witch_modelsheet.png",
+      "target": "原图/05-早期未定稿/bun_witch_modelsheet.png",
+      "group": "rejected",
+      "title": "白馒头短发版：三视图尝试 1",
+      "description": "早期输出只有三个视图，工作记录将它列为废弃稿；外形过程仍值得保留。",
+      "sha256": "0f0aff4346c5b49971e38323d9202bd398aeaaa9bbcdfc51d67db73d76ad30d8",
+      "size": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "source": "原图/05-早期未定稿/Character_model_sheet__2D_stor_2026-10-19T02-03-11.png",
+      "target": "原图/05-早期未定稿/Character_model_sheet__2D_stor_2026-10-19T02-03-11.png",
+      "group": "rejected",
+      "title": "白馒头短发版：三视图尝试 2",
+      "description": "另一张三视图尝试，后续采用四视图版本。",
+      "sha256": "a0a54fc3bbbb5b382c0b4dc33483452d0f0806ebe15346d0eade79929284a5fb",
+      "size": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "source": "原图/03-同期探索/baimantou-broom-idle-pose.png",
+      "target": "原图/03-同期探索/baimantou-broom-idle-pose.png",
+      "group": "parallel",
+      "title": "骑扫把探索：舒展姿态",
+      "description": "蓝蝴蝶结、金色双辫与馒头魔杖的一次独立姿态探索。",
+      "sha256": "6311518e12c8311f1b64219434f2bedc8e6be7ef8226da937f55f01b4db169d5",
+      "size": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "source": "原图/03-同期探索/baimantou-broom-idle-compact.png",
+      "target": "原图/03-同期探索/baimantou-broom-idle-compact.png",
+      "group": "parallel",
+      "title": "骑扫把探索：紧凑坐姿",
+      "description": "收紧四肢和辫子的轮廓，身体更紧凑；不把文件名 v2 当成主项目统一版本号。",
+      "sha256": "0193c98a8cb3e6e5c050ac32ff2ebdd9d987f3910bab2a4068075e9574657361",
+      "size": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "source": "原图/04-界面插画/cand_a_侧坐偏蓝.png",
+      "target": "原图/04-界面插画/cand_a_侧坐偏蓝.png",
+      "group": "menu",
+      "title": "标题页侧坐备选：偏蓝色调",
+      "description": "与最终采用的 cand_b 同属侧坐方案；这张也是上一轮遗漏的独立画稿。",
+      "sha256": "3648348ae1f4b53c67bb1d8596b6e0e3f6e4413932beac5ef64767ad70a11bbf",
+      "size": [
+        1024,
+        1536
+      ]
+    },
+    {
+      "source": "原图/04-界面插画/witch_lose.jpg",
+      "target": "原图/04-界面插画/witch_lose.jpg",
+      "group": "menu",
+      "title": "失败页立绘的白底原图",
+      "description": "保留完整原始插画，透明 WebP 是后续处理文件，不算新造型。",
+      "sha256": "e66107baf7baf1046fdde9de9c9dfc13eea4972dfbd27c1b52cfa0163a91b4c3",
+      "size": [
+        1024,
+        1536
+      ]
+    },
+    {
+      "source": "原图/06-动画尝试/generated-source-sheet.png",
+      "target": "原图/06-动画尝试/generated-source-sheet.png",
+      "group": "animation",
+      "title": "早期站姿待机动画原始图",
+      "description": "延续馒头帽双辫方向的一次站姿序列帧尝试，与最终骑扫把动画分开记录。",
+      "sha256": "ba65db91e0abbd63b70ed24dbd3580f4a9b62cc31a551f38afa3966f4a9bb961",
+      "size": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "source": "原图/07-场景插画/Children_s_picture_book_waterc_2026-10-21T02-56-02.png",
+      "target": "原图/07-场景插画/Children_s_picture_book_waterc_2026-10-21T02-56-02.png",
+      "group": "scene",
+      "title": "早期结算场景：小屋与湖面",
+      "description": "这是包含角色的整幅场景插画，不是独立人物立绘。",
+      "sha256": "97d316381d742039eb7eb345832ea33e4eefc5868fb5dc42cff637440089ecea",
+      "size": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "source": "原图/07-场景插画/Children_s_picture_book_waterc_2026-10-21T02-58-07.png",
+      "target": "原图/07-场景插画/Children_s_picture_book_waterc_2026-10-21T02-58-07.png",
+      "group": "scene",
+      "title": "早期结算场景：月夜湖面",
+      "description": "另一张包含角色的整幅场景插画，单独归档，避免漏掉角色的界面表现。",
+      "sha256": "6f6f0e6c29fa0a439a359f66295e6cc488b68fd2bce3e359b56650deca855021",
+      "size": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "source": "原图/08-采用记录/game_newhero.png",
+      "target": "原图/08-采用记录/game_newhero.png",
+      "group": "evidence",
+      "title": "白馒头形象曾被像素化",
+      "description": "工作记录说明先按设定图手工绘制 30×26 像素角色；这是保留的游戏截图，不是最早程序角色原图。",
+      "sha256": "2f4a47f8ea4dc9628f78f23fb963b56f99806099df60dabc52124596abcd7fd4",
+      "size": [
+        960,
+        540
+      ]
+    },
+    {
+      "source": "原图/08-采用记录/heroart_play.png",
+      "target": "原图/08-采用记录/heroart_play.png",
+      "group": "evidence",
+      "title": "白馒头透明立绘接入游戏",
+      "description": "在像素化尝试后，直接使用抠出的绘制形象，保留游戏截图作证。",
+      "sha256": "c40cd64133df59cdcef3f353555a4ce73aa6cc274eebe8d997a5e2e4475e0d06",
+      "size": [
+        960,
+        540
+      ]
+    },
+    {
+      "source": "原图/08-采用记录/v12_play.png",
+      "target": "原图/08-采用记录/v12_play.png",
+      "group": "evidence",
+      "title": "栗红发侧骑版的游戏截图",
+      "description": "与生成图、透明原图及历史网页中的角色相互核对。",
+      "sha256": "8139616a4bda74f41354d89d422e276300812cf212cbfb8cfc94ec354b73f753",
+      "size": [
+        1100,
+        700
+      ]
+    }
+  ]
+}

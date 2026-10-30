@@ -1,8 +1,8 @@
 {
-  "date": "2026-10-29",
-  "scope": "离线游戏、可构建源码、精选设计素材、本地H3工作流、HTML使用说明与教学策划初稿",
-  "file_count_excluding_this_manifest": 250,
-  "bytes_excluding_this_manifest": 53892762,
+  "date": "2026-10-30",
+  "scope": "离线游戏、可构建源码、精选设计素材、H3工作流、教学策划初稿与制作过程网页",
+  "file_count_excluding_this_manifest": 437,
+  "bytes_excluding_this_manifest": 182050021,
   "files": [
     {
       "path": ".gitattributes",
@@ -1409,6 +1409,1256 @@
       "sha256": "383f7041d964e07c3423a5c1e5bb0ba05674a725f466a6281b00c0402514cbdf"
     },
     {
+      "path": "09-making-of/action-map/GIF/boostLoop.gif",
+      "bytes": 283120,
+      "sha256": "a9d297955327ea5a7c4abf338b89df8cc36da227ae0e098fba73c2b79be3d687",
+      "width": 360,
+      "height": 300,
+      "mode": "P"
+    },
+    {
+      "path": "09-making-of/action-map/GIF/boostStart.gif",
+      "bytes": 331478,
+      "sha256": "30f87512363ab364b0dc21dfa260d9aaa0f3c7dd5a89790d18a811a347d1d8bd",
+      "width": 360,
+      "height": 300,
+      "mode": "P"
+    },
+    {
+      "path": "09-making-of/action-map/GIF/cast.gif",
+      "bytes": 466106,
+      "sha256": "d5c0a1c43157c476d9de8aa58b449c41bfee45a1111bbaad01b9506fb97cf046",
+      "width": 360,
+      "height": 300,
+      "mode": "P"
+    },
+    {
+      "path": "09-making-of/action-map/GIF/fever.gif",
+      "bytes": 692279,
+      "sha256": "007a235ac409ea20e62adc99a9a2f3c2c1d931b5f8b75cff152f062adef442ca",
+      "width": 360,
+      "height": 300,
+      "mode": "P"
+    },
+    {
+      "path": "09-making-of/action-map/GIF/idle.gif",
+      "bytes": 240382,
+      "sha256": "8697fbc4a66b59f0645f8dcd2225a893ca31f337c0f3cd0777aaa2b99aeefd61",
+      "width": 360,
+      "height": 300,
+      "mode": "P"
+    },
+    {
+      "path": "09-making-of/action-map/GIF/move.gif",
+      "bytes": 482366,
+      "sha256": "8bb7923aa807c1763d1805667908ae711cc786e5c457638ff40fd267254c7ca0",
+      "width": 360,
+      "height": 300,
+      "mode": "P"
+    },
+    {
+      "path": "09-making-of/action-map/GIF/shoot-intro.gif",
+      "bytes": 220271,
+      "sha256": "adfdc1f64f7d44ec9e77723fa146e9f44c72bb5ecb8502f2f419c15a4cd1ec09",
+      "width": 360,
+      "height": 300,
+      "mode": "P"
+    },
+    {
+      "path": "09-making-of/action-map/GIF/shoot-loop.gif",
+      "bytes": 488900,
+      "sha256": "5c921c828f52735739b73ea49390552a18d9e35a85359bb72978349492dd506c",
+      "width": 360,
+      "height": 300,
+      "mode": "P"
+    },
+    {
+      "path": "09-making-of/action-map/GIF/shoot.gif",
+      "bytes": 1200253,
+      "sha256": "def1aae67e7327127eb0f3335d47fa8c1b920f16350d17b20c5b27ec78ae92a8",
+      "width": 360,
+      "height": 300,
+      "mode": "P"
+    },
+    {
+      "path": "09-making-of/action-map/README.md",
+      "bytes": 843,
+      "sha256": "97ec89f3a1fdd0aff227d4604d33b72842635bed067854bafb607b44690f15de"
+    },
+    {
+      "path": "09-making-of/action-map/动作来源与播放说明.json",
+      "bytes": 12190,
+      "sha256": "3c4129a4528bdc7cb59df3eb6da4f09121718ceec6342a660ce42c688b0456f9"
+    },
+    {
+      "path": "09-making-of/action-map/小魔女动作状态图-预览.png",
+      "bytes": 464630,
+      "sha256": "ed9c8ac8cf0e7ed668cf1101428c3f23bf76091480b273a21de3dee0689f9e9d",
+      "width": 1920,
+      "height": 1080,
+      "mode": "RGB"
+    },
+    {
+      "path": "09-making-of/action-map/小魔女动作状态图.html",
+      "bytes": 6376779,
+      "sha256": "e35d8efee1eb32e4a6f3adf96418c6210cf0c56419414c7e16a15f1bf88f433c"
+    },
+    {
+      "path": "09-making-of/audio/01-程序生成/代码/程序音频合成.js",
+      "bytes": 19202,
+      "sha256": "7a8ac3a80940c75593521bb946fbf7fe058b4a4607604a07b2514f59e6341822"
+    },
+    {
+      "path": "09-making-of/audio/01-程序生成/程序旋律试听/boss.wav",
+      "bytes": 787244,
+      "sha256": "c8b7f637d21c1b21e018a877b3bff2c755dd77b40b3d6a45a940318469498a5c"
+    },
+    {
+      "path": "09-making-of/audio/01-程序生成/程序旋律试听/normal.wav",
+      "bytes": 787244,
+      "sha256": "8704ac84424ba9b11f784663168edaf0673a312938be44b3df8f045efee44bbc"
+    },
+    {
+      "path": "09-making-of/audio/01-程序生成/程序旋律试听/starLoop.wav",
+      "bytes": 499244,
+      "sha256": "45f212fb4c4dbfff317b7e0db78f7befe460703c4ded4b30f5bf0d42360bd024"
+    },
+    {
+      "path": "09-making-of/audio/01-程序生成/音效试听WAV/batFlap.wav",
+      "bytes": 22506,
+      "sha256": "d5f177dc9e60b9b93d7e36d51d9754129a6ffbe50212bb7b228ca0074775d18a"
+    },
+    {
+      "path": "09-making-of/audio/01-程序生成/音效试听WAV/bigBoom.wav",
+      "bytes": 85098,
+      "sha256": "999544e0223937e7bf19fc761c5b73386f720715cbe1b661a663a3412b1a3142"
+    },
+    {
+      "path": "09-making-of/audio/01-程序生成/音效试听WAV/bomb.wav",
+      "bytes": 56730,
+      "sha256": "37b89c7edb15a09b844deb241e6c80b2f2ae6346f28bb6f9b5888aa0a99b6060"
+    },
+    {
+      "path": "09-making-of/audio/01-程序生成/音效试听WAV/boom.wav",
+      "bytes": 41898,
+      "sha256": "5b6007148c3a63ed99cecb370d088447b6347754167b4ecde533614b8b80ba37"
+    },
+    {
+      "path": "09-making-of/audio/01-程序生成/音效试听WAV/bossBreak.wav",
+      "bytes": 113898,
+      "sha256": "3833ce7c59c7d868e820ac86c2cd72f5d1516e8930199154ef3c614e63408f9c"
+    },
+    {
+      "path": "09-making-of/audio/01-程序生成/音效试听WAV/bossBreath.wav",
+      "bytes": 113898,
+      "sha256": "d2ee48b9f93923f43c2fcaf9ddebef38e2c09bf3e92e2a302fedb13a563a64f9"
+    },
+    {
+      "path": "09-making-of/audio/01-程序生成/音效试听WAV/bossCharge.wav",
+      "bytes": 65898,
+      "sha256": "02d502a4a7a60065b1883bd9834f19a24da4118f56e0f0da69ede0e94227045a"
+    },
+    {
+      "path": "09-making-of/audio/01-程序生成/音效试听WAV/bossHalf.wav",
+      "bytes": 86876,
+      "sha256": "2438b3cc2bdaf11c3a19dded474a3af4894718e294a9871229aeed08b889c1ea"
+    },
+    {
+      "path": "09-making-of/audio/01-程序生成/音效试听WAV/bossOrb.wav",
+      "bytes": 37098,
+      "sha256": "9fc85ea2865b9f99cfa5b8bd0e71177dc60ca7ce834f47345608f78572d2927e"
+    },
+    {
+      "path": "09-making-of/audio/01-程序生成/音效试听WAV/bossRoar.wav",
+      "bytes": 94698,
+      "sha256": "2f1aa052125958285f48e3b64f5b29f5d72ced2cc94bdb44cb0f9d0a18b07ff9"
+    },
+    {
+      "path": "09-making-of/audio/01-程序生成/音效试听WAV/bossWall.wav",
+      "bytes": 75498,
+      "sha256": "20a1be2bf0969990df61c6e29ce7cd50a19870c0334c8a7ae0b8b25074bceeb6"
+    },
+    {
+      "path": "09-making-of/audio/01-程序生成/音效试听WAV/bossWeak.wav",
+      "bytes": 36138,
+      "sha256": "d57f910d4259d4290a2d4c1512c0c0e1df3cd733399b80a157a6727d179dc320"
+    },
+    {
+      "path": "09-making-of/audio/01-程序生成/音效试听WAV/carrierGulp.wav",
+      "bytes": 33256,
+      "sha256": "00915d91e58e786ec1cb12b7de33ef0e01d46889b34d2c0f033bc5052c7712e7"
+    },
+    {
+      "path": "09-making-of/audio/01-程序生成/音效试听WAV/charge.wav",
+      "bytes": 33258,
+      "sha256": "067af866837ff053c3b342edb2d014d926626b78d5c25c6a20b2c3cac7c364b3"
+    },
+    {
+      "path": "09-making-of/audio/01-程序生成/音效试听WAV/crystal.wav",
+      "bytes": 17418,
+      "sha256": "8b9d08577f94e7c58f978bb7fee1d2ef4ae57b3c6eee7c674f00e30e1335ac35"
+    },
+    {
+      "path": "09-making-of/audio/01-程序生成/音效试听WAV/cup.wav",
+      "bytes": 21738,
+      "sha256": "f50d284d50ffff93332a4ea115757869c33b154ecbf731d6f91899c693cc4e00"
+    },
+    {
+      "path": "09-making-of/audio/01-程序生成/音效试听WAV/enemyDie.wav",
+      "bytes": 27498,
+      "sha256": "2f4cd84c9182d8954aebac59633a1472689fcc75c48da79c5c7b066ef611a8c1"
+    },
+    {
+      "path": "09-making-of/audio/01-程序生成/音效试听WAV/enemyHit.wav",
+      "bytes": 14444,
+      "sha256": "928fbdd0411d8f335dbce725daf68587040087fde66de981353bb78d31268cca"
+    },
+    {
+      "path": "09-making-of/audio/01-程序生成/音效试听WAV/enemyShot.wav",
+      "bytes": 17898,
+      "sha256": "0d57405739b9bdd93c564a3f0226611f7507e31218a7cd7c557e4d4020114d0d"
+    },
+    {
+      "path": "09-making-of/audio/01-程序生成/音效试听WAV/fearPuff.wav",
+      "bytes": 32086,
+      "sha256": "855e0f13a769be1ea7935d96e9c23bb2d8ba7755bbb1c91b6463005bcbfadf43"
+    },
+    {
+      "path": "09-making-of/audio/01-程序生成/音效试听WAV/fever.wav",
+      "bytes": 68534,
+      "sha256": "86ae42729ae147a459a0b3523337c6ee85c288dea3b8ced150f1a3976e76058c"
+    },
+    {
+      "path": "09-making-of/audio/01-程序生成/音效试听WAV/feverEnd.wav",
+      "bytes": 33258,
+      "sha256": "885cc99d5afb34e1d9eb00418793fb96f293187404c37f6ea40a4a0a41da8736"
+    },
+    {
+      "path": "09-making-of/audio/01-程序生成/音效试听WAV/fireTick.wav",
+      "bytes": 14444,
+      "sha256": "9b5621dbc4a86d08428819309408b62542275c46a525014ea9097cf05b1dfbdd"
+    },
+    {
+      "path": "09-making-of/audio/01-程序生成/音效试听WAV/fishSplash.wav",
+      "bytes": 25644,
+      "sha256": "4c1122030bef72cae48228725f38387d5ff8a888cc1e0a9f114a081f708fde9d"
+    },
+    {
+      "path": "09-making-of/audio/01-程序生成/音效试听WAV/headPuff.wav",
+      "bytes": 27498,
+      "sha256": "e8e71f750724c8053f5f1edae51ef813a432e91de5cacbabe08139bca8cbdd39"
+    },
+    {
+      "path": "09-making-of/audio/01-程序生成/音效试听WAV/hit.wav",
+      "bytes": 14444,
+      "sha256": "ac09dffcdc04e8fbc1a168f15828d52139622250d8822af080d14bc404488639"
+    },
+    {
+      "path": "09-making-of/audio/01-程序生成/音效试听WAV/hurt.wav",
+      "bytes": 37098,
+      "sha256": "485e796818a5d6e9ae2487f34ee3a4e4e8c731f9eaa2fa2787ca32d74319e5d2"
+    },
+    {
+      "path": "09-making-of/audio/01-程序生成/音效试听WAV/impCry.wav",
+      "bytes": 19818,
+      "sha256": "fd63c214be7415c6e6bfbe978cb0f2b53a51d9e2db131f628b77351a9941975c"
+    },
+    {
+      "path": "09-making-of/audio/01-程序生成/音效试听WAV/levelUp.wav",
+      "bytes": 44008,
+      "sha256": "d4335a6b7b7e6e3ff68f9f252d8aa2242f1a2b8317b770e09918d96318445258"
+    },
+    {
+      "path": "09-making-of/audio/01-程序生成/音效试听WAV/lose.wav",
+      "bytes": 163818,
+      "sha256": "0e73b6b605ad67165ad12a87740fb2513e5d531770e261da6c8a2e9a1ba43ff2"
+    },
+    {
+      "path": "09-making-of/audio/01-程序生成/音效试听WAV/lowHp.wav",
+      "bytes": 44778,
+      "sha256": "a2e52133c07219c2431ee445a55849a28b2e8a9f11a4a57a48d1ebac2486db37"
+    },
+    {
+      "path": "09-making-of/audio/01-程序生成/音效试听WAV/magicBurst.wav",
+      "bytes": 56298,
+      "sha256": "9920a619f8edc2928b8c769edebd2c8470ca1c3ce50345d646b46b2b036b5122"
+    },
+    {
+      "path": "09-making-of/audio/01-程序生成/音效试听WAV/magicFire.wav",
+      "bytes": 95238,
+      "sha256": "da1a6aa11da1611ad698e691a31738ff8174f816dbebe025112979ced3b8918c"
+    },
+    {
+      "path": "09-making-of/audio/01-程序生成/音效试听WAV/magicStar.wav",
+      "bytes": 40938,
+      "sha256": "9afc2125ba347792245f2bc226c81dd6483b73152cc79343d515474bc1d5de7d"
+    },
+    {
+      "path": "09-making-of/audio/01-程序生成/音效试听WAV/magicThunder.wav",
+      "bytes": 43498,
+      "sha256": "7eb81b8d99edc4ec92e4db1e7bebfa49c6ae11354edc5b2af8874fc6ba510a70"
+    },
+    {
+      "path": "09-making-of/audio/01-程序生成/音效试听WAV/phaseChange.wav",
+      "bytes": 53186,
+      "sha256": "c699e128d299df6da6759a00781ea9f5a06b11e1f3e162182424a58ee2397541"
+    },
+    {
+      "path": "09-making-of/audio/01-程序生成/音效试听WAV/shoot.wav",
+      "bytes": 14444,
+      "sha256": "2e0c28559ce6a6ce1b6f7519b0f4e161b532b6a4adfdf289d040637ecf86c509"
+    },
+    {
+      "path": "09-making-of/audio/01-程序生成/音效试听WAV/shootBig.wav",
+      "bytes": 15018,
+      "sha256": "dcb450c2f4a09a8de1b152278aee85121ad87ae581c93d0f3f9b46d1efdfb5d1"
+    },
+    {
+      "path": "09-making-of/audio/01-程序生成/音效试听WAV/star.wav",
+      "bytes": 24618,
+      "sha256": "5c86e32b59afdc63ee333f0899195b16c4b72de142ec09db98cfcdc2f8a8a7ac"
+    },
+    {
+      "path": "09-making-of/audio/01-程序生成/音效试听WAV/warn.wav",
+      "bytes": 44778,
+      "sha256": "25a2962e55651356254a4a4852158e2f0d9ca14b11010b3f5a8b810cc0126748"
+    },
+    {
+      "path": "09-making-of/audio/01-程序生成/音效试听WAV/win.wav",
+      "bytes": 123498,
+      "sha256": "ddec6c822b2253d4426500497b94a32afefa6c36f4eb42f2f28eef57275d6136"
+    },
+    {
+      "path": "09-making-of/audio/02-MiniMax配乐/原始MP3/bgm_boss.mp3",
+      "bytes": 401544,
+      "sha256": "18d2a8f9866bde06f92efd321f41d70eacd3aa2ba3ec39de25558f1a08d5b8a6"
+    },
+    {
+      "path": "09-making-of/audio/02-MiniMax配乐/原始MP3/bgm_lose.mp3",
+      "bytes": 43509,
+      "sha256": "2ba528dd3bf1ded133d0de75c1673eb73dca961ab51268f70ac79ea5cf4123d5"
+    },
+    {
+      "path": "09-making-of/audio/02-MiniMax配乐/原始MP3/bgm_normal.mp3",
+      "bytes": 295173,
+      "sha256": "ec69fb1f2ebd80f27ade44d23911e4a35a0b028459c41f52eb297fd029b8d7a9"
+    },
+    {
+      "path": "09-making-of/audio/02-MiniMax配乐/原始MP3/bgm_win.mp3",
+      "bytes": 55578,
+      "sha256": "9cfcbe37bd64384e6eda6212cb4fc214dcd6f18b39dc1b78a5dd937584555ad0"
+    },
+    {
+      "path": "09-making-of/audio/02-MiniMax配乐/原项目来源说明.md",
+      "bytes": 789,
+      "sha256": "ba77ef0b07f162b878d3bcd0c89d3a81e1dc41811c718c051c8437dad7726222"
+    },
+    {
+      "path": "09-making-of/audio/02-MiniMax配乐/生成提示词.json",
+      "bytes": 1540,
+      "sha256": "c1aa87c012d33293fead8cccf0d3514739c6ac5c11a31c9b8f96358a12bf7ecd"
+    },
+    {
+      "path": "09-making-of/audio/02-MiniMax配乐/试听MP3/bgm_boss.mp3",
+      "bytes": 1202041,
+      "sha256": "befe1e326ba75ada82c13efea6a6d9b44891ae34e1425d412a9684706c575d11"
+    },
+    {
+      "path": "09-making-of/audio/02-MiniMax配乐/试听MP3/bgm_lose.mp3",
+      "bytes": 85776,
+      "sha256": "e43b1f3d4f1a51bdeacc9492833511b978afaa1b45428c982f1ecf3953ddadaa"
+    },
+    {
+      "path": "09-making-of/audio/02-MiniMax配乐/试听MP3/bgm_normal.mp3",
+      "bytes": 882929,
+      "sha256": "6fb9ae4e13e9ce20474b4431480fdce7e82b0f24286003f2da60dd2a6bc046bb"
+    },
+    {
+      "path": "09-making-of/audio/02-MiniMax配乐/试听MP3/bgm_win.mp3",
+      "bytes": 109913,
+      "sha256": "0c0c7ac0e5cd6aa4966a951da7eeafaa94a64fe69893416f21e76804f63a4b9d"
+    },
+    {
+      "path": "09-making-of/audio/README.md",
+      "bytes": 1112,
+      "sha256": "d02d3805baebcb56d3db3b520ee37514a9bd704450ccd4edbc4a09b5aeca824c"
+    },
+    {
+      "path": "09-making-of/audio/声音来源与导出清单.json",
+      "bytes": 15650,
+      "sha256": "c63e3c34497044622f001b4937969c84f29e47f0a3ab745222255c777c7e7bce"
+    },
+    {
+      "path": "09-making-of/audio/小魔女音效与配乐-预览.png",
+      "bytes": 186891,
+      "sha256": "9b9c805aa769af44387f9f9b20470ca3b8931e192f446259c323e1829502cf68",
+      "width": 1920,
+      "height": 1080,
+      "mode": "RGB"
+    },
+    {
+      "path": "09-making-of/audio/小魔女音效与配乐.html",
+      "bytes": 8581249,
+      "sha256": "5a4f15cd1f9020bb8053fdf58aa9f55f18341a68159621120d3c85c08dfb3c65"
+    },
+    {
+      "path": "09-making-of/audio/整理说明.md",
+      "bytes": 2861,
+      "sha256": "39294d3ef4092062d18ca3ed8c6d0cec7ace73e286d08335ded041b625d59a5a"
+    },
+    {
+      "path": "09-making-of/character-evolution/README.md",
+      "bytes": 911,
+      "sha256": "b60eb28d4a0f8420c9a826b2ae3bd6826f1a8c546ade534d433118c81e23cc1e"
+    },
+    {
+      "path": "09-making-of/character-evolution/原图/01-演变主线/01_A1_witch_warm_flying.png",
+      "bytes": 800029,
+      "sha256": "c0d4c65e4a700c2d2bec8be4c074203e1ff304a2246fafbd08767bfce2108da7",
+      "width": 1024,
+      "height": 1024,
+      "mode": "RGB"
+    },
+    {
+      "path": "09-making-of/character-evolution/原图/01-演变主线/02_v03_witch_modelsheet.png",
+      "bytes": 1085406,
+      "sha256": "5ec58f4d4e349247c94582161436794c830109762a691625df358218f10ed1fe",
+      "width": 1536,
+      "height": 1024,
+      "mode": "RGB"
+    },
+    {
+      "path": "09-making-of/character-evolution/原图/01-演变主线/03_bun_witch_modelsheet_v2.png",
+      "bytes": 1261593,
+      "sha256": "67e623ecc5b0a64930d3fc6ba2d370108107db49bf65764f1096ceb0eaa88be8",
+      "width": 1536,
+      "height": 1024,
+      "mode": "RGB"
+    },
+    {
+      "path": "09-making-of/character-evolution/原图/01-演变主线/04_bun_witch_v3.png",
+      "bytes": 1297911,
+      "sha256": "78f0074dc042823c6699ddb4997d3aa532ba519cc44a070cb5124c4ccf600b28",
+      "width": 1536,
+      "height": 1024,
+      "mode": "RGB"
+    },
+    {
+      "path": "09-making-of/character-evolution/原图/01-演变主线/05_bun_witch_broom_idle_v2.png",
+      "bytes": 712706,
+      "sha256": "44044492a32c475ca9420f4490376add4b7c2fdef950e6a4b7bbdd5faab09e31",
+      "width": 1024,
+      "height": 1024,
+      "mode": "RGB"
+    },
+    {
+      "path": "09-making-of/character-evolution/原图/01-演变主线/06_bun_witch_broom_idle_v3_flat.png",
+      "bytes": 639300,
+      "sha256": "093e9a8241f322c1e9aab97687f371d6b2dfd8184bbcec6e3bdad8ba9957b6d7",
+      "width": 1024,
+      "height": 1024,
+      "mode": "RGB"
+    },
+    {
+      "path": "09-making-of/character-evolution/原图/01-演变主线/07_A_small_witch_girl_riding_a_br_2026-10-19T12-16-16.png",
+      "bytes": 338201,
+      "sha256": "2920e76de8fd9f1303781e3ceba451c2aef2e5658f9294aa8d8b9dc0288c981e",
+      "width": 1024,
+      "height": 1024,
+      "mode": "RGB"
+    },
+    {
+      "path": "09-making-of/character-evolution/原图/01-演变主线/08_witch_flight_green_v1_character_original.png",
+      "bytes": 1760451,
+      "sha256": "8bff2aba923105d1a7e1750e94cfb0bdbf661def0ed20b932929c3af0266c597",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGB"
+    },
+    {
+      "path": "09-making-of/character-evolution/原图/02-主线补充/A2_witch_violet_flying.png",
+      "bytes": 772075,
+      "sha256": "79e1918029b3bea221647721eb5444d8a0b56c7d15572e4fc8f9ff37cd552598",
+      "width": 1024,
+      "height": 1024,
+      "mode": "RGB"
+    },
+    {
+      "path": "09-making-of/character-evolution/原图/02-主线补充/B_witch_turnaround.png",
+      "bytes": 1973367,
+      "sha256": "19c80c31cd570e6a9052678140489886b28d441c6c3236e912d0353d1ad096c9",
+      "width": 1536,
+      "height": 1024,
+      "mode": "RGB"
+    },
+    {
+      "path": "09-making-of/character-evolution/原图/02-主线补充/bun_witch_broom_idle.png",
+      "bytes": 771166,
+      "sha256": "b7bad828946e393110e1af63542a39295bcddbee9745149637c83a6b749dcce0",
+      "width": 1024,
+      "height": 1024,
+      "mode": "RGB"
+    },
+    {
+      "path": "09-making-of/character-evolution/原图/02-主线补充/C_witch_expressions.png",
+      "bytes": 1537829,
+      "sha256": "1ed8cdef7cb5191d84a12e02737e25893f01342dbf60f8c8c1b9caa584b92e8d",
+      "width": 1536,
+      "height": 1024,
+      "mode": "RGB"
+    },
+    {
+      "path": "09-making-of/character-evolution/原图/02-主线补充/hero_art_raw.png",
+      "bytes": 379469,
+      "sha256": "28a3fa6a5a7f3e4f754ed4dbd163da75d7d9db8a7be3cc2efbd83b7bd30df4ce",
+      "width": 772,
+      "height": 832,
+      "mode": "RGBA"
+    },
+    {
+      "path": "09-making-of/character-evolution/原图/02-主线补充/witch2_raw.png",
+      "bytes": 319179,
+      "sha256": "9ea853d5de0e293443f04208c15c06209a58946c8dd72009139b29e3283e882c",
+      "width": 742,
+      "height": 563,
+      "mode": "RGBA"
+    },
+    {
+      "path": "09-making-of/character-evolution/原图/03-同期探索/01-yellow-brim-witch.png",
+      "bytes": 1477550,
+      "sha256": "9e98fc2b8f9c58c7aafcfa11c6e392c550ef998ad7ddb8ef2fa8675d29608e5d",
+      "width": 1536,
+      "height": 1024,
+      "mode": "RGB"
+    },
+    {
+      "path": "09-making-of/character-evolution/原图/03-同期探索/02-sage-traveler-witch.png",
+      "bytes": 1503836,
+      "sha256": "2fe0c42502efafa2bcc116cdca8d5086c1abffa5e4f2de1077dc3d117617c220",
+      "width": 1536,
+      "height": 1024,
+      "mode": "RGB"
+    },
+    {
+      "path": "09-making-of/character-evolution/原图/03-同期探索/03-terracotta-cape-witch.png",
+      "bytes": 1507596,
+      "sha256": "5e10452cdbe396e2efe1e0ba0dea15d9f115072118d8dbfe83348c84dfbd0ed2",
+      "width": 1536,
+      "height": 1024,
+      "mode": "RGB"
+    },
+    {
+      "path": "09-making-of/character-evolution/原图/03-同期探索/04-baimantou-cloud-witch-v1.png",
+      "bytes": 1936851,
+      "sha256": "581c2fbfdddc5ee3452bccf429512576d0abaad69bf1ae14f4bfee3eb5bff564",
+      "width": 1536,
+      "height": 1024,
+      "mode": "RGB"
+    },
+    {
+      "path": "09-making-of/character-evolution/原图/03-同期探索/05-baimantou-bold-witch-v2.png",
+      "bytes": 2062892,
+      "sha256": "44cd287bc93bd0447bacb3af5c0ca3841fea317e63630b3e33da66b5e278d8b7",
+      "width": 1536,
+      "height": 1024,
+      "mode": "RGB"
+    },
+    {
+      "path": "09-making-of/character-evolution/原图/03-同期探索/06-baimantou-simple-witch-v3.png",
+      "bytes": 1277950,
+      "sha256": "52ace01aa53a1dd2636b808e99573a90502b4324b19eb8943dbdef42c5555daf",
+      "width": 1774,
+      "height": 887,
+      "mode": "RGB"
+    },
+    {
+      "path": "09-making-of/character-evolution/原图/03-同期探索/07-baimantou-blue-bow-bun-wand-v4.png",
+      "bytes": 1461155,
+      "sha256": "16f9c33c5e4dede0c09168a60adf75efc29e14db7bb80ef57490eae53c533344",
+      "width": 1774,
+      "height": 887,
+      "mode": "RGB"
+    },
+    {
+      "path": "09-making-of/character-evolution/原图/03-同期探索/08-baimantou-cream-blonde-twin-braids-v5.png",
+      "bytes": 1446951,
+      "sha256": "1a58b7da69e27a555dfd96d539894b8cb6f712d9391221b96d9c66f1c7cd3db4",
+      "width": 1774,
+      "height": 887,
+      "mode": "RGB"
+    },
+    {
+      "path": "09-making-of/character-evolution/原图/03-同期探索/baimantou-broom-idle-compact.png",
+      "bytes": 1543594,
+      "sha256": "0193c98a8cb3e6e5c050ac32ff2ebdd9d987f3910bab2a4068075e9574657361",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGB"
+    },
+    {
+      "path": "09-making-of/character-evolution/原图/03-同期探索/baimantou-broom-idle-pose.png",
+      "bytes": 1537161,
+      "sha256": "6311518e12c8311f1b64219434f2bedc8e6be7ef8226da937f55f01b4db169d5",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGB"
+    },
+    {
+      "path": "09-making-of/character-evolution/原图/04-界面插画/cand_a_侧坐偏蓝.png",
+      "bytes": 1845205,
+      "sha256": "3648348ae1f4b53c67bb1d8596b6e0e3f6e4413932beac5ef64767ad70a11bbf",
+      "width": 1024,
+      "height": 1536,
+      "mode": "RGB"
+    },
+    {
+      "path": "09-making-of/character-evolution/原图/04-界面插画/witch_lose.jpg",
+      "bytes": 263626,
+      "sha256": "e66107baf7baf1046fdde9de9c9dfc13eea4972dfbd27c1b52cfa0163a91b4c3",
+      "width": 1024,
+      "height": 1536,
+      "mode": "RGB"
+    },
+    {
+      "path": "09-making-of/character-evolution/原图/04-界面插画/witch_lose.webp",
+      "bytes": 192464,
+      "sha256": "dd7657f4a858e51ace730ecbef67d5bb4581d40846123c43a0611c349ef1ff00",
+      "width": 977,
+      "height": 1316,
+      "mode": "RGBA"
+    },
+    {
+      "path": "09-making-of/character-evolution/原图/04-界面插画/witch_title.jpg",
+      "bytes": 290418,
+      "sha256": "272e03bac6dd2ccfb888c3d17dc9d3da56643a2d45914636e931e98cd377e88b",
+      "width": 1024,
+      "height": 1536,
+      "mode": "RGB"
+    },
+    {
+      "path": "09-making-of/character-evolution/原图/04-界面插画/witch_title_src.png",
+      "bytes": 830465,
+      "sha256": "72b8846399c5f5d8f61720ce150464cdf5ca607745834f9116f00166f84a76f2",
+      "width": 1024,
+      "height": 1024,
+      "mode": "RGB"
+    },
+    {
+      "path": "09-making-of/character-evolution/原图/05-早期未定稿/bun_witch_modelsheet.png",
+      "bytes": 1318982,
+      "sha256": "0f0aff4346c5b49971e38323d9202bd398aeaaa9bbcdfc51d67db73d76ad30d8",
+      "width": 1536,
+      "height": 1024,
+      "mode": "RGB"
+    },
+    {
+      "path": "09-making-of/character-evolution/原图/05-早期未定稿/Character_model_sheet__2D_stor_2026-10-19T02-03-11.png",
+      "bytes": 1736927,
+      "sha256": "a0a54fc3bbbb5b382c0b4dc33483452d0f0806ebe15346d0eade79929284a5fb",
+      "width": 1536,
+      "height": 1024,
+      "mode": "RGB"
+    },
+    {
+      "path": "09-making-of/character-evolution/原图/06-动画尝试/generated-source-sheet.png",
+      "bytes": 1242228,
+      "sha256": "ba65db91e0abbd63b70ed24dbd3580f4a9b62cc31a551f38afa3966f4a9bb961",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGBA"
+    },
+    {
+      "path": "09-making-of/character-evolution/原图/07-场景插画/Children_s_picture_book_waterc_2026-10-21T02-56-02.png",
+      "bytes": 2796971,
+      "sha256": "97d316381d742039eb7eb345832ea33e4eefc5868fb5dc42cff637440089ecea",
+      "width": 1536,
+      "height": 1024,
+      "mode": "RGB"
+    },
+    {
+      "path": "09-making-of/character-evolution/原图/07-场景插画/Children_s_picture_book_waterc_2026-10-21T02-58-07.png",
+      "bytes": 2167186,
+      "sha256": "6f6f0e6c29fa0a439a359f66295e6cc488b68fd2bce3e359b56650deca855021",
+      "width": 1536,
+      "height": 1024,
+      "mode": "RGB"
+    },
+    {
+      "path": "09-making-of/character-evolution/原图/08-采用记录/game_newhero.png",
+      "bytes": 100153,
+      "sha256": "2f4a47f8ea4dc9628f78f23fb963b56f99806099df60dabc52124596abcd7fd4",
+      "width": 960,
+      "height": 540,
+      "mode": "RGB"
+    },
+    {
+      "path": "09-making-of/character-evolution/原图/08-采用记录/heroart_play.png",
+      "bytes": 261260,
+      "sha256": "c40cd64133df59cdcef3f353555a4ce73aa6cc274eebe8d997a5e2e4475e0d06",
+      "width": 960,
+      "height": 540,
+      "mode": "RGB"
+    },
+    {
+      "path": "09-making-of/character-evolution/原图/08-采用记录/v12_play.png",
+      "bytes": 288970,
+      "sha256": "8139616a4bda74f41354d89d422e276300812cf212cbfb8cfc94ec354b73f753",
+      "width": 1100,
+      "height": 700,
+      "mode": "RGB"
+    },
+    {
+      "path": "09-making-of/character-evolution/小魔女形象演变.html",
+      "bytes": 29128,
+      "sha256": "61fd234d0d5bdf3527f2129f2b152b4ba58917500402714d1fb39e781135a69e"
+    },
+    {
+      "path": "09-making-of/character-evolution/小魔女形象演变总览.jpg",
+      "bytes": 620535,
+      "sha256": "f6738e64e51ad5d441293ed692f82ad5124d11ec7ea42d3afceddf435c4bca26",
+      "width": 2100,
+      "height": 2170,
+      "mode": "RGB"
+    },
+    {
+      "path": "09-making-of/character-evolution/展示图/01-yellow-brim-witch.png",
+      "bytes": 785902,
+      "sha256": "15aa219360bfd6845767b63b8e5471a7b35dc3655badfb4da980ab0265d8e56e",
+      "width": 1050,
+      "height": 700,
+      "mode": "RGBA"
+    },
+    {
+      "path": "09-making-of/character-evolution/展示图/01_A1_witch_warm_flying.png",
+      "bytes": 921146,
+      "sha256": "e026f5d22201cd54804e18998faa90af036a5a2e17823792bb49772f194dea61",
+      "width": 1024,
+      "height": 1024,
+      "mode": "RGBA"
+    },
+    {
+      "path": "09-making-of/character-evolution/展示图/02-sage-traveler-witch.png",
+      "bytes": 796546,
+      "sha256": "d69924089ddc1136bc6c9db9e0816ae3353996518212d1cce2b6957b51768c56",
+      "width": 1050,
+      "height": 700,
+      "mode": "RGBA"
+    },
+    {
+      "path": "09-making-of/character-evolution/展示图/02_v03_witch_modelsheet.png",
+      "bytes": 279852,
+      "sha256": "df4b621cdd51b66eaebeb9cac53479a1d8980cc09b426ea86e0457338a7b9595",
+      "width": 415,
+      "height": 605,
+      "mode": "RGBA"
+    },
+    {
+      "path": "09-making-of/character-evolution/展示图/03-terracotta-cape-witch.png",
+      "bytes": 806972,
+      "sha256": "a294acc22a8db690255e509306c8e197f37b64c84dcf02380e470deae9b34e0b",
+      "width": 1050,
+      "height": 700,
+      "mode": "RGBA"
+    },
+    {
+      "path": "09-making-of/character-evolution/展示图/03_bun_witch_modelsheet_v2.png",
+      "bytes": 290702,
+      "sha256": "efa2badefb4a1a1634bd2ff20e55dfc31be10582b5bea3272e71ed0b47b7ae70",
+      "width": 345,
+      "height": 615,
+      "mode": "RGBA"
+    },
+    {
+      "path": "09-making-of/character-evolution/展示图/04-baimantou-cloud-witch-v1.png",
+      "bytes": 987354,
+      "sha256": "7d7afb3c0b8087294d406900a0100e09a2a0e09294bf4e46cf84314a6b588149",
+      "width": 1050,
+      "height": 700,
+      "mode": "RGBA"
+    },
+    {
+      "path": "09-making-of/character-evolution/展示图/04_bun_witch_v3.png",
+      "bytes": 366100,
+      "sha256": "fe7ac22966aafa23a4aeb968dc42a7a49013c2e0c714a133cb78d05380518746",
+      "width": 360,
+      "height": 740,
+      "mode": "RGBA"
+    },
+    {
+      "path": "09-making-of/character-evolution/展示图/05-baimantou-bold-witch-v2.png",
+      "bytes": 1090045,
+      "sha256": "e0e34a097c0ae0443494d1af1950a58b89c5f6ce8de2b2013345bbb46bae7b12",
+      "width": 1050,
+      "height": 700,
+      "mode": "RGBA"
+    },
+    {
+      "path": "09-making-of/character-evolution/展示图/05_bun_witch_broom_idle_v2.png",
+      "bytes": 807733,
+      "sha256": "f5c43d6564e35473343837868a4fdcfbba0f27dd9d279a9d86b1c62836e049e0",
+      "width": 1024,
+      "height": 1024,
+      "mode": "RGBA"
+    },
+    {
+      "path": "09-making-of/character-evolution/展示图/06-baimantou-simple-witch-v3.png",
+      "bytes": 512500,
+      "sha256": "49d1b193a2cbe5aefd31bddd252ba516c05a5d8939eabdd998e9378034348818",
+      "width": 1050,
+      "height": 525,
+      "mode": "RGBA"
+    },
+    {
+      "path": "09-making-of/character-evolution/展示图/06_bun_witch_broom_idle_v3_flat.png",
+      "bytes": 731112,
+      "sha256": "05eadf50840b9566edac97b2f17fb57d7555db18b33265997bb787f27753eccd",
+      "width": 1024,
+      "height": 1024,
+      "mode": "RGBA"
+    },
+    {
+      "path": "09-making-of/character-evolution/展示图/07-baimantou-blue-bow-bun-wand-v4.png",
+      "bytes": 559374,
+      "sha256": "bce50196e811cd6663dfe4d133949f609a42df1e4de02fe302fd564ca505052f",
+      "width": 1050,
+      "height": 525,
+      "mode": "RGBA"
+    },
+    {
+      "path": "09-making-of/character-evolution/展示图/07_A_small_witch_girl_riding_a_br_2026-10-19T12-16-16.png",
+      "bytes": 369479,
+      "sha256": "9f3538cfa9c4d4dff9bd95353b6793cbb2193447fa79215731939db66b23a349",
+      "width": 805,
+      "height": 630,
+      "mode": "RGBA"
+    },
+    {
+      "path": "09-making-of/character-evolution/展示图/08-baimantou-cream-blonde-twin-braids-v5.png",
+      "bytes": 565286,
+      "sha256": "f90f41ce245716b54d5ba7a009088eafed2371a1f9fb32fa9d8e4bb9bd19d868",
+      "width": 1050,
+      "height": 525,
+      "mode": "RGBA"
+    },
+    {
+      "path": "09-making-of/character-evolution/展示图/08_witch_flight_green_v1_character_original.png",
+      "bytes": 1103798,
+      "sha256": "d68ad6eef0078ce105faed273e47fba58152c08d1c83b0f15e4922b75207f9c2",
+      "width": 1050,
+      "height": 1050,
+      "mode": "RGBA"
+    },
+    {
+      "path": "09-making-of/character-evolution/展示图/A2_witch_violet_flying.png",
+      "bytes": 879317,
+      "sha256": "4d10ddac1ed14432be829cdf63050c0850eec3157195cf97ca013fcb14c2c0c2",
+      "width": 1024,
+      "height": 1024,
+      "mode": "RGBA"
+    },
+    {
+      "path": "09-making-of/character-evolution/展示图/B_witch_turnaround.png",
+      "bytes": 1142477,
+      "sha256": "0c0531cd49e68079409d60d45b0b6142e7a4c8ca2c1a338783a5b1d7882e8bfc",
+      "width": 1050,
+      "height": 700,
+      "mode": "RGBA"
+    },
+    {
+      "path": "09-making-of/character-evolution/展示图/baimantou-broom-idle-compact.png",
+      "bytes": 1103798,
+      "sha256": "d68ad6eef0078ce105faed273e47fba58152c08d1c83b0f15e4922b75207f9c2",
+      "width": 1050,
+      "height": 1050,
+      "mode": "RGBA"
+    },
+    {
+      "path": "09-making-of/character-evolution/展示图/baimantou-broom-idle-pose.png",
+      "bytes": 1096391,
+      "sha256": "d4cc6a435cf70e715b48ab96b6bbf653c782b23aed356d05e0b5456df5ddf7fb",
+      "width": 1050,
+      "height": 1050,
+      "mode": "RGBA"
+    },
+    {
+      "path": "09-making-of/character-evolution/展示图/bun_witch_broom_idle.png",
+      "bytes": 875986,
+      "sha256": "a842d972fa57b3e9d3d588005688ab51bdc6f0451224cd5d344a4b32f31c2af7",
+      "width": 1024,
+      "height": 1024,
+      "mode": "RGBA"
+    },
+    {
+      "path": "09-making-of/character-evolution/展示图/bun_witch_modelsheet.png",
+      "bytes": 765845,
+      "sha256": "06e5f894211070a736b4488d1d65f20b8ed86f4a64b11097202c134382b680b5",
+      "width": 1050,
+      "height": 700,
+      "mode": "RGBA"
+    },
+    {
+      "path": "09-making-of/character-evolution/展示图/C_witch_expressions.png",
+      "bytes": 885021,
+      "sha256": "16482334fc3fb298162e033b4e0fd7edbcb6e12712ddfe8513a5974bb22f1a13",
+      "width": 1050,
+      "height": 700,
+      "mode": "RGBA"
+    },
+    {
+      "path": "09-making-of/character-evolution/展示图/cand_a_侧坐偏蓝.png",
+      "bytes": 1054692,
+      "sha256": "512f3ad978c08eb1db96a314b388763622f0d19ca3bec8b7961cdbc99ea0f747",
+      "width": 700,
+      "height": 1050,
+      "mode": "RGBA"
+    },
+    {
+      "path": "09-making-of/character-evolution/展示图/Character_model_sheet__2D_stor_2026-10-19T02-03-11.png",
+      "bytes": 948298,
+      "sha256": "e20a07242c79fdb5fe7b00f6b25e386f732428ed369b2bdc5311d82a38520028",
+      "width": 1050,
+      "height": 700,
+      "mode": "RGBA"
+    },
+    {
+      "path": "09-making-of/character-evolution/展示图/Children_s_picture_book_waterc_2026-10-21T02-56-02.png",
+      "bytes": 1550950,
+      "sha256": "3d77a673188533d3414a2b8bcaaf2c7ae29830cc9650695fad4f1e7c5fca645d",
+      "width": 1050,
+      "height": 700,
+      "mode": "RGBA"
+    },
+    {
+      "path": "09-making-of/character-evolution/展示图/Children_s_picture_book_waterc_2026-10-21T02-58-07.png",
+      "bytes": 1287068,
+      "sha256": "6f35b59a1160b9549ca695131100f1afacf8ef0f8feb4bff09b2eb7c17a19657",
+      "width": 1050,
+      "height": 700,
+      "mode": "RGBA"
+    },
+    {
+      "path": "09-making-of/character-evolution/展示图/game_newhero.png",
+      "bytes": 104030,
+      "sha256": "bdf61a5a03ce70aafa491ce566d3d700f687858607dd9041d627b4f02d8ba929",
+      "width": 960,
+      "height": 540,
+      "mode": "RGBA"
+    },
+    {
+      "path": "09-making-of/character-evolution/展示图/generated-source-sheet.png",
+      "bytes": 893737,
+      "sha256": "bbccb0ac92bf43a96ebc5df43b2bb8f58620e77176154af30d225fa188ed8e58",
+      "width": 1050,
+      "height": 1050,
+      "mode": "RGBA"
+    },
+    {
+      "path": "09-making-of/character-evolution/展示图/hero_art_raw.png",
+      "bytes": 379469,
+      "sha256": "28a3fa6a5a7f3e4f754ed4dbd163da75d7d9db8a7be3cc2efbd83b7bd30df4ce",
+      "width": 772,
+      "height": 832,
+      "mode": "RGBA"
+    },
+    {
+      "path": "09-making-of/character-evolution/展示图/heroart_play.png",
+      "bytes": 286999,
+      "sha256": "59a3905755e75bae830b7e05752b436e5f7d0e637fc1875edfa161371b0b1fb5",
+      "width": 960,
+      "height": 540,
+      "mode": "RGBA"
+    },
+    {
+      "path": "09-making-of/character-evolution/展示图/v12_play.png",
+      "bytes": 380161,
+      "sha256": "b1bbca8b6478a2fdb91492a912b737a9dba16b113f002295bd90e8cee47e7a5d",
+      "width": 1050,
+      "height": 668,
+      "mode": "RGBA"
+    },
+    {
+      "path": "09-making-of/character-evolution/展示图/witch2_raw.png",
+      "bytes": 319179,
+      "sha256": "9ea853d5de0e293443f04208c15c06209a58946c8dd72009139b29e3283e882c",
+      "width": 742,
+      "height": 563,
+      "mode": "RGBA"
+    },
+    {
+      "path": "09-making-of/character-evolution/展示图/witch_lose.png",
+      "bytes": 645430,
+      "sha256": "a1809638d589b6c512819476e8af4f4214c37d1de3fda30ab0d1f6a0a386ba36",
+      "width": 700,
+      "height": 1050,
+      "mode": "RGBA"
+    },
+    {
+      "path": "09-making-of/character-evolution/展示图/witch_title.png",
+      "bytes": 752729,
+      "sha256": "5ec410f4d8205bd5722f231955c3d73539d475a2f0682dac9c26c6310abee278",
+      "width": 700,
+      "height": 1050,
+      "mode": "RGBA"
+    },
+    {
+      "path": "09-making-of/character-evolution/展示图/witch_title_src.png",
+      "bytes": 927826,
+      "sha256": "441e6b94aa05ea1584a03e42740750dfdcb5e80ff1b45380010fa309e9d499b9",
+      "width": 1024,
+      "height": 1024,
+      "mode": "RGBA"
+    },
+    {
+      "path": "09-making-of/character-evolution/展示图/当前游戏飞行动画.gif",
+      "bytes": 127965,
+      "sha256": "b6c641deaff98b5891d1011959428ceae8be1efc0dc00848cb98625ba1ab338e",
+      "width": 450,
+      "height": 441,
+      "mode": "P"
+    },
+    {
+      "path": "09-making-of/character-evolution/展示图/当前游戏飞行图集.png",
+      "bytes": 82707,
+      "sha256": "3559adaac9a8da5a556d1d0b7e075c0b26a6c8af8e9cecf11287b0ac83710ef0",
+      "width": 900,
+      "height": 147,
+      "mode": "RGBA"
+    },
+    {
+      "path": "09-making-of/character-evolution/展示图/当前游戏飞行首帧.png",
+      "bytes": 15937,
+      "sha256": "76eb18974114033d1ba5f3588e260f5204877dd451ee1225b8f0263bf84f0197",
+      "width": 150,
+      "height": 147,
+      "mode": "RGBA"
+    },
+    {
+      "path": "09-making-of/character-evolution/整理说明.md",
+      "bytes": 937,
+      "sha256": "804a8cca1e1584395dfa526efa903a9bd13db4b6611ee666ed97ed9299a939f1"
+    },
+    {
+      "path": "09-making-of/character-evolution/来源清单.json",
+      "bytes": 17782,
+      "sha256": "500cb1d3a4ef175210ad8ac93903f0c2ac0fa99a637008be8de895f40deea14d"
+    },
+    {
+      "path": "09-making-of/character-evolution/运行时提取说明.json",
+      "bytes": 386,
+      "sha256": "58de8912ee7529b851731f6059a2e935f45a4233de7a9c67332e415053732280"
+    },
+    {
+      "path": "09-making-of/index.html",
+      "bytes": 3154,
+      "sha256": "b618720784f9515ec9515c15b1d6b52dcba41f2f36f4ed59d882c96ec707e7f8"
+    },
+    {
+      "path": "09-making-of/README.md",
+      "bytes": 1983,
+      "sha256": "643a10ed553c9d3628c6cd412222eb79ffa18732d3e2acbc5af93c6a6a3f2e0b"
+    },
+    {
+      "path": "09-making-of/ui-evolution/README.md",
+      "bytes": 1178,
+      "sha256": "1e9e070946f1ac3e05249eba9236c8127569e0761ab0e08ac92f293ebb19f12e"
+    },
+    {
+      "path": "09-making-of/ui-evolution/UI变化路径与来源.md",
+      "bytes": 1178,
+      "sha256": "1e9e070946f1ac3e05249eba9236c8127569e0761ab0e08ac92f293ebb19f12e"
+    },
+    {
+      "path": "09-making-of/ui-evolution/原图/01-早期界面/style_play.png",
+      "bytes": 119397,
+      "sha256": "af392cb94abb9d426fdc334c211e474e1de7d907be1817d02062acf48e4bccc2",
+      "width": 960,
+      "height": 540,
+      "mode": "RGB"
+    },
+    {
+      "path": "09-making-of/ui-evolution/原图/02-提案前界面/ui_combat.png",
+      "bytes": 635106,
+      "sha256": "77bbb7cc7ad39a031199326c961bbc30aa804184e660bf78417db80270a4e60a",
+      "width": 1280,
+      "height": 720,
+      "mode": "RGB"
+    },
+    {
+      "path": "09-making-of/ui-evolution/原图/03-视觉双方案/两版效果对照.html",
+      "bytes": 3635,
+      "sha256": "047f45c98517b86b52e325ff7cf861d4ec3111132b1ee2f3a323f70a075e7b4d"
+    },
+    {
+      "path": "09-making-of/ui-evolution/原图/03-视觉双方案/方案A-月光悬浮.png",
+      "bytes": 1881362,
+      "sha256": "856aa9f190f7c9412729ea6b428379e9e2f004961b71898ab380ff8c4beb6ec8",
+      "width": 1844,
+      "height": 853,
+      "mode": "RGB"
+    },
+    {
+      "path": "09-making-of/ui-evolution/原图/03-视觉双方案/方案B-童话徽章.png",
+      "bytes": 1965366,
+      "sha256": "0aa2c944f78bf4ad610f611af6ada49033f0542d834c2148b218f01f9981118d",
+      "width": 1843,
+      "height": 853,
+      "mode": "RGB"
+    },
+    {
+      "path": "09-making-of/ui-evolution/原图/03-视觉双方案/生成提示词.json",
+      "bytes": 9067,
+      "sha256": "4ded8569f1f8e0f4d15e6e60dc7d9e4c532a144b97eb154ff72db203ca65feef"
+    },
+    {
+      "path": "09-making-of/ui-evolution/原图/03-视觉双方案/适配与DeepSeek交付说明.md",
+      "bytes": 8750,
+      "sha256": "b13a440aabf0e7830cb59004cd684521fa652817219cb2a7c1e002c02ceb29df"
+    },
+    {
+      "path": "09-making-of/ui-evolution/原图/04-选定A与双端/A月光悬浮-手机版.png",
+      "bytes": 1881362,
+      "sha256": "856aa9f190f7c9412729ea6b428379e9e2f004961b71898ab380ff8c4beb6ec8",
+      "width": 1844,
+      "height": 853,
+      "mode": "RGB"
+    },
+    {
+      "path": "09-making-of/ui-evolution/原图/04-选定A与双端/A月光悬浮-桌面版.png",
+      "bytes": 2083319,
+      "sha256": "b649e987d335b603e31f40b94dda29825149b3559f5ffeaba78bdfab6f176292",
+      "width": 1672,
+      "height": 941,
+      "mode": "RGB"
+    },
+    {
+      "path": "09-making-of/ui-evolution/原图/05-暂停页设计/A月光悬浮-手机暂停页.png",
+      "bytes": 1874034,
+      "sha256": "8590bb757adf23c75f00ad605912d427262f7422fc30f6b2ba145a0b85d0c762",
+      "width": 1821,
+      "height": 864,
+      "mode": "RGB"
+    },
+    {
+      "path": "09-making-of/ui-evolution/原图/05-暂停页设计/A月光悬浮-桌面暂停页.png",
+      "bytes": 1839206,
+      "sha256": "4016b535eff561339b06e13b038d6c51de45f62de8b272f646fa033d017ad940",
+      "width": 1672,
+      "height": 941,
+      "mode": "RGB"
+    },
+    {
+      "path": "09-making-of/ui-evolution/原图/06-当前实装/当前实装-手机-战斗.png",
+      "bytes": 449979,
+      "sha256": "3bbf2596c10f2b611d99fd568f77d5fd704e8210913407a4b91a0daf3256b568",
+      "width": 844,
+      "height": 390,
+      "mode": "RGB"
+    },
+    {
+      "path": "09-making-of/ui-evolution/原图/06-当前实装/当前实装-手机-暂停.png",
+      "bytes": 292715,
+      "sha256": "3e04e4fc77ca2d638431ba2395b9339b9733640f6a7f4f531180a460f8ded363",
+      "width": 844,
+      "height": 390,
+      "mode": "RGB"
+    },
+    {
+      "path": "09-making-of/ui-evolution/原图/06-当前实装/当前实装-桌面-战斗.png",
+      "bytes": 1059209,
+      "sha256": "b58dd3d063d7f57ad5b1fd27c39425e2a2c7626b10b9ea45eab3c3be087fd493",
+      "width": 1280,
+      "height": 720,
+      "mode": "RGB"
+    },
+    {
+      "path": "09-making-of/ui-evolution/原图/06-当前实装/当前实装-桌面-暂停.png",
+      "bytes": 807722,
+      "sha256": "ebbe3e0557c67aeb80b8fcd683235aa609ffb020f66b0e3a9a693e6da56e217f",
+      "width": 1280,
+      "height": 720,
+      "mode": "RGB"
+    },
+    {
+      "path": "09-making-of/ui-evolution/小魔女UI变化路径-预览.png",
+      "bytes": 919378,
+      "sha256": "a88e82b41636d14e0fbaa0dae77d7e75221ec9f80b523341a11d168349de47d7",
+      "width": 1920,
+      "height": 1080,
+      "mode": "RGB"
+    },
+    {
+      "path": "09-making-of/ui-evolution/小魔女UI变化路径.html",
+      "bytes": 5318499,
+      "sha256": "659e55934210ac43025a438aa02df7e72c58adb4ad5c25e013e011c529038bcd"
+    },
+    {
+      "path": "09-making-of/ui-evolution/来源清单.json",
+      "bytes": 5230,
+      "sha256": "c04a7702f16c4037c16edffebb0b75249efad7f1795e6e6ec75db487998ce48b"
+    },
+    {
+      "path": "09-making-of/ui-evolution/电脑与手机UI对照-当前战斗.png",
+      "bytes": 912357,
+      "sha256": "feb2f74e6fba0f9c1bc66b5446d72e18861f59627697c521e6cd0424e8ce2f7c",
+      "width": 1920,
+      "height": 1080,
+      "mode": "RGB"
+    },
+    {
+      "path": "09-making-of/ui-evolution/电脑与手机UI对照-暂停实装.png",
+      "bytes": 653547,
+      "sha256": "3717f3af248a3e9368ac0a281d40029146ea4a9c7e68bee35726f5a7077c5f2f",
+      "width": 1920,
+      "height": 1080,
+      "mode": "RGB"
+    },
+    {
+      "path": "09-making-of/ui-evolution/电脑与手机UI对照-暂停方案.png",
+      "bytes": 951149,
+      "sha256": "cc8cee760c13ca55623c8a9a77419ffe69a2071cbf54bee85b35c7b5e16818a1",
+      "width": 1920,
+      "height": 1080,
+      "mode": "RGB"
+    },
+    {
+      "path": "09-making-of/ui-evolution/电脑与手机UI对照-视觉方案.png",
+      "bytes": 979917,
+      "sha256": "1fc57e5b15b0ed5ee9e2faf2e25261f4adc380e54bedfe01ff34ecea29f64b35",
+      "width": 1920,
+      "height": 1080,
+      "mode": "RGB"
+    },
+    {
+      "path": "09-making-of/ui-evolution/电脑与手机UI对照.html",
+      "bytes": 5318519,
+      "sha256": "de332dd85d1d017f29cf72a93049c985c9efbc0b1d5fd4a154475e31739e1b9d"
+    },
+    {
+      "path": "09-making-of/ui-evolution/说明文档/v1.1.0/桌面与手机交付说明.md",
+      "bytes": 4071,
+      "sha256": "ab1d4ffbfa4e5a7f52eed9db34f0b003ae4fb961212159fafc9c39728642cb5f"
+    },
+    {
+      "path": "09-making-of/ui-evolution/说明文档/v1.1.0/桌面版生成提示词.json",
+      "bytes": 4540,
+      "sha256": "895bcb7de44d46ea2a334851c099002dd8ca2d969db75b9ad141a61d009b0566"
+    },
+    {
+      "path": "09-making-of/ui-evolution/说明文档/v1.2.0/技能资源验收用例.csv",
+      "bytes": 1963,
+      "sha256": "4914d4d5dd36202a2805c7745e7951f3521cbfa36462f57e4621f919afc95f4d"
+    },
+    {
+      "path": "09-making-of/ui-evolution/说明文档/v1.2.0/桌面与手机交付说明.md",
+      "bytes": 8254,
+      "sha256": "b3724b6840cc510d9c664cdc4b8a7a8cef2392a6ebbfd445b6eb12bdfbb1fb01"
+    },
+    {
+      "path": "09-making-of/ui-evolution/说明文档/v1.3.1/桌面适配与暂停页修改说明.md",
+      "bytes": 18176,
+      "sha256": "aeb91bc45fc21ecbaf00ec75758eba5ed8f683c6d24f29aba81eea6c6e7c7a00"
+    },
+    {
       "path": "DEPENDENCIES.md",
       "bytes": 3837,
       "sha256": "908d3928e016821887487f27f86a745b03203f8f31f688a00b02a21447ad99d4"
@@ -1420,8 +2670,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 3683,
-      "sha256": "6d199e581ffe42b928baf2db6d2005b7b566530b979002d6a973159b5bd4bff3"
+      "bytes": 4446,
+      "sha256": "cd5459d96e491a8e04fc721f575645b8e4c0757a07ffcf2021b3b0510c1ec11e"
     },
     {
       "path": "requirements-assets.txt",
@@ -1661,18 +2911,18 @@
     },
     {
       "path": "使用说明.html",
-      "bytes": 33125,
-      "sha256": "55eec7767fa3a007f264d7dab76611dbe282dd7959eb2a409361936cf11c30dc"
+      "bytes": 34827,
+      "sha256": "1deab2646b3912d6fe51495502f8df71c2b3353c3140831ed60a209f1306cf39"
     },
     {
       "path": "素材总览.html",
-      "bytes": 22649,
-      "sha256": "1d3747191c1981bced012d818eaf01f8b549f50d0af58d5e4e8ba0e0df9b8a40"
+      "bytes": 22768,
+      "sha256": "298b830cb1d8128de07e6047a83633ea43bc26c6f1323bd85eed510d75a144aa"
     },
     {
       "path": "素材来源与使用说明.md",
-      "bytes": 2462,
-      "sha256": "96a080b8d92eb5aaab71022a6c6aa5e31cc4b37a4d8cc77608111a51feba787a"
+      "bytes": 3378,
+      "sha256": "a067cf6ef7c025df5e5ac76ae86e3ef451788a93e4a0cbd56b6de7b51f67ef02"
     }
   ]
 }
